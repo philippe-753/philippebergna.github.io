@@ -1,9 +1,9 @@
 ---
 # Display name
-title: "Richard Bergna"
+title: "Philippe Bergna"
 
 # Full name (for SEO)
-first_name: "Richard"
+first_name: "Philippe"
 last_name: "Bergna"
 
 # Status emoji
@@ -17,7 +17,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: "PhD Candidate in Advance Machine Learning"
+role: "Reseach Scientish for AI safety and Security"
 
 # Organizations/Affiliations to display in Biography block
 organizations:
@@ -30,22 +30,21 @@ profiles:
     url: 'mailto:rsb63@cam.ac.uk'
     label: "Email Me"
   - icon: brands/github
-    url: "https://github.com/RichardBergna"
+    url: "https://github.com/philippe-753"
     label: "GitHub"
   - icon: brands/linkedin
-    url: "https://www.linkedin.com/in/richard-bergna"
+    url: "https://www.linkedin.com/in/philippe-bergna-59a20917b/"
     label: "LinkedIn"
-  - icon: academicons/google-scholar
-    url: "https://scholar.google.com/citations?user=QEjxEjcAAAAJ&hl=enz"
-    label: "My Work"
+  # - icon: academicons/google-scholar
+  #   url: "https://scholar.google.com/citations?user=QEjxEjcAAAAJ&hl=enz"
+  #   label: "My Work"
 # Research Interests
 interests:
-  - "Uncertainty Quantification in ML"
-  - "Probabilistic Deep Learning"
-  - "Bayesian Methods"
-  - "Gaussian Processes"
-  - "Reinforcement Learning"
-  - "Graph Neural Networks"
+  - "AI Safety and Security"
+  - "Model Robustness"
+  - "Out of Destribution Detection (OOD)"
+  - "Computer Vision"
+  - "Large Language models"
 # Education
 education:
   - area: "PhD in Advance Machine Learning"
