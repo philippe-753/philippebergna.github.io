@@ -17,7 +17,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: "Reseach Scientish for AI safety and Security"
+role: "Research Scientist for AI Safety and Security"
 
 # Organizations/Affiliations to display in Biography block
 organizations:
@@ -42,7 +42,7 @@ profiles:
 interests:
   - "AI Safety and Security"
   - "Model Robustness"
-  - "Out of Destribution Detection (OOD)"
+  - "Out of Distribution Detection (OOD)"
   - "Computer Vision"
   - "Large Language models"
 # Education
@@ -58,15 +58,15 @@ education:
     date_start: "2020-10-01"
     date_end: "2021-08-01"
     summary: |
-    Took an AI master’s degree in my third year at University.
+      Took an AI master’s degree in my third year at University.
 
     
 # Work Experience
 work:
-  - position: "Researcher Scientist for AI safety and security"
+  - position: "Research Scientist for AI Safety and Security"
     company_name: "Advai"
-    date_start: "2024-04-01"
-    date_end: ""
+    date_start: "2022-09-01"
+    date_end: "2025-01-01"
     summary: |
       At Advai in London, selected from 1 out of 500 applicants, I advanced AI safety and security as a Research Scientist and Engineer by developing cutting-edge adversarial attacks for defense and facial verification systems, optimizing object detection through active learning, and leading model safety consultations, resulting in significant performance improvements and securing multimillion-pound contracts.
   - position: "Teacher Assistant"
