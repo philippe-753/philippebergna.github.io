@@ -1,4 +1,4 @@
----
+<!-- ---
 # Display name
 title: "Philippe Bergna"
 
@@ -178,6 +178,4 @@ awards:
     icon: credly
     summary: |
       Completed a practical course on data warehousing, covering essential concepts in data storage and retrieval for large-scale systems.
-
-
----
+--- -->
