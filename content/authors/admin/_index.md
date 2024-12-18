@@ -57,6 +57,7 @@ education:
     institution: "Katholieke Universiteit Leuven"
     date_start: "2020-10-01"
     date_end: "2021-08-01"
+    summary: |
     Took an AI master’s degree in my third year at University.
 
     
@@ -131,7 +132,7 @@ languages:
   - name: "Spanish"
     percent: 100
   - name: "Italian"
-    percent: 40
+    percent: 75
 
 # Awards and Certifications
 awards:
