@@ -72,7 +72,7 @@ work:
   - position: "Teacher Assistant"
     company_name: "University of Bristol"
     date_start: "2021-09-01"
-    date_end: "2022-6-01"
+    date_end: "2022-06-01"
     summary: |
       Teaching Assistant for the following courses: Artificial Intelligence, Data Science, Computer Programming, and Engineering Physics, effectively teaching machine learning algorithms and programming concepts. I supervised final-year computer vision projects, provided comprehensive academic support by assisting students with exercises, debugging, and concept comprehension, and was uniquely selected as the sole TA without a PhD, showcasing my exceptional expertise and commitment.
   - position: "Front end Developer"
