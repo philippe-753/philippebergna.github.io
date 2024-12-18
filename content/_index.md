@@ -16,7 +16,7 @@ sections:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
       text: |
-        <span style="color: black;">Richard Bergna is a first-year PhD student in Advanced Machine Learning at the Cambridge Computentional and Biological Learning Group (CBL), under the supervision of Prof. Jose Miguel Hernandez-Lobato and Prof. Pietro Liò. His research focuses on uncertainty quantification in machine learning, with applications in decision-making under uncertainty, Gaussian processes, graph neural networks, and reinforcement learning. Previously, he completed his MPhil in Machine Learning and Machine Intelligence at Cambridge and graduated with first-class honors from the University of Bristol in Engineering Mathematics.</span>
+        <span style="color: black;">Richard Bergna is a first-year PhD student in Advanced Machine Learning at the Cambridge Computentional and Biological Learning Group (CBL), under the supervision of Prof. Jose Miguel Hernandez-Lobato and Prof. Pietro Liò. His research focuses on uncertainty quantification in machine learning, with applications in decision-making under uncertainty, Gaussian processes, graph neural networks, and reinforcement learning. Previously, he completed his MPhil in Machine Learning and Machine Intelligence at Cambridge and graduated with first-class honors from the University of Bristol in Engineering Mathematic.</span>
 
     # Show a call-to-action button under your biography? (optional)
       button:
