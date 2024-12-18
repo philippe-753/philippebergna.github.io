@@ -1,9 +1,9 @@
 ---
 # Display name
-title: "Richard Bergna"
+title: "Philippe Bergna"
 
 # Full name (for SEO)
-first_name: "Richard"
+first_name: "Philippe"
 last_name: "Bergna"
 
 # Status emoji
@@ -17,7 +17,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: "PhD Candidate in Advance Machine Learning"
+role: "Research Scientist for AI Safety and Security"
 
 # Organizations/Affiliations to display in Biography block
 organizations:
@@ -30,69 +30,57 @@ profiles:
     url: 'mailto:rsb63@cam.ac.uk'
     label: "Email Me"
   - icon: brands/github
-    url: "https://github.com/RichardBergna"
+    url: "https://github.com/philippe-753"
     label: "GitHub"
   - icon: brands/linkedin
-    url: "https://www.linkedin.com/in/richard-bergna"
+    url: "https://www.linkedin.com/in/philippe-bergna-59a20917b/"
     label: "LinkedIn"
-  - icon: academicons/google-scholar
-    url: "https://scholar.google.com/citations?user=QEjxEjcAAAAJ&hl=enz"
-    label: "My Work"
+  # - icon: academicons/google-scholar
+  #   url: "https://scholar.google.com/citations?user=QEjxEjcAAAAJ&hl=enz"
+  #   label: "My Work"
 # Research Interests
 interests:
-  - "Uncertainty Quantification in ML"
-  - "Probabilistic Deep Learning"
-  - "Bayesian Methods"
-  - "Gaussian Processes"
-  - "Reinforcement Learning"
-  - "Graph Neural Networks"
+  - "AI Safety and Security"
+  - "Model Robustness"
+  - "Out of Distribution Detection (OOD)"
+  - "Computer Vision"
+  - "Large Language models"
 # Education
 education:
-  - area: "PhD in Advance Machine Learning"
-    institution: "University of Cambridge" 
-    date_start: "2024-10-01"
-    date_end: "2027-12-31"
-    summary: |
-      Researching scalable probabilistic deep learning models to quantify uncertainty under the supervision of Prof. Jose Miguel Hernandez-Lobato and Prof. Pietro Liò.
-  - area: "MPhil in Machine Learning and Machine Intelligence"
-    institution: "University of Cambridge"
-    date_start: "2022-10-01"
-    date_end: "2023-09-01"
-    summary: |
-      Achieved a 74% overall grade with an 84% in dissertation on Uncertainty Modeling in Graph Neural Networks via Stochastic Differential Equations. Supervised by Prof. Jose Miguel Hernandez-Lobato and Prof. Pietro Liò.
-  - area: "BEng in Engineering Mathematics"
+  - area: "MEng in Engineering Mathematics with study abroad"
     institution: "University of Bristol"
     date_start: "2018-10-01"
+    date_end: "2022-09-01"
+    summary: |
+      Achieved a 74% overall grade. I proposed a Multimodal Explaionable Fake News Detections framework.
+  - area: "MS Artificial Intelligence"
+    institution: "Katholieke Universiteit Leuven"
+    date_start: "2020-10-01"
     date_end: "2021-08-01"
     summary: |
-      First-class honours with a dissertation grade of 81%, the highest in the cohort, focused on using machine learning to predict movement patterns.
+      Took an AI master’s degree in my third year at University.
+
     
 # Work Experience
 work:
-  - position: "Quantitative Researcher"
-    company_name: "Qube Research & Technologies"
-    date_start: "2024-04-01"
-    date_end: ""
+  - position: "Research Scientist for AI Safety and Security"
+    company_name: "Advai"
+    date_start: "2022-09-01"
+    date_end: "2025-01-01"
     summary: |
-      Applying machine learning and mathematical models to predict future financial returns.
-  - position: "Machine Learning Research Assistant"
-    company_name: "University of Cambridge"
-    date_start: "2023-11-01"
-    date_end: "2024-04-01"
-    summary: |
-      Investigated uncertainty quantification methods in graph neural networks in the CBL lab, under the supervision of Prof. Jose Miguel Hernandez-Lobato and Prof. Pietro Liò.
-  - position: "Data Scientist"
-    company_name: "Sopra Steria"
-    date_start: "2021-09-01"
-    date_end: "2022-10-01"
-    summary: |
-      Led ETL transformations in Python, implemented machine learning algorithms, and deployed deep learning architectures for production systems.
-  - position: "Research Intern"
+      At Advai in London, selected from 1 out of 500 applicants, I advanced AI safety and security as a Research Scientist and Engineer by developing cutting-edge adversarial attacks for defense and facial verification systems, optimizing object detection through active learning, and leading model safety consultations, resulting in significant performance improvements and securing multimillion-pound contracts.
+  - position: "Teacher Assistant"
     company_name: "University of Bristol"
-    date_start: "2021-06-01"
-    date_end: "2021-08-01"
+    date_start: "2021-09-01"
+    date_end: "2022-06-01"
     summary: |
-      Collaborated with Dr. Kacper Sokol on explainability in machine learning algorithms, including LIME and ANCHORS.
+      Teaching Assistant for the following courses: Artificial Intelligence, Data Science, Computer Programming, and Engineering Physics, effectively teaching machine learning algorithms and programming concepts. I supervised final-year computer vision projects, provided comprehensive academic support by assisting students with exercises, debugging, and concept comprehension, and was uniquely selected as the sole TA without a PhD, showcasing my exceptional expertise and commitment.
+  - position: "Front end Developer"
+    company_name: "Alfrad"
+    date_start: "2020-05-01"
+    date_end: "2022-09-01"
+    summary: |
+      Created an mobile application that worked both android and ios using Javascript using react native.
 
 # Skills
 skills:
@@ -102,11 +90,11 @@ skills:
         description: "Advanced"
         percent: 98
         icon: code-bracket
-      - name: "Probabilistic Modeling"
+      - name: "AI safety and robustness"
         description: "Strong foundation"
         percent: 95
         icon: chart-bar
-      - name: "Bayesian Inference"
+      - name: "Computer vision"
         description: "Proficient"
         percent: 90
         icon: code
@@ -118,15 +106,15 @@ skills:
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: "Judo"
+      - name: "Brazilian Jiu-Jitsu"
         description: "Competitive training"
-        percent: 20
+        percent: 90
         icon: person-fighting
       - name: "Salsa and Bachata Dancing"
-        percent: 90
+        percent: 30
         icon: dance
       - name: "Gym"
-        percent: 85
+        percent: 70
         icon: camera
 
 # Publications
@@ -144,7 +132,7 @@ languages:
   - name: "Spanish"
     percent: 100
   - name: "Italian"
-    percent: 40
+    percent: 75
 
 # Awards and Certifications
 awards:
