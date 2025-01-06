@@ -1,6 +1,6 @@
 ---
-title: Pandas
-date: 2023-10-26
+title: 3D Adversarial Attacks
+date: 2024-12-21
 external_link: https://github.com/pandas-dev/pandas
 tags:
   - Hugo
@@ -8,7 +8,6 @@ tags:
   - Markdown
 ---
 
-Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
-
+3D Adaversararial Attacks that fool AI object detectors models. 
 
 <!--more-->
