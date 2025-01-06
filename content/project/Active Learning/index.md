@@ -1,5 +1,5 @@
 ---
-title: PyTorch
+title: Active Learning
 date: 2023-10-26
 external_link: https://github.com/pytorch/pytorch
 tags:
@@ -8,6 +8,6 @@ tags:
   - Markdown
 ---
 
-PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.
+Different Active Learning strategies for selecting the most informative images to train object dectors models.
 
 <!--more-->
