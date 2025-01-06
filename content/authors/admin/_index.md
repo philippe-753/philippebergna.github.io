@@ -21,8 +21,8 @@ role: "Research Scientist for AI Safety and Security"
 
 # Organizations/Affiliations to display in Biography block
 organizations:
-  - name: "Computational and Biological Learning Lab (CBL)"
-    url: "https://cbl.eng.cam.ac.uk/"
+  - name: "Advai"
+    url: "https://www.advai.co.uk/"
 
 # Social network links
 profiles:
