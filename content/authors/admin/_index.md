@@ -16,7 +16,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: "<span style="color: black;"> Research Scientist for AI Safety and Security</span>"
+role: Research Scientist for AI Safety and Security
 
 # Organizations/Affiliations to display in Biography block
 organizations:
