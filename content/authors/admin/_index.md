@@ -3,8 +3,8 @@
 title: "Philippe Bergna"
 
 # Full name 
-first_name: "Philippe"
-last_name: "Bergna"
+first_name: '<span style="color: black;" Philippe </span>'
+last_name: '<span style="color: black; Bergna </span>'
 # Status emoji
 status:
   icon: 🎓
@@ -16,12 +16,12 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: '<span style="color: black;">Research Scientist for AI Safety and Security</span>'
+role: '<span style="color: black;">Research Scientist for AI Safety and Security'
 
 
 # Organizations/Affiliations to display in Biography block
 organizations:
-  - name: "Advai"
+  - name: '<span style="color: black; "Advai"</span>'
     url: "https://www.advai.co.uk/"
 
 # Social network links
