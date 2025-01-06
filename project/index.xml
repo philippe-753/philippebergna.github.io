@@ -21,11 +21,11 @@
     </item>
     
     <item>
-      <title>PyTorch</title>
+      <title>Active Learning</title>
       <link>https://philippebergna.github.io/project/active-learning/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://philippebergna.github.io/project/active-learning/</guid>
-      <description>&lt;p&gt;PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Different Active Learning strategies for selecting the most informative images to train object dectors models.&lt;/p&gt;</description>
     </item>
     
     <item>

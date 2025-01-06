@@ -131,11 +131,11 @@
     </item>
     
     <item>
-      <title>PyTorch</title>
+      <title>Active Learning</title>
       <link>https://philippebergna.github.io/project/active-learning/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://philippebergna.github.io/project/active-learning/</guid>
-      <description>&lt;p&gt;PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Different Active Learning strategies for selecting the most informative images to train object dectors models.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -283,7 +283,7 @@
 
 
 
-&lt;div id=&#34;chart-746812593&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-964378512&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -301,7 +301,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-746812593&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-964378512&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
