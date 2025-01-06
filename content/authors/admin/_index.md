@@ -6,10 +6,7 @@ title: "Philippe Bergna"
 
 # Full name 
 first_name: "Philippe"
-  # - color: '#eeac02'
 last_name: "Bergna"
-  # - color: '#eeac02'
-
 # Status emoji
 status:
   icon: 🎓

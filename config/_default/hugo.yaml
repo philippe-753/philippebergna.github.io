@@ -19,6 +19,12 @@ removePathAccents: true
 params:
   featured_pdf: "featured.pdf"
 
+  # Custom color settings
+  colors:
+    text: "#000000"        # Black
+    link: "#1a0dab"        # Example link color
+    background: "#ffffff"  # White background
+
 ############################
 ## ADVANCED
 ############################
@@ -56,3 +62,7 @@ security:
   _merge: deep
 sitemap:
   _merge: deep
+
+
+
+
