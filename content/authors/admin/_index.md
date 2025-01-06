@@ -21,13 +21,13 @@ role: '<span style="color: black;">Research Scientist for AI Safety and Security
 
 # Organizations/Affiliations to display in Biography block
 organizations:
-  - name: '<span style="color: black; "Advai"</span>'
+  - name: '<span style="color: black;>"Advai"</span>'
     url: "https://www.advai.co.uk/"
 
 # Social network links
 profiles:
   - icon: at-symbol
-    url: 'mailto:rsb63@cam.ac.uk'
+    url: 'pbergna753@gmail.com'
     label: "Email Me"
   - icon: brands/github
     url: "https://github.com/philippe-753"
