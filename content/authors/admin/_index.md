@@ -1,6 +1,4 @@
 ---
-layout: default
-
 # Display name
 title: "Philippe Bergna"
 
