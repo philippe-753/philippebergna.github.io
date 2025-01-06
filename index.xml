@@ -6,6 +6,12 @@
       <atom:link href="https://philippebergna.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Philippe Bergna - Academic CV</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://philippebergna.github.io/media/icon_hu7729264130191091259.png</url>
+      <title>Philippe Bergna - Academic CV</title>
+      <link>https://philippebergna.github.io/</link>
+    </image>
+    
     <item>
       <title>Example Talk</title>
       <link>https://philippebergna.github.io/event/example/</link>
@@ -309,7 +315,7 @@
 
 
 
-&lt;div id=&#34;chart-927635814&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-156382794&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -327,7 +333,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-927635814&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-156382794&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

@@ -6,6 +6,12 @@
       <atom:link href="https://philippebergna.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Blog</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 27 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://philippebergna.github.io/media/icon_hu7729264130191091259.png</url>
+      <title>Blog</title>
+      <link>https://philippebergna.github.io/post/</link>
+    </image>
+    
     <item>
       <title>🎉 Easily create your own simple yet highly customizable blog</title>
       <link>https://philippebergna.github.io/post/get-started/</link>
@@ -245,7 +251,7 @@
 
 
 
-&lt;div id=&#34;chart-927635814&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-156382794&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -263,7 +269,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-927635814&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-156382794&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
