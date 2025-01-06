@@ -1,10 +1,10 @@
 ---
 # Display name
-title: "Philippe Bergna"
+title: "<span style="color: black;">Philippe Bergna</span>"
 
 # Full name 
-first_name: '<span style="color: black;" Philippe </span>'
-last_name: '<span style="color: black; Bergna </span>'
+first_name: '<span style="color: black;">Philippe </span>'
+last_name: '<span style="color: black;">Bergna </span>'
 # Status emoji
 status:
   icon: 🎓
