@@ -1,10 +1,10 @@
 ---
 # Display name
-title: '<span style="color: black;">Philippe Bergna</span>'
+title: '<span style="color: black;">Philippe Bergna'
 
 # Full name 
-first_name: '<span style="color: black;">Philippe </span>'
-last_name: '<span style="color: black;">Bergna </span>'
+first_name: '<span style="color: black;">Philippe'
+last_name: '<span style="color: black;">Bergna'
 # Status emoji
 status:
   icon: 🎓
@@ -21,7 +21,7 @@ role: '<span style="color: black;">Research Scientist for AI Safety and Security
 
 # Organizations/Affiliations to display in Biography block
 organizations:
-  - name: '<span style="color: black;>"Advai"</span>'
+  - name: '<span style="color: black;>"Advai"'
     url: "https://www.advai.co.uk/"
 
 # Social network links
