@@ -6,12 +6,6 @@
       <atom:link href="https://philippebergna.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     <description>Blogs</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>https://philippebergna.github.io/media/icon_hu7729264130191091259.png</url>
-      <title>Blogs</title>
-      <link>https://philippebergna.github.io/blogs/</link>
-    </image>
-    
     <item>
       <title>Learn JavaScript</title>
       <link>https://philippebergna.github.io/blogs/what-is-adversarial-attakcks/</link>
