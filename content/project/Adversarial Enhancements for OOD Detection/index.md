@@ -1,6 +1,6 @@
 ---
-title: scikit-learn
-date: 2023-10-26
+title: Adversarial Reprogramming for OOD detection
+date: 2025-01-05
 external_link: https://github.com/scikit-learn/scikit-learn
 tags:
   - Hugo
@@ -8,6 +8,6 @@ tags:
   - Markdown
 ---
 
-scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
+Iproving AI model on out-of-distribution (OOD) detection with adversarial attcks.
 
 <!--more-->
