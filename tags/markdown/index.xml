@@ -5,12 +5,20 @@
     <link>https://philippebergna.github.io/tags/markdown/</link>
       <atom:link href="https://philippebergna.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <description>Markdown</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 21 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 05 Jan 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://philippebergna.github.io/media/icon_hu7729264130191091259.png</url>
       <title>Markdown</title>
       <link>https://philippebergna.github.io/tags/markdown/</link>
     </image>
+    
+    <item>
+      <title>Adversarial Reprogramming for OOD detection</title>
+      <link>https://philippebergna.github.io/project/adversarial-enhancements-for-ood-detection/</link>
+      <pubDate>Sun, 05 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://philippebergna.github.io/project/adversarial-enhancements-for-ood-detection/</guid>
+      <description>&lt;p&gt;Iproving AI model on out-of-distribution (OOD) detection with adversarial attcks.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>3D Adversarial Attacks</title>
@@ -139,19 +147,11 @@
     </item>
     
     <item>
-      <title>scikit-learn</title>
+      <title>Adversarial Attacks for Facial Verification Systems</title>
       <link>https://philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</guid>
-      <description>&lt;p&gt;scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>scikit-learn</title>
-      <link>https://philippebergna.github.io/project/adversarial-enhancements-for-ood-detection/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/project/adversarial-enhancements-for-ood-detection/</guid>
-      <description>&lt;p&gt;scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Adversarial Attacks on facial verification systems.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -283,7 +283,7 @@
 
 
 
-&lt;div id=&#34;chart-867291534&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-512639874&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -301,7 +301,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-867291534&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-512639874&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
