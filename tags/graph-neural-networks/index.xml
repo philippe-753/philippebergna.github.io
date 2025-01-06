@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graph Neural Networks | Philippe Bergna - Academic CV</title>
+    <link>https://philippebergna.github.io/tags/graph-neural-networks/</link>
+      <atom:link href="https://philippebergna.github.io/tags/graph-neural-networks/index.xml" rel="self" type="application/rss+xml" />
+    <description>Graph Neural Networks</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://philippebergna.github.io/media/icon_hu7729264130191091259.png</url>
+      <title>Graph Neural Networks</title>
+      <link>https://philippebergna.github.io/tags/graph-neural-networks/</link>
+    </image>
+    
+    <item>
+      <title>Uncertainty Modeling in Graph Neural Networks via Stochastic Differential Equations</title>
+      <link>https://philippebergna.github.io/publication/preprint/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://philippebergna.github.io/publication/preprint/</guid>
+      <description>&lt;p&gt;This work provides a framework for leveraging stochastic differential equations to address uncertainty in graph neural networks, positioning it as a key approach for robust, uncertainty-aware models in structured data applications.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

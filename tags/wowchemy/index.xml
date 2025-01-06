@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wowchemy | Philippe Bergna - Academic CV</title>
+    <link>https://philippebergna.github.io/tags/wowchemy/</link>
+      <atom:link href="https://philippebergna.github.io/tags/wowchemy/index.xml" rel="self" type="application/rss+xml" />
+    <description>Wowchemy</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 21 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://philippebergna.github.io/media/icon_hu7729264130191091259.png</url>
+      <title>Wowchemy</title>
+      <link>https://philippebergna.github.io/tags/wowchemy/</link>
+    </image>
+    
+    <item>
+      <title>3D Adversarial Attacks</title>
+      <link>https://philippebergna.github.io/project/pandas/</link>
+      <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://philippebergna.github.io/project/pandas/</guid>
+      <description>&lt;p&gt;3D Adaversararial Attacks that fool AI object detectors models.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PyTorch</title>
+      <link>https://philippebergna.github.io/project/active-learning/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://philippebergna.github.io/project/active-learning/</guid>
+      <description>&lt;p&gt;PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>scikit-learn</title>
+      <link>https://philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</guid>
+      <description>&lt;p&gt;scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>scikit-learn</title>
+      <link>https://philippebergna.github.io/project/adversarial-enhancements-for-ood-detection/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://philippebergna.github.io/project/adversarial-enhancements-for-ood-detection/</guid>
+      <description>&lt;p&gt;scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
