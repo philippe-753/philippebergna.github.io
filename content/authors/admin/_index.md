@@ -2,7 +2,7 @@
 # Display name
 title: "Philippe Bergna"
 
-# Full name (for SEO)
+# Full name 
 first_name: "Philippe"
 last_name: "Bergna"
 
