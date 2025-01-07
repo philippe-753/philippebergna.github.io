@@ -1,6 +1,6 @@
 ---
 # Display name
-title: '<span style="color: black;">Philippe Bergna</span>'
+title: 'Philippe Bergna'
 
 # Full name 
 first_name: 'Philippe'
