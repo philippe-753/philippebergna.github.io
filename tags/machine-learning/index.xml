@@ -6,12 +6,6 @@
       <atom:link href="https://philippebergna.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <description>Machine Learning</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>https://philippebergna.github.io/media/icon_hu7729264130191091259.png</url>
-      <title>Machine Learning</title>
-      <link>https://philippebergna.github.io/tags/machine-learning/</link>
-    </image>
-    
     <item>
       <title>Uncertainty Modeling in Graph Neural Networks via Stochastic Differential Equations</title>
       <link>https://philippebergna.github.io/publication/preprint/</link>
