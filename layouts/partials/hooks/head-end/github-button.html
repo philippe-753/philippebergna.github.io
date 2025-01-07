@@ -1,6 +1,6 @@
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-<!-- Add custom styles below -->
+  <!-- Add custom styles below -->
 <style>
     /* Override text color for the display name */
     .text-3xl.font-bold.mb-2.mt-6 {
@@ -8,9 +8,23 @@
     }
   
     /* Override text color for the organization name */
-    .organizations {
+    .organization a {
+      color: black !important;
+    }
+  
+    /* Additional selector if span is used */
+    .organization a span {
       color: black !important;
     }
   </style>
   
-  
+  <!-- Render Organizations -->
+  {% if site.data.your_data_file.organizations %}
+    <div class="organization">
+      {% for org in site.data.your_data_file.organizations %}
+        <a href="{{ org.url }}" target="_blank">
+          {{ org.name | safe }}
+        </a>
+      {% endfor %}
+    </div>
+  {% endif %}
