@@ -19,10 +19,9 @@ highlight_name: true
 role: '<span style="color: black;">Research Scientist for AI Safety and Security</span>'
 
 
-
 # Organizations/Affiliations to display in Biography block
 organizations:
-  - name: '<span style="color: black;">Advai</span>'
+  - name: 'Advai'
     url: "https://www.advai.co.uk/"
 
 # Social network links
