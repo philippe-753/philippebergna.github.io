@@ -6,25 +6,4 @@
     .text-3xl.font-bold.mb-2.mt-6 {
       color: black !important;
     }
-  
-    /* Override text color for the organization name */
-    .organization a {
-      color: black !important;
-    }
-  
-    /* Additional selector if span is used */
-    .organization a span {
-      color: black !important;
-    }
 </style>
-
-<!-- Render Organizations -->
-{% if page.organizations %}
-  <div class="organization">
-    {% for org in page.organizations %}
-      <a href="{{ org.url }}" target="_blank">
-        {{ org.name | markdownify }}
-      </a>
-    {% endfor %}
-  </div>
-{% endif %}
