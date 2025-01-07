@@ -1,0 +1,20 @@
+<!-- layouts/_default/baseof.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ block "title" . }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Existing partials or theme CSS links -->
+  {{ partial "hooks/head-end/github-button.html" . }}
+
+  <!-- Link to your custom CSS if any -->
+  <link rel="stylesheet" href="{{ "assets/css/custom.css" | relURL }}">
+</head>
+<body>
+  {{ block "main" . }}
+  {{ end }}
+</body>
+</html>
