@@ -1,5 +1,5 @@
 ---
-title: Aversarial Attacks Introduction
+title: Blog 2
 summary: A summary of what are adversariala attacks, the optimisation attacks and more.
 date: 2023-10-24
 type: docs

@@ -1,3 +1,17 @@
+---
+title: Aversarial Attacks Introduction
+summary: A summary of what are adversariala attacks, the optimisation attacks and more.
+date: 2023-10-24
+type: docs
+math: false
+tags:
+  - Python
+image:
+  caption: 'Embed rich media such as videos and LaTeX math'
+---
+
+
+
 # Introduction to Adversarial Attacks in Computer Vision
 
 *Building Trust and Robustness in AI Models through Understanding Adversarial Vulnerabilities*
@@ -33,9 +47,11 @@ Adversarial attacks are intentional manipulations of input data designed to dece
 
 Given a machine learning model \( f \) that maps input data \( x \) to output predictions \( f(x) \), an adversarial attack seeks to find a perturbed input \( x' \) such that:
 
-\[
+
+$$
 x' = x + \delta \quad \text{where} \quad \| \delta \| < \epsilon \quad \text{and} \quad f(x') \neq f(x)
-\]
+$$
+
 
 Here, \( \delta \) represents the perturbation added to the original input \( x \), and \( \epsilon \) defines the maximum allowable magnitude of this perturbation, typically measured using norms such as \( \ell_\infty \) or \( \ell_2 \).
 
