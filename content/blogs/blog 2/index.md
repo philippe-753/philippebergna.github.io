@@ -1,6 +1,6 @@
 ---
-title: Learn Python
-summary: Easily learn Python in 10 minutes!
+title: Aversarial Attacks Introduction
+summary: A summary of what are adversariala attacks, the optimisation attacks and more.
 date: 2023-10-24
 type: docs
 math: false
