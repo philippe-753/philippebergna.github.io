@@ -315,7 +315,7 @@
 
 
 
-&lt;div id=&#34;chart-927143658&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-234651978&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -333,7 +333,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-927143658&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-234651978&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -758,22 +758,6 @@ data.head()
     </item>
     
     <item>
-      <title>Learn JavaScript</title>
-      <link>https://philippebergna.github.io/blogs/what-is-adversarial-attakcks/</link>
-      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/blogs/what-is-adversarial-attakcks/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;!-- What is this blog about? computer vision, etc. Why did I decide to write this blog? --&gt;
-&lt;p&gt;For the past 2.5 years I have been working as a reseach scientist on AI safety for computer vision systems at 
-. With the boom of Large language models (LLMs) such as ChatGPT, gemini, and claude emerging in the las few years, the AI safety community seemed to have shifted their focus from computer vision systems to LLMs safety. However, I still believe that if we wish to build trust and robust AI models, the reseach on Adversarial attacks in computer vision serves as a pillow to takle before we can&lt;/p&gt;
-&lt;h2 id=&#34;why-do-adversarial-attacks-exist-my-own-take&#34;&gt;Why do Adversarial attacks exist? my own take.&lt;/h2&gt;
-&lt;h2 id=&#34;types-of-adversarial-attacks&#34;&gt;Types of Adversarial Attacks&lt;/h2&gt;
-&lt;p&gt;FSGM, PGD, Iterative PGD (?), Deepfool, Gans.&lt;/p&gt;
-&lt;h2 id=&#34;some-cool-adversarial-attackszws&#34;&gt;Some cool adversarial attackszws&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
       <title>✅ Manage your projects</title>
       <link>https://philippebergna.github.io/post/project-management/</link>
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
@@ -898,6 +882,236 @@ Parallel 4   :         des6, after des4, 1d
 &lt;/div&gt;
 &lt;p&gt;Add the publication&amp;rsquo;s &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; here. You can use rich formatting such as including 
 .&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://philippebergna.github.io/blogs/what-is-adversarial-attakcks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://philippebergna.github.io/blogs/what-is-adversarial-attakcks/</guid>
+      <description>&lt;h1 id=&#34;introduction-to-adversarial-attacks-in-computer-vision&#34;&gt;Introduction to Adversarial Attacks in Computer Vision&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Building Trust and Robustness in AI Models through Understanding Adversarial Vulnerabilities&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;For the past 2.5 years, I have been engaged as a research scientist focusing on AI safety for computer vision systems at 
+. In recent years, the surge in popularity of Large Language Models (LLMs) such as ChatGPT, Gemini, and Claude has shifted the attention of the AI safety community towards ensuring the reliability and security of these sophisticated language-based systems. However, I contend that research on adversarial attacks in computer vision remains a critical milestone for building trust and developing robust AI models.&lt;/p&gt;
+&lt;p&gt;Adversarial attacks expose fundamental vulnerabilities in machine learning models, particularly in computer vision, by introducing subtle perturbations to input data that lead to incorrect model predictions. Understanding these attacks is essential not only for enhancing the security of AI systems but also for advancing the overall field of machine learning by highlighting areas where models may fail unexpectedly.&lt;/p&gt;
+&lt;p&gt;This blog serves as an introductory exploration of adversarial attacks, delving into their definitions, underlying causes, various types, and significant research contributions. Whether you are an AI practitioner, researcher, or enthusiast, this discussion aims to provide a comprehensive foundation for understanding and addressing adversarial vulnerabilities in computer vision systems.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;what-are-adversarial-attacks&#34;&gt;What Are Adversarial Attacks?&lt;/h2&gt;
+&lt;p&gt;Adversarial attacks are intentional manipulations of input data designed to deceive machine learning models into making incorrect predictions or classifications. These manipulations are often imperceptible to humans but can significantly alter the model&amp;rsquo;s output. The phenomenon was first widely recognized in the context of image classification tasks but extends to various domains within machine learning.&lt;/p&gt;
+&lt;h3 id=&#34;formal-definition&#34;&gt;Formal Definition&lt;/h3&gt;
+&lt;p&gt;Given a machine learning model \( f \) that maps input data \( x \) to output predictions \( f(x) \), an adversarial attack seeks to find a perturbed input \( x&#39; \) such that:&lt;/p&gt;
+\[
+x&#39; = x + \delta \quad \text{where} \quad \| \delta \| &lt; \epsilon \quad \text{and} \quad f(x&#39;) \neq f(x)
+\]&lt;p&gt;Here, \( \delta \) represents the perturbation added to the original input \( x \), and \( \epsilon \) defines the maximum allowable magnitude of this perturbation, typically measured using norms such as \( \ell_\infty \) or \( \ell_2 \).&lt;/p&gt;
+&lt;h3 id=&#34;real-world-implications&#34;&gt;Real-World Implications&lt;/h3&gt;
+&lt;p&gt;Adversarial attacks pose significant risks in applications where AI systems are deployed in safety-critical environments. For instance, in autonomous driving, a minor alteration to a traffic sign could lead to misclassification, resulting in potentially hazardous driving decisions. Similarly, in security systems employing facial recognition, adversarial examples could bypass authentication mechanisms, compromising system integrity.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://your-image-link.com/adversarial_example.png&#34; alt=&#34;Adversarial Example&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;br&gt;
+&lt;em&gt;Figure 1: An adversarial image where minor alterations deceive the AI into misclassification.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;why-do-adversarial-attacks-exist&#34;&gt;Why Do Adversarial Attacks Exist?&lt;/h2&gt;
+&lt;p&gt;The existence of adversarial attacks raises profound questions about the nature of machine learning models and their decision-making processes. Despite extensive research, the precise reasons behind the susceptibility of models to such minimal perturbations remain partially understood, making this an active area of investigation.&lt;/p&gt;
+&lt;h3 id=&#34;theoretical-perspectives&#34;&gt;Theoretical Perspectives&lt;/h3&gt;
+&lt;p&gt;Several hypotheses have been proposed to explain why adversarial attacks are effective:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;High-Dimensional Spaces:&lt;/strong&gt; In high-dimensional input spaces, such as images, there exist numerous directions in which input data can be perturbed without significantly altering human perception. This abundance of directions provides adversaries with ample opportunities to find perturbations that mislead models.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Linear Behavior in Non-Linear Models:&lt;/strong&gt; Despite the non-linear nature of deep neural networks, these models exhibit locally linear behavior in high-dimensional spaces. This linearity can be exploited by adversaries to craft perturbations using gradient-based methods effectively.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Overfitting to Training Data:&lt;/strong&gt; Models that overfit to training data may capture noise and irrelevant patterns, making them more vulnerable to adversarial manipulations that exploit these specific learned patterns.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Model Complexity and Decision Boundaries:&lt;/strong&gt; The complexity of model architectures can lead to intricate decision boundaries. Adversarial perturbations can navigate these boundaries to cross into regions associated with different classes with minimal input changes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;empirical-evidence&#34;&gt;Empirical Evidence&lt;/h3&gt;
+&lt;p&gt;Empirical studies demonstrate that even state-of-the-art models, such as convolutional neural networks (CNNs), are highly susceptible to adversarial attacks. The consistent success of various attack strategies across different models and datasets underscores the pervasive nature of this vulnerability.&lt;/p&gt;
+&lt;h3 id=&#34;implications-for-ai-safety&#34;&gt;Implications for AI Safety&lt;/h3&gt;
+&lt;p&gt;Understanding the underlying causes of adversarial vulnerabilities is crucial for developing effective defense mechanisms. Addressing these vulnerabilities is essential for ensuring the reliability and safety of AI systems, particularly as they become increasingly integrated into critical applications.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;types-of-adversarial-attacks&#34;&gt;Types of Adversarial Attacks&lt;/h2&gt;
+&lt;p&gt;Adversarial attacks can be categorized based on several criteria, including the attacker&amp;rsquo;s knowledge of the target model, the attack&amp;rsquo;s objective, and the nature of the perturbations. Below, we outline the primary classifications and notable attack methods within each category.&lt;/p&gt;
+&lt;h3 id=&#34;1-based-on-knowledge-of-the-target-model&#34;&gt;1. Based on Knowledge of the Target Model&lt;/h3&gt;
+&lt;h4 id=&#34;a-white-box-attacks&#34;&gt;a. White-Box Attacks&lt;/h4&gt;
+&lt;p&gt;In white-box attacks, the adversary has complete access to the target model&amp;rsquo;s architecture, parameters, and gradients. This comprehensive knowledge allows for precise crafting of adversarial examples by leveraging detailed insights into the model&amp;rsquo;s behavior.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Examples:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Fast Gradient Sign Method (FGSM)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Projected Gradient Descent (PGD)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Carlini &amp;amp; Wagner (C&amp;amp;W) Attack&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;b-black-box-attacks&#34;&gt;b. Black-Box Attacks&lt;/h4&gt;
+&lt;p&gt;Black-box attacks operate under the assumption that the adversary has no internal knowledge of the model. Instead, the attacker can only interact with the model through input-output queries. These attacks often rely on surrogate models or query-based strategies to approximate the target model&amp;rsquo;s behavior.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Examples:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Zeroth-Order Optimization (ZOO)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Transfer-Based Attacks&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Boundary Attack&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-based-on-the-attack-objective&#34;&gt;2. Based on the Attack Objective&lt;/h3&gt;
+&lt;h4 id=&#34;a-targeted-attacks&#34;&gt;a. Targeted Attacks&lt;/h4&gt;
+&lt;p&gt;Targeted attacks aim to misclassify an input into a specific, predetermined class. The adversary&amp;rsquo;s goal is not merely to cause any misclassification but to ensure the model predicts a particular incorrect label.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; Altering an image of a &amp;ldquo;dog&amp;rdquo; so that the model classifies it as a &amp;ldquo;cat.&amp;rdquo;&lt;/p&gt;
+&lt;h4 id=&#34;b-untargeted-attacks&#34;&gt;b. Untargeted Attacks&lt;/h4&gt;
+&lt;p&gt;Untargeted attacks seek to cause any misclassification without a specific target class in mind. The objective is to disrupt the model&amp;rsquo;s correct predictions, irrespective of the incorrect label assigned.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; Modifying an image of a &amp;ldquo;car&amp;rdquo; so that the model fails to recognize it as a &amp;ldquo;car,&amp;rdquo; potentially labeling it as any other category.&lt;/p&gt;
+&lt;h3 id=&#34;3-based-on-the-nature-of-perturbations&#34;&gt;3. Based on the Nature of Perturbations&lt;/h3&gt;
+&lt;h4 id=&#34;a-additive-perturbations&#34;&gt;a. Additive Perturbations&lt;/h4&gt;
+&lt;p&gt;Additive perturbations involve adding small, carefully calculated noise to the input data. These perturbations are typically constrained by norm-based bounds (e.g., \( \ell_\infty \), \( \ell_2 \)) to ensure they remain imperceptible to humans.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; Slightly adjusting pixel values in an image to deceive the model.&lt;/p&gt;
+&lt;h4 id=&#34;b-non-additive-perturbations&#34;&gt;b. Non-Additive Perturbations&lt;/h4&gt;
+&lt;p&gt;Non-additive perturbations encompass more complex alterations that may involve spatial transformations, geometric modifications, or other non-linear changes to the input data. These perturbations can be more sophisticated and harder to detect.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; Applying small rotations, translations, or scaling transformations to an image to alter its classification.&lt;/p&gt;
+&lt;h3 id=&#34;notable-adversarial-attack-methods&#34;&gt;Notable Adversarial Attack Methods&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Fast Gradient Sign Method (FGSM):&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A one-step attack that perturbs the input in the direction of the gradient of the loss function with respect to the input.&lt;/li&gt;
+&lt;li&gt;Efficient and widely used for generating adversarial examples quickly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Projected Gradient Descent (PGD):&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An iterative extension of FGSM that applies multiple small perturbations, projecting the perturbed input back into the allowed perturbation space after each step.&lt;/li&gt;
+&lt;li&gt;Considered a strong first-order adversary and often used to evaluate model robustness.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Carlini &amp;amp; Wagner (C&amp;amp;W) Attack:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An optimization-based attack that formulates adversarial example generation as a constrained optimization problem.&lt;/li&gt;
+&lt;li&gt;Known for its effectiveness in circumventing many defense mechanisms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;DeepFool:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An iterative attack that seeks the minimal perturbation required to change the model&amp;rsquo;s prediction by moving the input across the decision boundary.&lt;/li&gt;
+&lt;li&gt;Provides insights into the robustness of models by measuring the distance to the decision boundary.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Generative Adversarial Networks (GANs) Based Attacks:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Utilize GANs to generate adversarial examples by training a generator to produce perturbations that deceive the target model.&lt;/li&gt;
+&lt;li&gt;Capable of producing more natural and transferable adversarial examples.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;seminal-papers-on-adversarial-attacks&#34;&gt;Seminal Papers on Adversarial Attacks&lt;/h2&gt;
+&lt;p&gt;The field of adversarial machine learning has been shaped by numerous influential research papers. Below, we highlight some of the most significant contributions that have advanced our understanding of adversarial attacks and defenses.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Ian J. Goodfellow, Jonathon Shlens, Christian Szegedy (2014)&lt;/em&gt;&lt;br&gt;
+This pioneering paper introduced the Fast Gradient Sign Method (FGSM) and explored the underlying reasons for the existence of adversarial examples. It posited that the linearity of neural networks in high-dimensional spaces contributes to their vulnerability.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Aleksander Madry, Aleksandar Makelov, Ludwig Schmidt, Dimitris Tsipras, Adrian Vladu (2017)&lt;/em&gt;&lt;br&gt;
+The authors conducted a comprehensive evaluation of neural network robustness against adversarial attacks, introducing Projected Gradient Descent (PGD) as a strong adversary and advocating for robust optimization techniques.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Seyed-Mohsen Moosavi-Dezfooli, Alhussein Fawzi, Pascal Frossard (2016)&lt;/em&gt;&lt;br&gt;
+This paper presented DeepFool, an efficient iterative attack that estimates the minimal perturbation required to misclassify an input, providing a measure of the model&amp;rsquo;s robustness.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Nicholas Carlini, David Wagner (2017)&lt;/em&gt;&lt;br&gt;
+The authors demonstrated that many proposed adversarial example detection methods are ineffective, highlighting the persistent challenge of creating robust defenses.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Ian J. Goodfellow et al. (2014)&lt;/em&gt;&lt;br&gt;
+While not solely focused on adversarial attacks, this foundational paper introduced GANs, which have been instrumental in developing advanced adversarial example generation techniques.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Yinpeng Dong, Fangzhou Liao, Tianyu Pang, Hang Su, Jun Zhu (2020)&lt;/em&gt;&lt;br&gt;
+This work explores efficient adversarial training methods that enhance model robustness without significantly increasing training time, contributing to practical defense strategies.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Aditi Raghunathan, Aleksander Madry, Andrew Trask (2020)&lt;/em&gt;&lt;br&gt;
+AutoAttack is introduced as an ensemble of parameter-free attacks that provides a reliable benchmark for evaluating the adversarial robustness of models.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Adversarial attacks represent a critical challenge in the domain of computer vision and broader machine learning applications. Understanding the mechanisms, types, and implications of these attacks is essential for developing robust and secure AI systems. As the AI landscape continues to evolve, ongoing research into adversarial vulnerabilities and defense strategies remains paramount to ensuring the reliability and safety of intelligent systems deployed in real-world scenarios.&lt;/p&gt;
+&lt;p&gt;In subsequent posts, we will delve deeper into defense mechanisms against adversarial attacks, explore advanced attack strategies, and examine case studies highlighting the practical implications of adversarial robustness in AI systems.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h2&gt;
+&lt;p&gt;For those interested in further exploring the topic of adversarial attacks and defenses in machine learning, the following resources provide comprehensive insights and detailed methodologies:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt; by Ian Goodfellow et al.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt; - Coursera Course&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt; by Akbar et al.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt; - Tools for Adversarial Learning&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt; - A toolkit for evaluating robustness of machine learning models&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;
+&lt;/strong&gt; by Aleksander Madry et al.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
 </description>
     </item>
     
