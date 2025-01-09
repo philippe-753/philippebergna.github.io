@@ -10,10 +10,6 @@ image:
   caption: 'Embed rich media such as videos and LaTeX math'
 ---
 
-
-
-# Introduction to Adversarial Attacks in Computer Vision
-
 *Building Trust and Robustness in AI Models through Understanding Adversarial Vulnerabilities*
 
 ---
