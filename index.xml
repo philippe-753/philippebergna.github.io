@@ -37,19 +37,20 @@
     </item>
     
     <item>
-      <title>Adversarial Reprogramming for OOD detection</title>
+      <title>Project 3</title>
       <link>https://philippebergna.github.io/project/adversarial-enhancements-for-ood-detection/</link>
       <pubDate>Sun, 05 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://philippebergna.github.io/project/adversarial-enhancements-for-ood-detection/</guid>
-      <description>&lt;p&gt;Iproving AI model on out-of-distribution (OOD) detection with adversarial attcks.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Description&lt;/p&gt;
+&lt;!-- Iproving AI model on out-of-distribution (OOD) detection with adversarial attcks. --&gt;</description>
     </item>
     
     <item>
-      <title>3D Adversarial Attacks</title>
+      <title>Project 1</title>
       <link>https://philippebergna.github.io/project/3d-adversarial-attacks/</link>
       <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://philippebergna.github.io/project/3d-adversarial-attacks/</guid>
-      <description>&lt;p&gt;3D Adaversararial Attacks that fool AI object detectors models.&lt;/p&gt;</description>
+      <description>&lt;!-- 3D Adaversararial Attacks that fool AI object detectors models.  --&gt;</description>
     </item>
     
     <item>
@@ -179,11 +180,11 @@
     </item>
     
     <item>
-      <title>Adversarial Attacks for Facial Verification Systems</title>
+      <title>Porject 2</title>
       <link>https://philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</guid>
-      <description>&lt;p&gt;Adversarial Attacks on facial verification systems.&lt;/p&gt;</description>
+      <description>&lt;!-- Adversarial Attacks on facial verification systems. --&gt;</description>
     </item>
     
     <item>
@@ -315,7 +316,7 @@
 
 
 
-&lt;div id=&#34;chart-612874935&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-836519247&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -333,7 +334,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-612874935&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-836519247&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
