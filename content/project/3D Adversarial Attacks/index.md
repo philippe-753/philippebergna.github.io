@@ -1,5 +1,5 @@
 ---
-title: 3D Adversarial Attacks
+title: Project 1 #3D Adversarial Attacks
 date: 2024-12-21
 external_link: https://github.com/pandas-dev/pandas
 tags:
@@ -8,6 +8,6 @@ tags:
   - Markdown
 ---
 
-3D Adaversararial Attacks that fool AI object detectors models. 
+<!-- 3D Adaversararial Attacks that fool AI object detectors models.  -->
 
 <!--more-->
