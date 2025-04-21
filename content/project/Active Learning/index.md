@@ -6,8 +6,9 @@ tags:
   - Hugo
   - Wowchemy
   - Markdown
+summary: Different Active Learning strategies for selecting the most informative images to train object dectors models.
 ---
 
-Different Active Learning strategies for selecting the most informative images to train object dectors models.
+
 
 <!--more-->

@@ -9,9 +9,18 @@ tags:
 type: docs
 ---
 
-3D Adaversararial Attacks that fool AI object detectors models. 
+# 3D Adversarial Patches
 
 <!--more-->
+<p align="center">
+  <img src="featured.png" style="width:70%; height:auto;" />
+<p/>
 
-## Summary
-asdasd
+<!-- # Summary
+At Advai, I developed state‑of‑the‑art 3D physical camouflage to fool the latest object detectors models using adversarial techiniques, achieving the strongest recorded attack performance for physical deploments whilst still looking military cammouflaged.
+
+## Goal -->
+
+
+
+
