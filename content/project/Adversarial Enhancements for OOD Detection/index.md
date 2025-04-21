@@ -1,7 +1,7 @@
 ---
 title: Adversarial Reprogramming for OOD detection
 date: 2025-01-05
-external_link: https://github.com/scikit-learn/scikit-learn
+type: docs
 tags:
   - Hugo
   - Wowchemy

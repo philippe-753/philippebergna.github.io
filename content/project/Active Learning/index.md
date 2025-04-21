@@ -1,7 +1,7 @@
 ---
 title: Active Learning
 date: 2023-10-26
-external_link: https://github.com/pytorch/pytorch
+type: docs
 tags:
   - Hugo
   - Wowchemy
