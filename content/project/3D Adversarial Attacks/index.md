@@ -14,7 +14,7 @@ type: docs
   <img src="featured.png" style="width:70%; height:auto;" />
 <p/>
 
-# Overview
+## Overview
 
 While working as an AI safety researcher at Advai, one of my most impactful projects focused on the design and deployment of **3D physical adversarial camouflage** to fool state-of-the-art object detection models, such as those from the YOLO family and Faster R-CNN. Although the specifics of the project are under NDA, this page shares high-level insights into the challenges, innovations, and outcomes of the work.
 

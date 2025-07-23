@@ -9,7 +9,7 @@ summary: Used OpenAI's ChatGPT-3.5 with Retrieval-Augmented Generation (RAG) on 
   <img src="featured.png" style="width:70%; height:auto;" />
 </p>
 
-# Summary 
+## Summary 
 This project is a hands-on exploration of Retrieval-Augmented Generation (RAG) using OpenAI's ChatGPT-3.5, powered by LangChain and FAISS.  
 It indexes a curated set of AI safety research papers to enable grounded responses from a custom chatbot.
 
