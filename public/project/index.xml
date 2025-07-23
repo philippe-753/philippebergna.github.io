@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Philippe Bergna - Academic CV</title>
+    <link>http://localhost:1313/project/</link>
+      <atom:link href="http://localhost:1313/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 05 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <title>Projects</title>
+      <link>http://localhost:1313/project/</link>
+    </image>
+    
+    <item>
+      <title>Adversarial Reprogramming for OOD detection</title>
+      <link>http://localhost:1313/project/adversarial-enhancements-for-ood-detection/</link>
+      <pubDate>Sun, 05 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/adversarial-enhancements-for-ood-detection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>3D Adversarial Camouflage</title>
+      <link>http://localhost:1313/project/3d-adversarial-attacks/</link>
+      <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/3d-adversarial-attacks/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;featured.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;
+&lt;p/&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;While working as an AI safety researcher at Advai, one of my most impactful projects focused on the design and deployment of &lt;strong&gt;3D physical adversarial camouflage&lt;/strong&gt; to fool state-of-the-art object detection models, such as those from the YOLO family and Faster R-CNN. Although the specifics of the project are under NDA, this page shares high-level insights into the challenges, innovations, and outcomes of the work.&lt;/p&gt;
+&lt;p&gt;The goal was to bridge the gap between digital adversarial attacks and &lt;strong&gt;physically deployable camouflage&lt;/strong&gt; that remains effective across varying distances, lighting, and camera resolutions—without compromising on visual realism. Our final designs achieved a state-of-the-art misclassification rate in physical environments while still maintaining a plausible military-style appearance.&lt;/p&gt;
+&lt;h2 id=&#34;what-are-3d-adversarial-attacks&#34;&gt;What Are 3D Adversarial Attacks?&lt;/h2&gt;
+&lt;p&gt;Traditional adversarial attacks involve adding subtle, often imperceptible perturbations to 2D digital images to fool AI models. In contrast, &lt;strong&gt;3D adversarial attacks&lt;/strong&gt; involve modifying the physical appearance of an object—through textures, shapes, or materials—so that it misleads machine learning systems in the real world.&lt;/p&gt;
+&lt;h2 id=&#34;from-2d-patches-to-3d-camouflage&#34;&gt;From 2D Patches to 3D Camouflage&lt;/h2&gt;
+&lt;p&gt;Adversarial patches typically overwrite a portion of an image with carefully optimized noise patterns to force misclassification. However, deploying such patches in real life, especially in operational environments, is vastly more challenging. The project aimed to answer the question:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Can we build a robust, real-world deployable adversarial camouflage that degrades AI perception while remaining visually consistent with military aesthetics?&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;key-contributions&#34;&gt;Key Contributions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;High-Resolution Adversarial Textures:&lt;/strong&gt; We scaled up from low-res synthetic patches to high-res camouflages that preserve detail and deceive object detectors at long distances.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Perceptual Alignment:&lt;/strong&gt; We modified standard camouflage patterns to improve realism and remove unnatural high-contrast or white regions that could give the patch away.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Physical Deployment Pipeline:&lt;/strong&gt; We developed a synthetic testing pipeline to predict real-world performance, which was validated through small- and full-scale deployments on vehicles.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Optimized Realism vs. Misclassification:&lt;/strong&gt; Through careful loss balancing (classification, perceptual, objectiveness), we achieved high fool rates while maintaining plausible human visual stealth.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Real-World Transfer is Hard:&lt;/strong&gt; Simulated success doesn’t always translate. Full-scale experiments performed much better than small-scale ones due to better environment realism and training alignment.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Viewpoint and Scale Matter:&lt;/strong&gt; Performance degraded when viewed from novel angles (e.g. aerial drones) not seen during training, suggesting future work on more diverse EoT (Expectation over Transformation).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Partial Patch Failure:&lt;/strong&gt; Cutting out parts of the patch significantly hurt performance, though promising early signs suggest this could be trained for.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;why-it-matters&#34;&gt;Why It Matters&lt;/h2&gt;
+&lt;p&gt;As AI becomes embedded in defense and security systems, &lt;strong&gt;ensuring their robustness to adversarial inputs is critical&lt;/strong&gt;. This work demonstrates that not only are digital models vulnerable—but these vulnerabilities can be exploited &lt;strong&gt;physically&lt;/strong&gt; in the real world. That has implications for red-teaming, defense resilience, and adversarial robustness research.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Active Learning</title>
+      <link>http://localhost:1313/project/active-learning/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/active-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adversarial Attacks for Facial Verification Systems</title>
+      <link>http://localhost:1313/project/adversarial-attacks-on-facial-verification-systems/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/adversarial-attacks-on-facial-verification-systems/</guid>
+      <description>&lt;p&gt;Adversarial Attacks on facial verification systems.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RAG Chatbot</title>
+      <link>http://localhost:1313/project/rag-chatbot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/rag-chatbot/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;featured.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;This project is a hands-on exploration of Retrieval-Augmented Generation (RAG) using OpenAI&amp;rsquo;s ChatGPT-3.5, powered by LangChain and FAISS.&lt;br&gt;
+It indexes a curated set of AI safety research papers to enable grounded responses from a custom chatbot.&lt;/p&gt;
+&lt;p&gt;The goal was to deepen my understanding of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;RAG architecture and design&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LLM deployment pipelines&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LangChain and FAISS vector search&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Web integration via FastAPI + HTML/JS&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Although this version doesn’t yet use Docker or AWS, they are on the roadmap as part of continued efforts to sharpen my software engineering skills and deploy LLM applications in production environments.&lt;/p&gt;
+&lt;p&gt;📎 &lt;a href=&#34;https://rag-up27.onrender.com/&#34;&gt;Launch Chatbot&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-is-rag&#34;&gt;What is RAG?&lt;/h2&gt;
+&lt;p&gt;Retrieval-Augmented Generation (RAG) is a method that enhances LLMs by retrieving relevant context from an external knowledge base at runtime.&lt;br&gt;
+Instead of relying solely on a model’s internal weights, RAG augments the prompt with relevant document chunks retrieved via vector search.&lt;/p&gt;
+&lt;p&gt;This improves:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Factual accuracy&lt;/li&gt;
+&lt;li&gt;Groundedness to a known corpus&lt;/li&gt;
+&lt;li&gt;Flexibility (no fine-tuning required)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this case, the external knowledge base is made up of ~40 carefully selected AI safety PDFs.&lt;/p&gt;
+&lt;h2 id=&#34;corpus-creation-and-vector-search&#34;&gt;Corpus Creation and Vector Search&lt;/h2&gt;
+&lt;p&gt;So far I have added 40 pdfs from papers from my favourite papers and researchers in the AI safety space, and also and blog posts - mainly from anthropic. To build the knowledge base:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PDFs were parsed using &lt;code&gt;unstructured.partition_pdf&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Long texts were split into overlapping chunks using LangChain’s &lt;code&gt;RecursiveCharacterTextSplitter&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Chunk size:&lt;/strong&gt; 500 characters&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Overlap:&lt;/strong&gt; 50 characters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Each chunk was embedded using &lt;code&gt;OpenAIEmbeddings&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The resulting vectors were stored in a local FAISS index.&lt;/li&gt;
+&lt;li&gt;Cosine similarity was used to perform top-10 document retrieval per query.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Code highlights:&lt;/p&gt;
+&lt;pre&gt;
+chunks = splitter.split_text(text)
+index = FAISS.from_documents(chunks, embeddings)
+index.save_local(&#34;faiss_index&#34;)
+&lt;/pre&gt;
+&lt;h2 id=&#34;how-retrieval-works-during-chat&#34;&gt;How Retrieval Works During Chat&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;🗣️ The user&amp;rsquo;s last 4 messages are joined into a synthetic query&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;📄 This query is used to retrieve 10 relevant chunks from FAISS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;📥 Those chunks are inserted into the LLM&amp;rsquo;s prompt&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🧑‍⚖️ A system prompt tells the model:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Use ONLY the context to answer. If it&amp;rsquo;s missing or irrelevant, say &amp;ldquo;I don&amp;rsquo;t know.&amp;rdquo;&lt;/p&gt;
+&lt;pre&gt;
+context = retrieve_context(query, messages)
+messages.append(HumanMessage(content=f&#34;Context:\n{context}\n\nQuestion: {query}&#34;))
+response = chat.invoke(messages)
+&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;frontend--deployment&#34;&gt;Frontend &amp;amp; Deployment&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;🌐 Frontend: Static HTML + JS with a clean chat UI&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🔌 Backend: FastAPI handles requests and talks to the model&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🚀 Deployed to Render using uvicorn as the ASGI server&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🔐 API key is stored using environment variables&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;✅ CORS support for local testing and deployment&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;example-use-case&#34;&gt;Example Use Case&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You ask: “What are the main takeaways from Anthropic’s paper on constitutional AI?”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The system retrieves the most relevant passages from the actual PDF&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The LLM replies based only on that retrieved context&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the context is not good enough, it will say: “I don’t know.”&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;what-i-learned&#34;&gt;What I Learned&lt;/h2&gt;
+&lt;p&gt;🧱 How to build a RAG pipeline from raw PDFs to chatbot&lt;/p&gt;
+&lt;p&gt;🔎 The importance of chunk size, overlap, and token limits&lt;/p&gt;
+&lt;p&gt;🌍 Full-stack deployment with FastAPI and static frontend&lt;/p&gt;
+&lt;p&gt;📦 How to structure prompt templates and message history&lt;/p&gt;
+&lt;p&gt;📌 What I still plan to add:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Docker containerization&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;AWS hosting and scalable infra&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;OpenAPI documentation for the backend&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Press here if you you want to try the chatbot your self:&lt;/p&gt;
+&lt;p&gt;📎 &lt;a href=&#34;https://rag-up27.onrender.com/&#34;&gt;Launch Chatbot&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

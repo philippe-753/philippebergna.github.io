@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Vision | Philippe Bergna - Academic CV</title>
+    <link>http://localhost:1313/tags/computer-vision/</link>
+      <atom:link href="http://localhost:1313/tags/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    <description>Computer Vision</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 21 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <title>Computer Vision</title>
+      <link>http://localhost:1313/tags/computer-vision/</link>
+    </image>
+    
+    <item>
+      <title>3D Adversarial Camouflage</title>
+      <link>http://localhost:1313/project/3d-adversarial-attacks/</link>
+      <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/3d-adversarial-attacks/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;featured.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;
+&lt;p/&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;While working as an AI safety researcher at Advai, one of my most impactful projects focused on the design and deployment of &lt;strong&gt;3D physical adversarial camouflage&lt;/strong&gt; to fool state-of-the-art object detection models, such as those from the YOLO family and Faster R-CNN. Although the specifics of the project are under NDA, this page shares high-level insights into the challenges, innovations, and outcomes of the work.&lt;/p&gt;
+&lt;p&gt;The goal was to bridge the gap between digital adversarial attacks and &lt;strong&gt;physically deployable camouflage&lt;/strong&gt; that remains effective across varying distances, lighting, and camera resolutions—without compromising on visual realism. Our final designs achieved a state-of-the-art misclassification rate in physical environments while still maintaining a plausible military-style appearance.&lt;/p&gt;
+&lt;h2 id=&#34;what-are-3d-adversarial-attacks&#34;&gt;What Are 3D Adversarial Attacks?&lt;/h2&gt;
+&lt;p&gt;Traditional adversarial attacks involve adding subtle, often imperceptible perturbations to 2D digital images to fool AI models. In contrast, &lt;strong&gt;3D adversarial attacks&lt;/strong&gt; involve modifying the physical appearance of an object—through textures, shapes, or materials—so that it misleads machine learning systems in the real world.&lt;/p&gt;
+&lt;h2 id=&#34;from-2d-patches-to-3d-camouflage&#34;&gt;From 2D Patches to 3D Camouflage&lt;/h2&gt;
+&lt;p&gt;Adversarial patches typically overwrite a portion of an image with carefully optimized noise patterns to force misclassification. However, deploying such patches in real life, especially in operational environments, is vastly more challenging. The project aimed to answer the question:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Can we build a robust, real-world deployable adversarial camouflage that degrades AI perception while remaining visually consistent with military aesthetics?&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;key-contributions&#34;&gt;Key Contributions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;High-Resolution Adversarial Textures:&lt;/strong&gt; We scaled up from low-res synthetic patches to high-res camouflages that preserve detail and deceive object detectors at long distances.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Perceptual Alignment:&lt;/strong&gt; We modified standard camouflage patterns to improve realism and remove unnatural high-contrast or white regions that could give the patch away.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Physical Deployment Pipeline:&lt;/strong&gt; We developed a synthetic testing pipeline to predict real-world performance, which was validated through small- and full-scale deployments on vehicles.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Optimized Realism vs. Misclassification:&lt;/strong&gt; Through careful loss balancing (classification, perceptual, objectiveness), we achieved high fool rates while maintaining plausible human visual stealth.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;lessons-learned&#34;&gt;Lessons Learned&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Real-World Transfer is Hard:&lt;/strong&gt; Simulated success doesn’t always translate. Full-scale experiments performed much better than small-scale ones due to better environment realism and training alignment.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Viewpoint and Scale Matter:&lt;/strong&gt; Performance degraded when viewed from novel angles (e.g. aerial drones) not seen during training, suggesting future work on more diverse EoT (Expectation over Transformation).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Partial Patch Failure:&lt;/strong&gt; Cutting out parts of the patch significantly hurt performance, though promising early signs suggest this could be trained for.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;why-it-matters&#34;&gt;Why It Matters&lt;/h2&gt;
+&lt;p&gt;As AI becomes embedded in defense and security systems, &lt;strong&gt;ensuring their robustness to adversarial inputs is critical&lt;/strong&gt;. This work demonstrates that not only are digital models vulnerable—but these vulnerabilities can be exploited &lt;strong&gt;physically&lt;/strong&gt; in the real world. That has implications for red-teaming, defense resilience, and adversarial robustness research.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
