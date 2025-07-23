@@ -64,5 +64,9 @@ sitemap:
   _merge: deep
 
 
+params:
+  customCSS:
+    - css/costum.css
+
 
 
