@@ -24,9 +24,8 @@ Although this version doesn’t yet use Docker or AWS, they are on the roadmap a
 📎 [Launch Chatbot](https://rag-up27.onrender.com/)
 
 
----
 
-# What is RAG?
+## What is RAG?
 
 Retrieval-Augmented Generation (RAG) is a method that enhances LLMs by retrieving relevant context from an external knowledge base at runtime.  
 Instead of relying solely on a model’s internal weights, RAG augments the prompt with relevant document chunks retrieved via vector search.
@@ -38,11 +37,10 @@ This improves:
 
 In this case, the external knowledge base is made up of ~40 carefully selected AI safety PDFs.
 
----
 
-# Corpus Creation and Vector Search
+## Corpus Creation and Vector Search
 
-To build the knowledge base:
+So far I have added 40 pdfs from papers from my favourite papers and researchers in the AI safety space, and also and blog posts - mainly from anthropic. To build the knowledge base:
 - PDFs were parsed using `unstructured.partition_pdf`.
 - Long texts were split into overlapping chunks using LangChain’s `RecursiveCharacterTextSplitter`:
   - **Chunk size:** 500 characters  
@@ -58,8 +56,8 @@ index = FAISS.from_documents(chunks, embeddings)
 index.save_local("faiss_index")
 </pre>
 
----
-# How Retrieval Works During Chat
+
+## How Retrieval Works During Chat
 
 - 🗣️ The user's last 4 messages are joined into a synthetic query
 
@@ -77,7 +75,7 @@ messages.append(HumanMessage(content=f"Context:\n{context}\n\nQuestion: {query}"
 response = chat.invoke(messages)
 </pre>
 ---
-# Frontend & Deployment
+## Frontend & Deployment
 
 - 🌐 Frontend: Static HTML + JS with a clean chat UI
 
@@ -89,8 +87,8 @@ response = chat.invoke(messages)
 
 - ✅ CORS support for local testing and deployment
 
----
-# Example Use Case
+
+## Example Use Case
 1. You ask: “What are the main takeaways from Anthropic’s paper on constitutional AI?”
 
 2. The system retrieves the most relevant passages from the actual PDF
@@ -99,8 +97,8 @@ response = chat.invoke(messages)
 
 4. If the context is not good enough, it will say: “I don’t know.”
 
----
-# What I Learned
+
+## What I Learned
 🧱 How to build a RAG pipeline from raw PDFs to chatbot
 
 🔎 The importance of chunk size, overlap, and token limits
