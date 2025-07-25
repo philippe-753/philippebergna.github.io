@@ -8,6 +8,7 @@ tags:
   - Markdown
 ---
 
-Adversarial Attacks on facial verification systems.
 
-<!--more-->
+## Summary
+
+Whilst being at advai, I was incharge of deploying adversarial attacks against iProov - UK's leading facial verification system company.

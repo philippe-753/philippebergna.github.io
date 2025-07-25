@@ -1,5 +1,5 @@
 ---
-title: Adversarial Reprogramming for OOD detection
+title: Out-of-distribtion (OOD) detection
 date: 2025-01-05
 type: docs
 tags:
