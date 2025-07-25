@@ -1,6 +1,6 @@
 ---
 title: Out-of-Distribution (OOD) Detection with Adversarial Probes
-date: 2025-01-05
+date: 2025-05-06
 type: docs
 tags:
   - AI Safety
@@ -13,6 +13,7 @@ summary: Leveraging adversarial perturbations as diagnostic probes to enhance th
 <p align="center">
   <img src="featured.png" style="width:70%; height:auto;" />
 </p>
-<p align="center"><em>Figure 1:</em></p>
+<!-- <p align="center"><em></em></p> -->
 
-Coming SOON!
+Coming soon!
+Checkout out the last paper draft: 
