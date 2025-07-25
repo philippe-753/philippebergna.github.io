@@ -46,7 +46,7 @@ image:
 projects:
   - graph-uncertainty
 
-slides: ""
+# slides: ""
 ---
 
 This work provides a framework for leveraging stochastic differential equations to address uncertainty in graph neural networks, positioning it as a key approach for robust, uncertainty-aware models in structured data applications.
