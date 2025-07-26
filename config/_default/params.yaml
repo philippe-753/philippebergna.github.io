@@ -8,8 +8,9 @@ params:
   featured_pdf: "featured.pdf"
   prioritize_pdf: true
 
-  custom_css:
-    - css/custom.css
+  assests:
+    custom_css:
+      - css/custom.css
 
 # Appearance
 appearance:
