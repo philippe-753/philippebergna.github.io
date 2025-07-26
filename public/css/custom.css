@@ -1,0 +1,24 @@
+/* Clean up: remove debug background */
+body {
+  background-color: white !important;
+}
+
+/* Tailwind-based publication grid layout override */
+.grid.md\:grid-cols-2 {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+  gap: 2rem !important;
+}
+
+/* Make each publication card visually distinct and flexible */
+.group.cursor-pointer {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white; /* Optional: makes card pop on gray backgrounds */
+  padding: 1rem; /* Optional: gives inside spacing */
+}

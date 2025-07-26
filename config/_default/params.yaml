@@ -7,7 +7,7 @@ params:
   featured_pdf: "featured.pdf"    # Specify the default PDF name
   prioritize_pdf: true            # Enable PDF priority globally
   custom_css:
-    - css/custum.css
+    - css/custom.css
 # Appearance
 appearance:
   mode: system
