@@ -1,6 +1,6 @@
 ---
 title: Jail breaking LLMs
-date: 2024-12-21
+date: 2025-05-26 
 summary: A small project were I redteam differetn LLMs models with type of attacks. 
 tags:
   - AI Safety

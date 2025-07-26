@@ -5,12 +5,21 @@
     <link>http://localhost:1313/tags/machine-learning/</link>
       <atom:link href="http://localhost:1313/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <description>Machine Learning</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jun 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>Machine Learning</title>
       <link>http://localhost:1313/tags/machine-learning/</link>
     </image>
+    
+    <item>
+      <title>AdvProb: Adversarial Probes to Test Confidence Robustness in Out-of-Distribution Detection</title>
+      <link>http://localhost:1313/publication/advprob/</link>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/advprob/</guid>
+      <description>&lt;p&gt;This work provides a framework for leveraging stochastic differential equations to address uncertainty in graph neural networks, positioning it as a key approach for robust, uncertainty-aware models in structured data applications.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Uncertainty Modeling in Graph Neural Networks via Stochastic Differential Equations</title>

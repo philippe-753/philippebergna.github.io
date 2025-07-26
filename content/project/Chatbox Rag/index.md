@@ -1,6 +1,6 @@
 ---
 title: RAG Chatbot  
-date: 2025-23-06
+date: 2025-07-20
 type: docs  
 url: /project/rag-chatbot/  
 summary: Used OpenAI's ChatGPT-3.5 with Retrieval-Augmented Generation (RAG) on a collection of recent and personally selected AI safety papers.

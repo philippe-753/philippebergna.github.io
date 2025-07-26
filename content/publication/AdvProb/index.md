@@ -39,14 +39,14 @@ url_slides: ''
 url_source: '#'
 
 image:
-  caption: 'AdvProb: Adversarial Probes to Test Confidence Robustness in Out-of-Distribution Detection
+  caption: 'AdvProb: Adversarial Probes to Test Confidence Robustness in Out-of-Distribution Detection'
   focal_point: ""
   preview_only: false
 
 projects:
   - graph-uncertainty
 
-# slides: ""
+slides: ""
 ---
 
 This work provides a framework for leveraging stochastic differential equations to address uncertainty in graph neural networks, positioning it as a key approach for robust, uncertainty-aware models in structured data applications.
