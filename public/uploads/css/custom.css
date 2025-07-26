@@ -1,0 +1,84 @@
+
+
+/* Set Advai link text to always appear black */
+a[href="https://www.advai.co.uk/"] div {
+  color: black !important;
+}
+
+/* Force GitHub icon black */
+a[href="https://github.com/philippe-753"] svg {
+  color: black !important;
+  fill: black !important;
+}
+
+/* Force LinkedIn icon black */
+a[href="https://www.linkedin.com/in/philippe-bergna-59a20917b/"] svg {
+  color: black !important;
+  fill: black !important;
+}
+
+/* Force email icon black */
+a[href="mailto:pbergna753@gmail.com"] svg {
+  color: black !important;
+  fill: black !important;
+}
+
+/* Force publication title in featured block to stay black */
+.dark h2 a[href*="/publication/advprob"] span {
+  color: black !important;
+  background: none !important; /* optional: removes unreadable gradient */
+}
+
+
+/* Force section titles (e.g. Interests, Education) to be black */
+.section-subheading {
+  color: black !important;
+}
+
+/* Force Interests list items to always appear black */
+ul.list-disc li {
+  color: black !important;
+}
+
+/* Force education text to be black */
+ul li.flex.items-start {
+  color: black !important;
+}
+
+/* Force social icon color to black */
+.author__social a svg {
+  color: black !important;
+  fill: black !important;
+}
+
+.dark a[href^="/blogs/"] span,
+.dark a[href^="/blog/"] span,
+.dark a[href^="/project/"] span,
+.dark a[href^="/publication/"] span {
+  background-image: none !important;
+  -webkit-background-clip: border-box !important;
+  -webkit-text-fill-color: black !important;
+  color: black !important;
+}
+
+
+
+/* Tailwind-based publication grid layout override */
+.grid.md\:grid-cols-2 {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+  gap: 2rem !important;
+}
+
+/* Make each publication card visually distinct and flexible */
+.group.cursor-pointer {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  padding: 1rem;
+}
