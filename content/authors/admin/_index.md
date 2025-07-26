@@ -21,13 +21,14 @@ role: '<span style="color: black;">Research Scientist for AI Safety and Security
 
 # Organizations/Affiliations to display in Biography block
 organizations:
-  - name: 'Advai'
+  - name: 'advai'
     url: "https://www.advai.co.uk/"
+
 
 # Social network links
 profiles:
   - icon: at-symbol
-    url: 'pbergna753@gmail.com'
+    url: 'mailto:pbergna753@gmail.com'
     label: "Email Me"
   - icon: brands/github
     url: "https://github.com/philippe-753"
@@ -35,9 +36,9 @@ profiles:
   - icon: brands/linkedin
     url: "https://www.linkedin.com/in/philippe-bergna-59a20917b/"
     label: "LinkedIn"
-  # - icon: academicons/google-scholar
-  #   url: "https://scholar.google.com/citations?user=QEjxEjcAAAAJ&hl=enz"
-  #   label: "My Work"
+
+
+
 # Research Interests
 interests:
   - "AI Safety and Security"
@@ -45,6 +46,9 @@ interests:
   - "Out of Distribution Detection (OOD)"
   - "Computer Vision"
   - "Large Language models"
+
+
+
 # Education
 education:
   - area: "MEng in Engineering Mathematics with study abroad"
