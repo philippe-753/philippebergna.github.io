@@ -5,12 +5,21 @@
     <link>http://localhost:1313/tags/ai-safety/</link>
       <atom:link href="http://localhost:1313/tags/ai-safety/index.xml" rel="self" type="application/rss+xml" />
     <description>AI Safety</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 06 May 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 26 May 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>AI Safety</title>
       <link>http://localhost:1313/tags/ai-safety/</link>
     </image>
+    
+    <item>
+      <title>Jail breaking LLMs</title>
+      <link>http://localhost:1313/project/llm-jailbreaking/</link>
+      <pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/llm-jailbreaking/</guid>
+      <description>&lt;p&gt;Coming soon!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Out-of-Distribution (OOD) Detection with Adversarial Probes</title>
@@ -56,15 +65,6 @@ Checkout out the last paper draft:&lt;/p&gt;
 &lt;p&gt;Unfortunately, the details of how we constructed and evaluated the physical adversarial camouflages are under NDA, but Figure 1 illustrates the visualization of the goal of the project, which we managed to create an adversarial patch that is both adversarial (misclassified by AI object detector models) and looks military camouflaged. In this project, we not just achieved the highest recorded 3D physical adversarial attack on object detectors, but we also extended the evaluating pipeline significantly to evaluate wider ranges of different objectives, such as different camera resolutions, projections, heights, etc.&lt;/p&gt;
 &lt;h2 id=&#34;why-it-matters&#34;&gt;Why It Matters&lt;/h2&gt;
 &lt;p&gt;As AI systems like drones, surveillance cameras, and self-driving cars become increasingly common in both military and civilian settings, the ability to physically mislead object detectors through adversarial camouflage raises serious concerns. This work suggests that 3D adversarial textures could be used to evade detection by AI systems in real-world environments—whether to avoid targeting in warfare or to disrupt autonomous vehicles in civilian life. Although specific technical details are under NDA, the implications are clear: physical adversarial attacks represent a credible threat to the safe and reliable deployment of machine learning in high-stakes applications.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Jail breaking LLMs</title>
-      <link>http://localhost:1313/project/llm-jailbreaking/</link>
-      <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/llm-jailbreaking/</guid>
-      <description>&lt;p&gt;Coming soon!&lt;/p&gt;
 </description>
     </item>
     

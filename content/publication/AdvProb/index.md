@@ -3,11 +3,11 @@ title: "AdvProb: Adversarial Probes to Test Confidence Robustness in Out-of-Dist
 authors:
   - Philippe Bergna
   - Jake Thomas
-date: "2025-06-01T00:00:00Z"
+date: "2025-07-15"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2025-06-01T00:00:00Z"
+publishDate: "2025-07-15"
 
 # Publication type.
 publication_types: ["preprint"]
@@ -30,13 +30,14 @@ tags:
 featured: true
 
 links:
-  - name: Preprint Link
-    url: 'https://arxiv.org/abs/2408.16115' # Replace with the actual preprint link
+  - name: PDF
+    url: OOD_detection_with_adversarial_perturbation.pdf
 
-url_code: 'https://github.com/RichardBergna/GraphNeuralSDE'
-url_project: ''
-url_slides: ''
-url_source: '#'
+
+# url_code: 'https://github.com/RichardBergna/GraphNeuralSDE'
+# url_project: ''
+# url_slides: ''
+# url_source: '#'
 
 image:
   caption: 'AdvProb: Adversarial Probes to Test Confidence Robustness in Out-of-Distribution Detection'
@@ -44,9 +45,12 @@ image:
   preview_only: false
 
 projects:
-  - graph-uncertainty
+  - CV-OOD
 
 slides: ""
 ---
 
-This work provides a framework for leveraging stochastic differential equations to address uncertainty in graph neural networks, positioning it as a key approach for robust, uncertainty-aware models in structured data applications.
+This work presents a novel OOD detection method that tests the stability of model confidence using adversarial probes optimized with diverse objectives.
+
+<embed src="OOD_detection_with_adversarial_perturbation.pdf" width="100%" height="800px" type="application/pdf">
+

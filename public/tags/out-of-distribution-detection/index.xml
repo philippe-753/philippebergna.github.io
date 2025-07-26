@@ -5,7 +5,7 @@
     <link>http://localhost:1313/tags/out-of-distribution-detection/</link>
       <atom:link href="http://localhost:1313/tags/out-of-distribution-detection/index.xml" rel="self" type="application/rss+xml" />
     <description>Out-of-Distribution Detection</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 15 Jul 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>Out-of-Distribution Detection</title>
@@ -15,9 +15,10 @@
     <item>
       <title>AdvProb: Adversarial Probes to Test Confidence Robustness in Out-of-Distribution Detection</title>
       <link>http://localhost:1313/publication/advprob/</link>
-      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publication/advprob/</guid>
-      <description>&lt;p&gt;This work provides a framework for leveraging stochastic differential equations to address uncertainty in graph neural networks, positioning it as a key approach for robust, uncertainty-aware models in structured data applications.&lt;/p&gt;
+      <description>&lt;p&gt;This work presents a novel OOD detection method that tests the stability of model confidence using adversarial probes optimized with diverse objectives.&lt;/p&gt;
+&lt;embed src=&#34;OOD_detection_with_adversarial_perturbation.pdf&#34; width=&#34;100%&#34; height=&#34;800px&#34; type=&#34;application/pdf&#34;&gt;
 </description>
     </item>
     

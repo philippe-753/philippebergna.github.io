@@ -1,0 +1,33 @@
+/* assets/css/custom.css */
+
+/* Set global text color to black */
+body {
+    color: black;
+}
+
+/* Override specific elements if necessary */
+h1, h2, h3, h4, h5, h6, p, a, li, span, div {
+    color: black !important;
+}
+
+body.layout-project .container,
+body.layout-project .content,
+body.layout-project .article-container {
+    max-width: 1000px !important;
+}
+
+
+/* Fix for squashed publication cards */
+.featured-publications .pub-list,
+.pub-list {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 2rem !important;
+}
+
+.featured-publications .pub-list-item,
+.pub-list-item {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-bottom: 2rem !important;
+}
