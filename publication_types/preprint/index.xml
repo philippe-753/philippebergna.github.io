@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Preprint | Philippe Bergna - Academic CV</title>
+    <title>preprint | Philippe Bergna - Academic CV</title>
     <link>https://philippebergna.github.io/publication_types/preprint/</link>
       <atom:link href="https://philippebergna.github.io/publication_types/preprint/index.xml" rel="self" type="application/rss+xml" />
-    <description>Preprint</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <description>preprint</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 15 Jul 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://philippebergna.github.io/media/icon_hu7729264130191091259.png</url>
-      <title>Preprint</title>
+      <url>https://philippebergna.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <title>preprint</title>
       <link>https://philippebergna.github.io/publication_types/preprint/</link>
     </image>
     
     <item>
-      <title>Uncertainty Modeling in Graph Neural Networks via Stochastic Differential Equations</title>
-      <link>https://philippebergna.github.io/publication/preprint/</link>
-      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/publication/preprint/</guid>
-      <description>&lt;p&gt;This work provides a framework for leveraging stochastic differential equations to address uncertainty in graph neural networks, positioning it as a key approach for robust, uncertainty-aware models in structured data applications.&lt;/p&gt;
+      <title>AdvProb: Adversarial Probes to Test Confidence Robustness in Out-of-Distribution Detection</title>
+      <link>https://philippebergna.github.io/publication/advprob/</link>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://philippebergna.github.io/publication/advprob/</guid>
+      <description>&lt;p&gt;This work presents a novel OOD detection method that tests the stability of model confidence using adversarial probes optimized with diverse objectives.&lt;/p&gt;
+&lt;embed src=&#34;OOD_detection_with_adversarial_perturbation.pdf&#34; width=&#34;100%&#34; height=&#34;800px&#34; type=&#34;application/pdf&#34;&gt;
 </description>
     </item>
     

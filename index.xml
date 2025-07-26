@@ -7,7 +7,7 @@
     <description>Philippe Bergna - Academic CV</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://philippebergna.github.io/media/icon_hu7729264130191091259.png</url>
+      <url>https://philippebergna.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>Philippe Bergna - Academic CV</title>
       <link>https://philippebergna.github.io/</link>
     </image>
@@ -25,32 +25,205 @@
 &lt;/div&gt;
 &lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Hugo Blox Builder&amp;rsquo;s 
- feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Hugo Blox Builder&amp;rsquo;s &lt;a href=&#34;https://www.slideshare.net/slideshow/uncertainty-modeling-in-graph-neural-networks-via-stochastic-precentation-pptx/273579479&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using 
-.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://docs.hugoblox.com/reference/markdown/&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Further event details, including 
- such as image galleries, can be added to the body of this page.&lt;/p&gt;
+&lt;p&gt;Further event details, including &lt;a href=&#34;https://docs.hugoblox.com/reference/markdown/&#34;&gt;page elements&lt;/a&gt; such as image galleries, can be added to the body of this page.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Project 3</title>
-      <link>https://philippebergna.github.io/project/adversarial-enhancements-for-ood-detection/</link>
-      <pubDate>Sun, 05 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/project/adversarial-enhancements-for-ood-detection/</guid>
-      <description>&lt;p&gt;Description&lt;/p&gt;
-&lt;!-- Iproving AI model on out-of-distribution (OOD) detection with adversarial attcks. --&gt;</description>
+      <title>RAG Chatbot</title>
+      <link>https://philippebergna.github.io/project/rag-chatbot/</link>
+      <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://philippebergna.github.io/project/rag-chatbot/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;featured.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;This project is a hands-on exploration of Retrieval-Augmented Generation (RAG) using OpenAI&amp;rsquo;s ChatGPT-3.5, powered by LangChain and FAISS.&lt;br&gt;
+It indexes a curated set of AI safety research papers to enable grounded responses from a custom chatbot.&lt;/p&gt;
+&lt;p&gt;The goal was to deepen my understanding of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;RAG architecture and design&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LLM deployment pipelines&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LangChain and FAISS vector search&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Web integration via FastAPI + HTML/JS&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Although this version doesn’t yet use Docker or AWS, they are on the roadmap as part of continued efforts to sharpen my software engineering skills and deploy LLM applications in production environments.&lt;/p&gt;
+&lt;p&gt;📎 &lt;a href=&#34;https://rag-up27.onrender.com/&#34;&gt;Launch Chatbot&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-is-rag&#34;&gt;What is RAG?&lt;/h2&gt;
+&lt;p&gt;Retrieval-Augmented Generation (RAG) is a method that enhances LLMs by retrieving relevant context from an external knowledge base at runtime.&lt;br&gt;
+Instead of relying solely on a model’s internal weights, RAG augments the prompt with relevant document chunks retrieved via vector search.&lt;/p&gt;
+&lt;p&gt;This improves:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Factual accuracy&lt;/li&gt;
+&lt;li&gt;Groundedness to a known corpus&lt;/li&gt;
+&lt;li&gt;Flexibility (no fine-tuning required)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this case, the external knowledge base is made up of ~40 carefully selected AI safety PDFs.&lt;/p&gt;
+&lt;h2 id=&#34;corpus-creation-and-vector-search&#34;&gt;Corpus Creation and Vector Search&lt;/h2&gt;
+&lt;p&gt;So far I have added 40 pdfs from papers from my favourite papers and researchers in the AI safety space, and also and blog posts - mainly from anthropic. To build the knowledge base:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PDFs were parsed using &lt;code&gt;unstructured.partition_pdf&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Long texts were split into overlapping chunks using LangChain’s &lt;code&gt;RecursiveCharacterTextSplitter&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Chunk size:&lt;/strong&gt; 500 characters&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Overlap:&lt;/strong&gt; 50 characters&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Each chunk was embedded using &lt;code&gt;OpenAIEmbeddings&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The resulting vectors were stored in a local FAISS index.&lt;/li&gt;
+&lt;li&gt;Cosine similarity was used to perform top-10 document retrieval per query.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Code highlights:&lt;/p&gt;
+&lt;pre&gt;
+chunks = splitter.split_text(text)
+index = FAISS.from_documents(chunks, embeddings)
+index.save_local(&#34;faiss_index&#34;)
+&lt;/pre&gt;
+&lt;h2 id=&#34;how-retrieval-works-during-chat&#34;&gt;How Retrieval Works During Chat&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;🗣️ The user&amp;rsquo;s last 4 messages are joined into a synthetic query&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;📄 This query is used to retrieve 10 relevant chunks from FAISS&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;📥 Those chunks are inserted into the LLM&amp;rsquo;s prompt&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🧑‍⚖️ A system prompt tells the model:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Use ONLY the context to answer. If it&amp;rsquo;s missing or irrelevant, say &amp;ldquo;I don&amp;rsquo;t know.&amp;rdquo;&lt;/p&gt;
+&lt;pre&gt;
+context = retrieve_context(query, messages)
+messages.append(HumanMessage(content=f&#34;Context:\n{context}\n\nQuestion: {query}&#34;))
+response = chat.invoke(messages)
+&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;frontend--deployment&#34;&gt;Frontend &amp;amp; Deployment&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;🌐 Frontend: Static HTML + JS with a clean chat UI&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🔌 Backend: FastAPI handles requests and talks to the model&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🚀 Deployed to Render using uvicorn as the ASGI server&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;🔐 API key is stored using environment variables&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;✅ CORS support for local testing and deployment&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;example-use-case&#34;&gt;Example Use Case&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;You ask: “What are the main takeaways from Anthropic’s paper on constitutional AI?”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The system retrieves the most relevant passages from the actual PDF&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The LLM replies based only on that retrieved context&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If the context is not good enough, it will say: “I don’t know.”&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;what-i-learned&#34;&gt;What I Learned&lt;/h2&gt;
+&lt;p&gt;🧱 How to build a RAG pipeline from raw PDFs to chatbot&lt;/p&gt;
+&lt;p&gt;🔎 The importance of chunk size, overlap, and token limits&lt;/p&gt;
+&lt;p&gt;🌍 Full-stack deployment with FastAPI and static frontend&lt;/p&gt;
+&lt;p&gt;📦 How to structure prompt templates and message history&lt;/p&gt;
+&lt;p&gt;📌 What I still plan to add:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Docker containerization&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;AWS hosting and scalable infra&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;OpenAPI documentation for the backend&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Press here if you you want to try the chatbot your self:&lt;/p&gt;
+&lt;p&gt;📎 &lt;a href=&#34;https://rag-up27.onrender.com/&#34;&gt;Launch Chatbot&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Project 1</title>
+      <title>AdvProb: Adversarial Probes to Test Confidence Robustness in Out-of-Distribution Detection</title>
+      <link>https://philippebergna.github.io/publication/advprob/</link>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://philippebergna.github.io/publication/advprob/</guid>
+      <description>&lt;p&gt;This work presents a novel OOD detection method that tests the stability of model confidence using adversarial probes optimized with diverse objectives.&lt;/p&gt;
+&lt;embed src=&#34;OOD_detection_with_adversarial_perturbation.pdf&#34; width=&#34;100%&#34; height=&#34;800px&#34; type=&#34;application/pdf&#34;&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Jail breaking LLMs</title>
+      <link>https://philippebergna.github.io/project/llm-jailbreaking/</link>
+      <pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://philippebergna.github.io/project/llm-jailbreaking/</guid>
+      <description>&lt;p&gt;Coming soon!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Out-of-Distribution (OOD) Detection with Adversarial Probes</title>
+      <link>https://philippebergna.github.io/project/out-of-distribution-ood-detection/</link>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://philippebergna.github.io/project/out-of-distribution-ood-detection/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;featured.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;
+&lt;/p&gt;
+&lt;!-- &lt;p align=&#34;center&#34;&gt;&lt;em&gt;&lt;/em&gt;&lt;/p&gt; --&gt;
+&lt;p&gt;Coming soon!
+Checkout out the last paper draft:&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>3D Adversarial Camouflage</title>
       <link>https://philippebergna.github.io/project/3d-adversarial-attacks/</link>
       <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://philippebergna.github.io/project/3d-adversarial-attacks/</guid>
-      <description>&lt;!-- 3D Adaversararial Attacks that fool AI object detectors models.  --&gt;</description>
+      <description>&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;featured.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;
+&lt;p/&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;em&gt;Figure 1: 3D adversarial camouflage patterns optimized to blend into military environments while being misclassified by AI object detection models. Left: Normal vehilce without any camouflage. Middle: Vehicle military camouflaged - still detected by object detector. Right (ours): Vehicle adversarial camuflaged - undetected.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;While working as an AI safety researcher at Advai, one of my most impactful projects focused on the design and deployment of &lt;strong&gt;3D physical adversarial camouflage&lt;/strong&gt; to fool state-of-the-art object detection models, such as those from the YOLO family and Faster R-CNN. Although the specifics of the project are under NDA, this page shares high-level insights into the challenges, innovations, and outcomes of the work.&lt;/p&gt;
+&lt;p&gt;The goal was to bridge the gap between digital adversarial attacks and &lt;strong&gt;physically deployable camouflage&lt;/strong&gt; that remains effective across varying distances, lighting, and camera resolutions—without compromising on visual realism. Our final designs achieved a state-of-the-art misclassification rate in physical environments while still maintaining a plausible military-style appearance.&lt;/p&gt;
+&lt;h2 id=&#34;what-are-adversarial-attacks&#34;&gt;What are Adversarial attacks?&lt;/h2&gt;
+&lt;p&gt;In computer vision, adversarial attacks involve introducing small, carefully crafted perturbations to digital images to fool AI models into making incorrect predictions. A common type of attack involves optimizing a subtle change to the input image that leads to catastrophic misclassification, even though the change is imperceptible to humans.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;bandas_adv_atck_exm.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;
+&lt;p/&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;em&gt;Figure 2: Example of a traditional 2D adversarial attack from (Szegedy et al., 2014) paper. &lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;(Learn more in my post on &lt;a href=&#34;http://localhost:1313/blogs/blog-2/&#34;&gt;What are adversarial attacks&lt;/a&gt;)&lt;/p&gt;
+&lt;h2 id=&#34;from-2d-adversarial-attacks-to-3d&#34;&gt;From 2D Adversarial Attacks to 3D&lt;/h2&gt;
+&lt;p&gt;The aim of this project was to translate the principles of 2D adversarial attacks into the physical world—specifically by designing textures that can be applied to &lt;strong&gt;vehicles&lt;/strong&gt; in real environments. Unlike digital attacks, which operate in static and controlled conditions, physical attacks must function across a wide range of real-world constraints: changing viewpoints, varying camera heights, rotations, lighting conditions, and occlusions.&lt;/p&gt;
+&lt;p&gt;This project posed a challenging question:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Can we design a robust, physically deployable adversarial camouflage for vehicles that remains visually consistent with military aesthetics while being consistently misclassified by object detection models?&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Note that although this project focuses on adversarial patches-which overwrite a small region of an image rather than perturbing the entire image-we refer to them broadly as adversarial attacks for simplicity. Patches are a specific subclass of adversarial attacks, optimized for local perturbations with similar misclassification objectives.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Unfortunately, the details of how we constructed and evaluated the physical adversarial camouflages are under NDA, but Figure 1 illustrates the visualization of the goal of the project, which we managed to create an adversarial patch that is both adversarial (misclassified by AI object detector models) and looks military camouflaged. In this project, we not just achieved the highest recorded 3D physical adversarial attack on object detectors, but we also extended the evaluating pipeline significantly to evaluate wider ranges of different objectives, such as different camera resolutions, projections, heights, etc.&lt;/p&gt;
+&lt;h2 id=&#34;why-it-matters&#34;&gt;Why It Matters&lt;/h2&gt;
+&lt;p&gt;As AI systems like drones, surveillance cameras, and self-driving cars become increasingly common in both military and civilian settings, the ability to physically mislead object detectors through adversarial camouflage raises serious concerns. This work suggests that 3D adversarial textures could be used to evade detection by AI systems in real-world environments—whether to avoid targeting in warfare or to disrupt autonomous vehicles in civilian life. Although specific technical details are under NDA, the implications are clear: physical adversarial attacks represent a credible threat to the safe and reliable deployment of machine learning in high-stakes applications.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -103,52 +276,31 @@
 &lt;/ol&gt;
 &lt;h3 id=&#34;get-started&#34;&gt;Get Started&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;👉 
-&lt;/li&gt;
-&lt;li&gt;📚 
-&lt;/li&gt;
-&lt;li&gt;💬 
- or 
-&lt;/li&gt;
-&lt;li&gt;🐦 Twitter: 
- 
- #MadeWithHugoBlox&lt;/li&gt;
-&lt;li&gt;💡 
-&lt;/li&gt;
-&lt;li&gt;⬆️ &lt;strong&gt;Updating Hugo Blox?&lt;/strong&gt; View the 
- and 
-&lt;/li&gt;
+&lt;li&gt;👉 &lt;a href=&#34;https://hugoblox.com/templates/&#34;&gt;&lt;strong&gt;Create a new site&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;📚 &lt;a href=&#34;https://docs.hugoblox.com/&#34;&gt;&lt;strong&gt;Personalize your site&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;💬 &lt;a href=&#34;https://discord.gg/z8wNYzb&#34;&gt;Chat with the &lt;strong&gt;Hugo Blox community&lt;/strong&gt;&lt;/a&gt; or &lt;a href=&#34;https://discourse.gohugo.io&#34;&gt;&lt;strong&gt;Hugo community&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🐦 Twitter: &lt;a href=&#34;https://twitter.com/GetResearchDev&#34;&gt;@GetResearchDev&lt;/a&gt; &lt;a href=&#34;https://twitter.com/GeorgeCushen&#34;&gt;@GeorgeCushen&lt;/a&gt; #MadeWithHugoBlox&lt;/li&gt;
+&lt;li&gt;💡 &lt;a href=&#34;https://github.com/HugoBlox/hugo-blox-builder/issues&#34;&gt;Request a &lt;strong&gt;feature&lt;/strong&gt; or report a &lt;strong&gt;bug&lt;/strong&gt; for &lt;em&gt;Hugo Blox&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;⬆️ &lt;strong&gt;Updating Hugo Blox?&lt;/strong&gt; View the &lt;a href=&#34;https://docs.hugoblox.com/reference/update/&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://github.com/HugoBlox/hugo-blox-builder/releases&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;crowd-funded-open-source-software&#34;&gt;Crowd-funded open-source software&lt;/h2&gt;
 &lt;p&gt;To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.&lt;/p&gt;
-&lt;h3 id=&#34;-click-here-to-become-a-sponsor-and-help-support-hugo-bloxs-future-httpshugobloxcomsponsor&#34;&gt;
-&lt;/h3&gt;
-&lt;p&gt;As a token of appreciation for sponsoring, you can &lt;strong&gt;unlock 
- awesome rewards and extra features 🦄✨&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;-click-here-to-become-a-sponsor-and-help-support-hugo-bloxs-future-httpshugobloxcomsponsor&#34;&gt;&lt;a href=&#34;https://hugoblox.com/sponsor/&#34;&gt;❤️ Click here to become a sponsor and help support Hugo Blox&amp;rsquo;s future ❤️&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;As a token of appreciation for sponsoring, you can &lt;strong&gt;unlock &lt;a href=&#34;https://hugoblox.com/sponsor/&#34;&gt;these&lt;/a&gt; awesome rewards and extra features 🦄✨&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;
-:&lt;/strong&gt; Automatically import publications from BibTeX&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/GetRD/academic-file-converter&#34;&gt;Bibtex To Markdown&lt;/a&gt;:&lt;/strong&gt; Automatically import publications from BibTeX&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;inspiration&#34;&gt;Inspiration&lt;/h2&gt;
-&lt;p&gt;
- are building with this template.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://hugoblox.com/creators/&#34;&gt;Learn what other &lt;strong&gt;creators&lt;/strong&gt;&lt;/a&gt; are building with this template.&lt;/p&gt;
 &lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with no-code 
- and 
-&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with no-code &lt;a href=&#34;https://hugoblox.com/blocks/&#34;&gt;&lt;strong&gt;blocks&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://docs.hugoblox.com/reference/markdown/&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in 
-, 
-, or 
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable 
-&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://docs.hugoblox.com/reference/markdown/&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://docs.hugoblox.com/getting-started/cms/&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://docs.hugoblox.com/getting-started/cms/&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://docs.hugoblox.com/getting-started/customize/&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code syntax highlighting and LaTeX math supported&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - 
-, 
-, Maps, Contact Forms, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one-page design&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
@@ -161,13 +313,10 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
 &lt;p&gt;Hugo Blox and its templates come with &lt;strong&gt;automatic day (light) and night (dark) mode&lt;/strong&gt; built-in. Visitors can choose their preferred mode by clicking the sun/moon icon in the header.&lt;/p&gt;
-&lt;p&gt;
- for your site. Themes are fully customizable.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.hugoblox.com/getting-started/customize/&#34;&gt;Choose a stunning &lt;strong&gt;theme&lt;/strong&gt; and &lt;strong&gt;font&lt;/strong&gt;&lt;/a&gt; for your site. Themes are fully customizable.&lt;/p&gt;
 &lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-&lt;p&gt;Copyright 2016-present 
-.&lt;/p&gt;
-&lt;p&gt;Released under the 
- license.&lt;/p&gt;
+&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
 </description>
     </item>
     
@@ -176,15 +325,35 @@
       <link>https://philippebergna.github.io/project/active-learning/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://philippebergna.github.io/project/active-learning/</guid>
-      <description>&lt;p&gt;Different Active Learning strategies for selecting the most informative images to train object dectors models.&lt;/p&gt;</description>
+      <description>&lt;p&gt;COMING SOON!&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Porject 2</title>
+      <title>Adversarial Attacks for Facial Verification Systems</title>
       <link>https://philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</guid>
-      <description>&lt;!-- Adversarial Attacks on facial verification systems. --&gt;</description>
+      <description>&lt;p align=&#34;center&#34;&gt;  
+  &lt;img src=&#34;featured.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;  
+&lt;p/&gt;  
+&lt;p align=&#34;center&#34;&gt;&lt;em&gt;Figure 1: Illustration of how adversarial perturbations can affect face similarity scores. Image adapted from Brown et al., 2020.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;As part of my work at Advai, I contributed to a confidential red-teaming project evaluating the robustness of a commercial facial verification platform—one of the UK’s most widely deployed systems. The focus was on &lt;strong&gt;AI safety&lt;/strong&gt;, specifically understanding how such systems behave under &lt;strong&gt;targeted adversarial attacks&lt;/strong&gt; in a &lt;strong&gt;black-box setting&lt;/strong&gt;, where model internals are unknown.&lt;/p&gt;
+&lt;p&gt;The challenge was to simulate how a motivated attacker might manipulate an image to be incorrectly verified as someone else in the system—without triggering biometric defenses like liveness or genuine presence detection. Although technical specifics remain under NDA, the project offered a rare opportunity to test adversarial robustness under realistic deployment conditions.&lt;/p&gt;
+&lt;h2 id=&#34;what-are-adversarial-attacks-in-facial-verification&#34;&gt;What Are Adversarial Attacks in Facial Verification?&lt;/h2&gt;
+&lt;p&gt;Adversarial attacks on facial verification models aim to subtly modify a face image so that a system misclassifies it—either rejecting a valid user or matching it to someone else. These perturbations are often invisible to humans but exploit vulnerabilities in the model’s learned representations.&lt;/p&gt;
+&lt;p&gt;In black-box scenarios, attackers have no access to the model architecture or weights. Instead, they generate attacks on surrogate models and rely on &lt;strong&gt;transferability&lt;/strong&gt;: the hope that perturbations crafted on one model will still fool another.&lt;/p&gt;
+&lt;h2 id=&#34;goal&#34;&gt;Goal&lt;/h2&gt;
+&lt;p&gt;To generate targeted, transferable adversarial attacks against one of the UK’s top commercial facial verification systems, and evaluate their effectiveness across multiple industry-leading platforms. Simply put, the objective was to test whether an image could be subtly modified to be falsely recognized as a specific person in the system — all without access to their underlying model.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Although full experimental details are under NDA, our strongest targeted attacks successfully induced misclassification under constrained, black-box conditions—without access to model architecture, parameters, or training data. These attacks were generated using open-source surrogates and remained effective when evaluated against commercial systems via standard user-facing APIs.&lt;/p&gt;
+&lt;p&gt;The results highlight that even well-established biometric pipelines can be vulnerable to transferable adversarial perturbations in realistic threat scenarios, especially when assurance mechanisms are absent or inconsistently enforced.&lt;/p&gt;
+&lt;h2 id=&#34;why-it-matters&#34;&gt;Why It Matters&lt;/h2&gt;
+&lt;p&gt;Facial verification systems are increasingly used across borders, banking, and critical infrastructure. This project reinforced that even large-scale commercial systems—deployed by industry leaders—can remain vulnerable to targeted adversarial attacks. These findings underscore the urgent need for proactive AI safety auditing in domains where identity verification underpins national security, privacy, and public trust.&lt;/p&gt;
+&lt;h2 id=&#34;citations&#34;&gt;Citations&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2004.05790&#34;&gt;Brown et al., 2020&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -215,16 +384,12 @@
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;markmap&#34; style=&#34;height: 200px;&#34;&gt;
-
-&lt;pre&gt;- Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Anh here&amp;rsquo;s a more advanced mindmap with formatting, code blocks, and math:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; height=&#34;200px&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- Hugo Modules
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - Hugo Blox
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - blox-plugins-netlify
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - blox-plugins-netlify-cms
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - blox-plugins-reveal
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Anh here&amp;rsquo;s a more advanced mindmap with formatting, code blocks, and math:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;
 &lt;pre class=&#34;chroma&#34;&gt;
 &lt;code&gt;
@@ -251,33 +416,28 @@
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;markmap&#34; style=&#34;height: 500px;&#34;&gt;
-
-&lt;pre&gt;- Mindmaps
-  - Links
-    - [Hugo Blox Docs](https://docs.hugoblox.com/)
-    - [Discord Community](https://discord.gg/z8wNYzb)
-    - [GitHub](https://github.com/HugoBlox/hugo-blox-builder)
-  - Features
-    - Markdown formatting
-    - **inline** ~~text~~ *styles*
-    - multiline
-      text
-    - `inline code`
-    -
-      ```js
-      console.log(&#39;hello&#39;);
-      console.log(&#39;code block&#39;);
-      ```
-    - Math: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;highlighting&#34;&gt;Highlighting&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- Mindmaps
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - Links
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - [Hugo Blox Docs](https://docs.hugoblox.com/)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - [Discord Community](https://discord.gg/z8wNYzb)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - [GitHub](https://github.com/HugoBlox/hugo-blox-builder)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - Features
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - Markdown formatting
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - **inline** ~~text~~ *styles*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - multiline
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      text
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - `inline code`
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ```js
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      console.log(&amp;#39;hello&amp;#39;);
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      console.log(&amp;#39;code block&amp;#39;);
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ```
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - Math: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;highlighting&#34;&gt;Highlighting&lt;/h2&gt;
 &lt;p&gt;&lt;mark&gt;Highlight&lt;/mark&gt; important text with &lt;code&gt;mark&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;mark&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Highlighted text&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;mark&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;callouts&#34;&gt;Callouts&lt;/h2&gt;
-&lt;p&gt;Use 
- (aka &lt;em&gt;asides&lt;/em&gt;, &lt;em&gt;hints&lt;/em&gt;, or &lt;em&gt;alerts&lt;/em&gt;) to draw attention to notes, tips, and warnings.&lt;/p&gt;
+&lt;p&gt;Use &lt;a href=&#34;https://docs.hugoblox.com/reference/markdown/#callouts&#34;&gt;callouts&lt;/a&gt; (aka &lt;em&gt;asides&lt;/em&gt;, &lt;em&gt;hints&lt;/em&gt;, or &lt;em&gt;alerts&lt;/em&gt;) to draw attention to notes, tips, and warnings.&lt;/p&gt;
 &lt;p&gt;By wrapping a paragraph in &lt;code&gt;{{% callout note %}} ... {{% /callout %}}&lt;/code&gt;, it will render as an aside.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% callout note %}}
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
@@ -308,15 +468,14 @@
       <description>&lt;p&gt;Hugo Blox is designed to give technical content creators a seamless experience. You can focus on the content and Hugo Blox handles the rest.&lt;/p&gt;
 &lt;p&gt;Use popular tools such as Plotly, Mermaid, and data frames.&lt;/p&gt;
 &lt;h2 id=&#34;charts&#34;&gt;Charts&lt;/h2&gt;
-&lt;p&gt;Hugo Blox supports the popular 
- format for interactive data visualizations. With Plotly, you can design almost any kind of visualization you can imagine!&lt;/p&gt;
+&lt;p&gt;Hugo Blox supports the popular &lt;a href=&#34;https://plot.ly/&#34;&gt;Plotly&lt;/a&gt; format for interactive data visualizations. With Plotly, you can design almost any kind of visualization you can imagine!&lt;/p&gt;
 &lt;p&gt;Save your Plotly JSON in your page folder, for example &lt;code&gt;line-chart.json&lt;/code&gt;, and then add the &lt;code&gt;{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code&gt; shortcode where you would like the chart to appear.&lt;/p&gt;
 &lt;p&gt;Demo:&lt;/p&gt;
 
 
 
 
-&lt;div id=&#34;chart-836519247&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-986125347&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -334,14 +493,13 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-836519247&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-986125347&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
 &lt;/script&gt;
 
-&lt;p&gt;You might also find the 
- useful.&lt;/p&gt;
+&lt;p&gt;You might also find the &lt;a href=&#34;http://plotly-json-editor.getforge.io/&#34;&gt;Plotly JSON Editor&lt;/a&gt; useful.&lt;/p&gt;
 &lt;h2 id=&#34;diagrams&#34;&gt;Diagrams&lt;/h2&gt;
 &lt;p&gt;Hugo Blox supports the &lt;em&gt;Mermaid&lt;/em&gt; Markdown extension for diagrams.&lt;/p&gt;
 &lt;p&gt;An example &lt;strong&gt;flowchart&lt;/strong&gt;:&lt;/p&gt;
@@ -354,13 +512,12 @@ C --&amp;gt;|Two| E[Result 2]
 ```
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;graph TD
-A[Hard] --&gt;|Text| B(Round)
-B --&gt; C{Decision}
-C --&gt;|One| D[Result 1]
-C --&gt;|Two| E[Result 2]
-&lt;/div&gt;
-&lt;p&gt;An example &lt;strong&gt;sequence diagram&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;graph TD
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;A[Hard] --&amp;gt;|Text| B(Round)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;B --&amp;gt; C{Decision}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C --&amp;gt;|One| D[Result 1]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C --&amp;gt;|Two| E[Result 2]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;An example &lt;strong&gt;sequence diagram&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;```mermaid
 sequenceDiagram
 Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
@@ -374,17 +531,16 @@ Bob--&amp;gt;&amp;gt;John: Jolly good!
 ```
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;sequenceDiagram
-Alice-&gt;&gt;John: Hello John, how are you?
-loop Healthcheck
-    John-&gt;&gt;John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John--&gt;&gt;Alice: Great!
-John-&gt;&gt;Bob: How about you?
-Bob--&gt;&gt;John: Jolly good!
-&lt;/div&gt;
-&lt;p&gt;An example &lt;strong&gt;class diagram&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sequenceDiagram
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;loop Healthcheck
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    John-&amp;gt;&amp;gt;John: Fight against hypochondria
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;end
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Note right of John: Rational thoughts!
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;John--&amp;gt;&amp;gt;Alice: Great!
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;John-&amp;gt;&amp;gt;Bob: How about you?
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Bob--&amp;gt;&amp;gt;John: Jolly good!
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;An example &lt;strong&gt;class diagram&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;```mermaid
 classDiagram
 Class01 &amp;lt;|-- AveryLongClass : Cool
@@ -403,22 +559,21 @@ Class08 &amp;lt;--&amp;gt; C2: Cool label
 ```
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;classDiagram
-Class01 &lt;|-- AveryLongClass : Cool
-Class03 *-- Class04
-Class05 o-- Class06
-Class07 .. Class08
-Class09 --&gt; C2 : Where am i?
-Class09 --* C3
-Class09 --|&gt; Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-Class08 &lt;--&gt; C2: Cool label
-&lt;/div&gt;
-&lt;p&gt;An example &lt;strong&gt;state diagram&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;classDiagram
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class01 &amp;lt;|-- AveryLongClass : Cool
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class03 *-- Class04
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class05 o-- Class06
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class07 .. Class08
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class09 --&amp;gt; C2 : Where am i?
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class09 --* C3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class09 --|&amp;gt; Class07
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class07 : equals()
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class07 : Object[] elementData
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class01 : size()
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class01 : int chimp
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class01 : int gorilla
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class08 &amp;lt;--&amp;gt; C2: Cool label
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;An example &lt;strong&gt;state diagram&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;```mermaid
 stateDiagram
 [*] --&amp;gt; Still
@@ -430,15 +585,14 @@ Crash --&amp;gt; [*]
 ```
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;stateDiagram
-[*] --&gt; Still
-Still --&gt; [*]
-Still --&gt; Moving
-Moving --&gt; Still
-Moving --&gt; Crash
-Crash --&gt; [*]
-&lt;/div&gt;
-&lt;h2 id=&#34;data-frames&#34;&gt;Data Frames&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;stateDiagram
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[*] --&amp;gt; Still
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Still --&amp;gt; [*]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Still --&amp;gt; Moving
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Moving --&amp;gt; Still
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Moving --&amp;gt; Crash
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Crash --&amp;gt; [*]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;data-frames&#34;&gt;Data Frames&lt;/h2&gt;
 &lt;p&gt;Save your spreadsheet as a CSV file in your page&amp;rsquo;s folder and then render it by adding the &lt;em&gt;Table&lt;/em&gt; shortcode to your page:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;table&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;results.csv&amp;#34;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;header&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;caption&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Table 1: My results&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
@@ -517,8 +671,7 @@ Crash --&gt; [*]
       <link>https://philippebergna.github.io/post/teach-courses/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://philippebergna.github.io/post/teach-courses/</guid>
-      <description>&lt;p&gt;
- is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://hugoblox.com&#34;&gt;Hugo Blox Builder&lt;/a&gt; is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Embed videos, podcasts, code, LaTeX math, and even test students!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Hugo Blox.&lt;/p&gt;
 &lt;h2 id=&#34;video&#34;&gt;Video&lt;/h2&gt;
@@ -527,9 +680,9 @@ Crash --&gt; [*]
 &lt;pre&gt;&lt;code&gt;{{&amp;lt; youtube D2vj0WcvH5c &amp;gt;}}
 &lt;/code&gt;&lt;/pre&gt;
 
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/D2vj0WcvH5c?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/D2vj0WcvH5c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Bilibili&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;{{&amp;lt; bilibili BV1WV4y1r7DF &amp;gt;}}
@@ -541,8 +694,7 @@ Crash --&gt; [*]
   &gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Video file&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Videos may be added to a page by either placing them in your &lt;code&gt;assets/media/&lt;/code&gt; media library or in your 
-, and then embedding them with the &lt;em&gt;video&lt;/em&gt; shortcode:&lt;/p&gt;
+&lt;p&gt;Videos may be added to a page by either placing them in your &lt;code&gt;assets/media/&lt;/code&gt; media library or in your &lt;a href=&#34;https://gohugo.io/content-management/page-bundles/&#34;&gt;page&amp;rsquo;s folder&lt;/a&gt;, and then embedding them with the &lt;em&gt;video&lt;/em&gt; shortcode:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;{{&amp;lt; video src=&amp;quot;my_video.mp4&amp;quot; controls=&amp;quot;yes&amp;quot; &amp;gt;}}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;podcast&#34;&gt;Podcast&lt;/h2&gt;
@@ -594,15 +746,17 @@ Crash --&gt; [*]
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\gamma&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;_{n} &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{ &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\left&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; | &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\left&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; x_{n} &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; x_{n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;} &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\right&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;^T &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\left&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\nabla&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; F &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; x_{n}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\nabla&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; F &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; x_{n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\right&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\right&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; |}{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\left&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\|\nabla&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; F&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{x}_{n}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\nabla&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; F&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{x}_{n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\right&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\|&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;^&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;$$&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$&lt;p&gt;Example &lt;strong&gt;inline math&lt;/strong&gt; &lt;code&gt;$\nabla F(\mathbf{x}_{n})$&lt;/code&gt; renders as $\nabla F(\mathbf{x}_{n})$.&lt;/p&gt;
+&lt;p&gt;$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left |\nabla F(\mathbf{x}&lt;em&gt;{n}) - \nabla F(\mathbf{x}&lt;/em&gt;{n-1}) \right |^2}$$&lt;/p&gt;
+&lt;p&gt;Example &lt;strong&gt;inline math&lt;/strong&gt; &lt;code&gt;$\nabla F(\mathbf{x}_{n})$&lt;/code&gt; renders as $\nabla F(\mathbf{x}_{n})$.&lt;/p&gt;
 &lt;p&gt;Example &lt;strong&gt;multi-line math&lt;/strong&gt; using the math linebreak (&lt;code&gt;\\&lt;/code&gt;):&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;$$&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;k;p_{&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}^{&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{cases}p_{&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}^{&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;} &amp;amp; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\text&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{if }k&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;, &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\\&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;p_{&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}^{&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;} &amp;amp; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\text&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{if }k&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\end&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{cases}&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;$$&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-$$
-f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} &amp; \text{if }k=1, \\
-1-p_{0}^{*} &amp; \text{if }k=0.\end{cases}
-$$&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
+&lt;p&gt;$$
+f(k;p_{0}^{&lt;em&gt;}) = \begin{cases}p_{0}^{&lt;/em&gt;} &amp;amp; \text{if }k=1, \
+1-p_{0}^{*} &amp;amp; \text{if }k=0.\end{cases}
+$$&lt;/p&gt;
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
 &lt;p&gt;Hugo Blox Builder utilises Hugo&amp;rsquo;s Markdown extension for highlighting code syntax. The code theme can be selected in the &lt;code&gt;config/_default/params.yaml&lt;/code&gt; file.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;```python
 import pandas as pd
@@ -627,248 +781,18 @@ data.head()
     
     <item>
       <title>Aversarial Attacks Introduction</title>
-      <link>https://philippebergna.github.io/blogs/what-is-adversarial-attakcks/</link>
-      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/blogs/what-is-adversarial-attakcks/</guid>
-      <description>&lt;p&gt;&lt;em&gt;Building Trust and Robustness in AI Models through Understanding Adversarial Vulnerabilities&lt;/em&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;For the past 2.5 years, I have been engaged as a research scientist focusing on AI safety for computer vision systems at 
-. In recent years, the surge in popularity of Large Language Models (LLMs) such as ChatGPT, Gemini, and Claude has shifted the attention of the AI safety community towards ensuring the reliability and security of these sophisticated language-based systems. However, I contend that research on adversarial attacks in computer vision remains a critical milestone for building trust and developing robust AI models.&lt;/p&gt;
-&lt;p&gt;Adversarial attacks expose fundamental vulnerabilities in machine learning models, particularly in computer vision, by introducing subtle perturbations to input data that lead to incorrect model predictions. Understanding these attacks is essential not only for enhancing the security of AI systems but also for advancing the overall field of machine learning by highlighting areas where models may fail unexpectedly.&lt;/p&gt;
-&lt;p&gt;This blog serves as an introductory exploration of adversarial attacks, delving into their definitions, underlying causes, various types, and significant research contributions. Whether you are an AI practitioner, researcher, or enthusiast, this discussion aims to provide a comprehensive foundation for understanding and addressing adversarial vulnerabilities in computer vision systems.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;what-are-adversarial-attacks&#34;&gt;What Are Adversarial Attacks?&lt;/h2&gt;
-&lt;p&gt;Adversarial attacks are intentional manipulations of input data designed to deceive machine learning models into making incorrect predictions or classifications. These manipulations are often imperceptible to humans but can significantly alter the model&amp;rsquo;s output. The phenomenon was first widely recognized in the context of image classification tasks but extends to various domains within machine learning.&lt;/p&gt;
-&lt;h3 id=&#34;formal-definition&#34;&gt;Formal Definition&lt;/h3&gt;
-&lt;p&gt;Given a machine learning model \( f \) that maps input data \( x \) to output predictions \( f(x) \), an adversarial attack seeks to find a perturbed input \( x&#39; \) such that:&lt;/p&gt;
-$$
-x&#39; = x + \delta \quad \text{where} \quad \| \delta \| &lt; \epsilon \quad \text{and} \quad f(x&#39;) \neq f(x)
-$$&lt;p&gt;Here, \( \delta \) represents the perturbation added to the original input \( x \), and \( \epsilon \) defines the maximum allowable magnitude of this perturbation, typically measured using norms such as \( \ell_\infty \) or \( \ell_2 \).&lt;/p&gt;
-&lt;h3 id=&#34;real-world-implications&#34;&gt;Real-World Implications&lt;/h3&gt;
-&lt;p&gt;Adversarial attacks pose significant risks in applications where AI systems are deployed in safety-critical environments. For instance, in autonomous driving, a minor alteration to a traffic sign could lead to misclassification, resulting in potentially hazardous driving decisions. Similarly, in security systems employing facial recognition, adversarial examples could bypass authentication mechanisms, compromising system integrity.&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;flex justify-center	&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://your-image-link.com/adversarial_example.png&#34; alt=&#34;Adversarial Example&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;br&gt;
-&lt;em&gt;Figure 1: An adversarial image where minor alterations deceive the AI into misclassification.&lt;/em&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;why-do-adversarial-attacks-exist&#34;&gt;Why Do Adversarial Attacks Exist?&lt;/h2&gt;
-&lt;p&gt;The existence of adversarial attacks raises profound questions about the nature of machine learning models and their decision-making processes. Despite extensive research, the precise reasons behind the susceptibility of models to such minimal perturbations remain partially understood, making this an active area of investigation.&lt;/p&gt;
-&lt;h3 id=&#34;theoretical-perspectives&#34;&gt;Theoretical Perspectives&lt;/h3&gt;
-&lt;p&gt;Several hypotheses have been proposed to explain why adversarial attacks are effective:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;High-Dimensional Spaces:&lt;/strong&gt; In high-dimensional input spaces, such as images, there exist numerous directions in which input data can be perturbed without significantly altering human perception. This abundance of directions provides adversaries with ample opportunities to find perturbations that mislead models.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Linear Behavior in Non-Linear Models:&lt;/strong&gt; Despite the non-linear nature of deep neural networks, these models exhibit locally linear behavior in high-dimensional spaces. This linearity can be exploited by adversaries to craft perturbations using gradient-based methods effectively.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Overfitting to Training Data:&lt;/strong&gt; Models that overfit to training data may capture noise and irrelevant patterns, making them more vulnerable to adversarial manipulations that exploit these specific learned patterns.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Model Complexity and Decision Boundaries:&lt;/strong&gt; The complexity of model architectures can lead to intricate decision boundaries. Adversarial perturbations can navigate these boundaries to cross into regions associated with different classes with minimal input changes.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;empirical-evidence&#34;&gt;Empirical Evidence&lt;/h3&gt;
-&lt;p&gt;Empirical studies demonstrate that even state-of-the-art models, such as convolutional neural networks (CNNs), are highly susceptible to adversarial attacks. The consistent success of various attack strategies across different models and datasets underscores the pervasive nature of this vulnerability.&lt;/p&gt;
-&lt;h3 id=&#34;implications-for-ai-safety&#34;&gt;Implications for AI Safety&lt;/h3&gt;
-&lt;p&gt;Understanding the underlying causes of adversarial vulnerabilities is crucial for developing effective defense mechanisms. Addressing these vulnerabilities is essential for ensuring the reliability and safety of AI systems, particularly as they become increasingly integrated into critical applications.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;types-of-adversarial-attacks&#34;&gt;Types of Adversarial Attacks&lt;/h2&gt;
-&lt;p&gt;Adversarial attacks can be categorized based on several criteria, including the attacker&amp;rsquo;s knowledge of the target model, the attack&amp;rsquo;s objective, and the nature of the perturbations. Below, we outline the primary classifications and notable attack methods within each category.&lt;/p&gt;
-&lt;h3 id=&#34;1-based-on-knowledge-of-the-target-model&#34;&gt;1. Based on Knowledge of the Target Model&lt;/h3&gt;
-&lt;h4 id=&#34;a-white-box-attacks&#34;&gt;a. White-Box Attacks&lt;/h4&gt;
-&lt;p&gt;In white-box attacks, the adversary has complete access to the target model&amp;rsquo;s architecture, parameters, and gradients. This comprehensive knowledge allows for precise crafting of adversarial examples by leveraging detailed insights into the model&amp;rsquo;s behavior.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Examples:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Fast Gradient Sign Method (FGSM)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Projected Gradient Descent (PGD)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Carlini &amp;amp; Wagner (C&amp;amp;W) Attack&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;b-black-box-attacks&#34;&gt;b. Black-Box Attacks&lt;/h4&gt;
-&lt;p&gt;Black-box attacks operate under the assumption that the adversary has no internal knowledge of the model. Instead, the attacker can only interact with the model through input-output queries. These attacks often rely on surrogate models or query-based strategies to approximate the target model&amp;rsquo;s behavior.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Examples:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Zeroth-Order Optimization (ZOO)&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Transfer-Based Attacks&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Boundary Attack&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;2-based-on-the-attack-objective&#34;&gt;2. Based on the Attack Objective&lt;/h3&gt;
-&lt;h4 id=&#34;a-targeted-attacks&#34;&gt;a. Targeted Attacks&lt;/h4&gt;
-&lt;p&gt;Targeted attacks aim to misclassify an input into a specific, predetermined class. The adversary&amp;rsquo;s goal is not merely to cause any misclassification but to ensure the model predicts a particular incorrect label.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; Altering an image of a &amp;ldquo;dog&amp;rdquo; so that the model classifies it as a &amp;ldquo;cat.&amp;rdquo;&lt;/p&gt;
-&lt;h4 id=&#34;b-untargeted-attacks&#34;&gt;b. Untargeted Attacks&lt;/h4&gt;
-&lt;p&gt;Untargeted attacks seek to cause any misclassification without a specific target class in mind. The objective is to disrupt the model&amp;rsquo;s correct predictions, irrespective of the incorrect label assigned.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; Modifying an image of a &amp;ldquo;car&amp;rdquo; so that the model fails to recognize it as a &amp;ldquo;car,&amp;rdquo; potentially labeling it as any other category.&lt;/p&gt;
-&lt;h3 id=&#34;3-based-on-the-nature-of-perturbations&#34;&gt;3. Based on the Nature of Perturbations&lt;/h3&gt;
-&lt;h4 id=&#34;a-additive-perturbations&#34;&gt;a. Additive Perturbations&lt;/h4&gt;
-&lt;p&gt;Additive perturbations involve adding small, carefully calculated noise to the input data. These perturbations are typically constrained by norm-based bounds (e.g., \( \ell_\infty \), \( \ell_2 \)) to ensure they remain imperceptible to humans.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; Slightly adjusting pixel values in an image to deceive the model.&lt;/p&gt;
-&lt;h4 id=&#34;b-non-additive-perturbations&#34;&gt;b. Non-Additive Perturbations&lt;/h4&gt;
-&lt;p&gt;Non-additive perturbations encompass more complex alterations that may involve spatial transformations, geometric modifications, or other non-linear changes to the input data. These perturbations can be more sophisticated and harder to detect.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; Applying small rotations, translations, or scaling transformations to an image to alter its classification.&lt;/p&gt;
-&lt;h3 id=&#34;notable-adversarial-attack-methods&#34;&gt;Notable Adversarial Attack Methods&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Fast Gradient Sign Method (FGSM):&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A one-step attack that perturbs the input in the direction of the gradient of the loss function with respect to the input.&lt;/li&gt;
-&lt;li&gt;Efficient and widely used for generating adversarial examples quickly.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Projected Gradient Descent (PGD):&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;An iterative extension of FGSM that applies multiple small perturbations, projecting the perturbed input back into the allowed perturbation space after each step.&lt;/li&gt;
-&lt;li&gt;Considered a strong first-order adversary and often used to evaluate model robustness.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Carlini &amp;amp; Wagner (C&amp;amp;W) Attack:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;An optimization-based attack that formulates adversarial example generation as a constrained optimization problem.&lt;/li&gt;
-&lt;li&gt;Known for its effectiveness in circumventing many defense mechanisms.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;DeepFool:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;An iterative attack that seeks the minimal perturbation required to change the model&amp;rsquo;s prediction by moving the input across the decision boundary.&lt;/li&gt;
-&lt;li&gt;Provides insights into the robustness of models by measuring the distance to the decision boundary.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Generative Adversarial Networks (GANs) Based Attacks:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Utilize GANs to generate adversarial examples by training a generator to produce perturbations that deceive the target model.&lt;/li&gt;
-&lt;li&gt;Capable of producing more natural and transferable adversarial examples.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;seminal-papers-on-adversarial-attacks&#34;&gt;Seminal Papers on Adversarial Attacks&lt;/h2&gt;
-&lt;p&gt;The field of adversarial machine learning has been shaped by numerous influential research papers. Below, we highlight some of the most significant contributions that have advanced our understanding of adversarial attacks and defenses.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;
-&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Ian J. Goodfellow, Jonathon Shlens, Christian Szegedy (2014)&lt;/em&gt;&lt;br&gt;
-This pioneering paper introduced the Fast Gradient Sign Method (FGSM) and explored the underlying reasons for the existence of adversarial examples. It posited that the linearity of neural networks in high-dimensional spaces contributes to their vulnerability.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;
-&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Aleksander Madry, Aleksandar Makelov, Ludwig Schmidt, Dimitris Tsipras, Adrian Vladu (2017)&lt;/em&gt;&lt;br&gt;
-The authors conducted a comprehensive evaluation of neural network robustness against adversarial attacks, introducing Projected Gradient Descent (PGD) as a strong adversary and advocating for robust optimization techniques.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;
-&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Seyed-Mohsen Moosavi-Dezfooli, Alhussein Fawzi, Pascal Frossard (2016)&lt;/em&gt;&lt;br&gt;
-This paper presented DeepFool, an efficient iterative attack that estimates the minimal perturbation required to misclassify an input, providing a measure of the model&amp;rsquo;s robustness.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;
-&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Nicholas Carlini, David Wagner (2017)&lt;/em&gt;&lt;br&gt;
-The authors demonstrated that many proposed adversarial example detection methods are ineffective, highlighting the persistent challenge of creating robust defenses.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;
-&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Ian J. Goodfellow et al. (2014)&lt;/em&gt;&lt;br&gt;
-While not solely focused on adversarial attacks, this foundational paper introduced GANs, which have been instrumental in developing advanced adversarial example generation techniques.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;
-&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Yinpeng Dong, Fangzhou Liao, Tianyu Pang, Hang Su, Jun Zhu (2020)&lt;/em&gt;&lt;br&gt;
-This work explores efficient adversarial training methods that enhance model robustness without significantly increasing training time, contributing to practical defense strategies.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;
-&lt;/strong&gt;&lt;br&gt;
-&lt;em&gt;Aditi Raghunathan, Aleksander Madry, Andrew Trask (2020)&lt;/em&gt;&lt;br&gt;
-AutoAttack is introduced as an ensemble of parameter-free attacks that provides a reliable benchmark for evaluating the adversarial robustness of models.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Adversarial attacks represent a critical challenge in the domain of computer vision and broader machine learning applications. Understanding the mechanisms, types, and implications of these attacks is essential for developing robust and secure AI systems. As the AI landscape continues to evolve, ongoing research into adversarial vulnerabilities and defense strategies remains paramount to ensuring the reliability and safety of intelligent systems deployed in real-world scenarios.&lt;/p&gt;
-&lt;p&gt;In subsequent posts, we will delve deeper into defense mechanisms against adversarial attacks, explore advanced attack strategies, and examine case studies highlighting the practical implications of adversarial robustness in AI systems.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;further-reading&#34;&gt;Further Reading&lt;/h2&gt;
-&lt;p&gt;For those interested in further exploring the topic of adversarial attacks and defenses in machine learning, the following resources provide comprehensive insights and detailed methodologies:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;/strong&gt; by Ian Goodfellow et al.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;/strong&gt; - Coursera Course&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;/strong&gt; by Akbar et al.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;/strong&gt; - Tools for Adversarial Learning&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;/strong&gt; - A toolkit for evaluating robustness of machine learning models&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;/strong&gt; by Aleksander Madry et al.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Blog 2</title>
       <link>https://philippebergna.github.io/blogs/blog-2/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://philippebergna.github.io/blogs/blog-2/</guid>
-      <description>&lt;p&gt;
- is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://hugoblox.com&#34;&gt;Hugo Blox Builder&lt;/a&gt; is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Embed videos, podcasts, code, LaTeX math, and even test students!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Hugo Blox.&lt;/p&gt;
 &lt;h2 id=&#34;video&#34;&gt;Video&lt;/h2&gt;
 &lt;p&gt;Teach your course by sharing videos with your students. Choose from one of the following approaches:&lt;/p&gt;
 
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/D2vj0WcvH5c?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/D2vj0WcvH5c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Youtube&lt;/strong&gt;:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;{{&amp;lt; youtube w7Ft2ymGmfc &amp;gt;}}
@@ -877,8 +801,7 @@ AutoAttack is introduced as an ensemble of parameter-free attacks that provides 
 &lt;pre&gt;&lt;code&gt;{{&amp;lt; bilibili id=&amp;quot;BV1WV4y1r7DF&amp;quot; &amp;gt;}}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;Video file&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Videos may be added to a page by either placing them in your &lt;code&gt;assets/media/&lt;/code&gt; media library or in your 
-, and then embedding them with the &lt;em&gt;video&lt;/em&gt; shortcode:&lt;/p&gt;
+&lt;p&gt;Videos may be added to a page by either placing them in your &lt;code&gt;assets/media/&lt;/code&gt; media library or in your &lt;a href=&#34;https://gohugo.io/content-management/page-bundles/&#34;&gt;page&amp;rsquo;s folder&lt;/a&gt;, and then embedding them with the &lt;em&gt;video&lt;/em&gt; shortcode:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;{{&amp;lt; video src=&amp;quot;my_video.mp4&amp;quot; controls=&amp;quot;yes&amp;quot; &amp;gt;}}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;podcast&#34;&gt;Podcast&lt;/h2&gt;
@@ -988,6 +911,21 @@ data.head()
     </item>
     
     <item>
+      <title>Learn JavaScript</title>
+      <link>https://philippebergna.github.io/blogs/what-is-adversarial-attakcks/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://philippebergna.github.io/blogs/what-is-adversarial-attakcks/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;!-- What is this blog about? computer vision, etc. Why did I decide to write this blog? --&gt;
+&lt;p&gt;For the past 2.5 years I have been working as a reseach scientist on AI safety for computer vision systems at &lt;a href=&#34;https://www.advai.co.uk/&#34;&gt;Advai&lt;/a&gt;. With the boom of Large language models (LLMs) such as ChatGPT, gemini, and claude emerging in the las few years, the AI safety community seemed to have shifted their focus from computer vision systems to LLMs safety. However, I still believe that if we wish to build trust and robust AI models, the reseach on Adversarial attacks in computer vision serves as a pillow to takle before we can&lt;/p&gt;
+&lt;h2 id=&#34;why-do-adversarial-attacks-exist-my-own-take&#34;&gt;Why do Adversarial attacks exist? my own take.&lt;/h2&gt;
+&lt;h2 id=&#34;types-of-adversarial-attacks&#34;&gt;Types of Adversarial Attacks&lt;/h2&gt;
+&lt;p&gt;FSGM, PGD, Iterative PGD (?), Deepfool, Gans.&lt;/p&gt;
+&lt;h2 id=&#34;some-cool-adversarial-attackszws&#34;&gt;Some cool adversarial attackszws&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
       <title>✅ Manage your projects</title>
       <link>https://philippebergna.github.io/post/project-management/</link>
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
@@ -1059,59 +997,6 @@ Parallel 4   :         des6, after des4, 1d
 &lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Do something else&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Uncertainty Modeling in Graph Neural Networks via Stochastic Differential Equations</title>
-      <link>https://philippebergna.github.io/publication/preprint/</link>
-      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/publication/preprint/</guid>
-      <description>&lt;p&gt;This work provides a framework for leveraging stochastic differential equations to address uncertainty in graph neural networks, positioning it as a key approach for robust, uncertainty-aware models in structured data applications.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>An example journal article</title>
-      <link>https://philippebergna.github.io/publication/journal-article/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/publication/journal-article/</guid>
-      <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
-&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-&lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.&lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
-&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-&lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.&lt;/span&gt;
-&lt;/div&gt;
-&lt;p&gt;Add the publication&amp;rsquo;s &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; here. You can use rich formatting such as including 
-.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>An example conference paper</title>
-      <link>https://philippebergna.github.io/publication/conference-paper/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/publication/conference-paper/</guid>
-      <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
-&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-&lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.&lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
-&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-&lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.&lt;/span&gt;
-&lt;/div&gt;
-&lt;p&gt;Add the publication&amp;rsquo;s &lt;strong&gt;full text&lt;/strong&gt; or &lt;strong&gt;supplementary notes&lt;/strong&gt; here. You can use rich formatting such as including 
-.&lt;/p&gt;
 </description>
     </item>
     

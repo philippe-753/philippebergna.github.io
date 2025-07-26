@@ -5,44 +5,20 @@
     <link>https://philippebergna.github.io/tags/wowchemy/</link>
       <atom:link href="https://philippebergna.github.io/tags/wowchemy/index.xml" rel="self" type="application/rss+xml" />
     <description>Wowchemy</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 05 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://philippebergna.github.io/media/icon_hu7729264130191091259.png</url>
+      <url>https://philippebergna.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>Wowchemy</title>
       <link>https://philippebergna.github.io/tags/wowchemy/</link>
     </image>
-    
-    <item>
-      <title>Project 3</title>
-      <link>https://philippebergna.github.io/project/adversarial-enhancements-for-ood-detection/</link>
-      <pubDate>Sun, 05 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/project/adversarial-enhancements-for-ood-detection/</guid>
-      <description>&lt;p&gt;Description&lt;/p&gt;
-&lt;!-- Iproving AI model on out-of-distribution (OOD) detection with adversarial attcks. --&gt;</description>
-    </item>
-    
-    <item>
-      <title>Project 1</title>
-      <link>https://philippebergna.github.io/project/3d-adversarial-attacks/</link>
-      <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/project/3d-adversarial-attacks/</guid>
-      <description>&lt;!-- 3D Adaversararial Attacks that fool AI object detectors models.  --&gt;</description>
-    </item>
     
     <item>
       <title>Active Learning</title>
       <link>https://philippebergna.github.io/project/active-learning/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://philippebergna.github.io/project/active-learning/</guid>
-      <description>&lt;p&gt;Different Active Learning strategies for selecting the most informative images to train object dectors models.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Porject 2</title>
-      <link>https://philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</guid>
-      <description>&lt;!-- Adversarial Attacks on facial verification systems. --&gt;</description>
+      <description>&lt;p&gt;COMING SOON!&lt;/p&gt;
+</description>
     </item>
     
   </channel>
