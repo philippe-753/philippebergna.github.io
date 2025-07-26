@@ -475,7 +475,7 @@ Checkout out the last paper draft:&lt;/p&gt;
 
 
 
-&lt;div id=&#34;chart-963124875&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-457236189&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -493,7 +493,7 @@ Checkout out the last paper draft:&lt;/p&gt;
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-963124875&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-457236189&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
