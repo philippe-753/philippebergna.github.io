@@ -22,5 +22,15 @@
 </description>
     </item>
     
+    <item>
+      <title>Coming Soon!</title>
+      <link>https://philippebergna.github.io/publication/advprob-copy/</link>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://philippebergna.github.io/publication/advprob-copy/</guid>
+      <description>&lt;p&gt;This work presents a novel OOD detection method that tests the stability of model confidence using adversarial probes optimized with diverse objectives.&lt;/p&gt;
+&lt;embed src=&#34;OOD_detection_with_adversarial_perturbation.pdf&#34; width=&#34;100%&#34; height=&#34;800px&#34; type=&#34;application/pdf&#34;&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

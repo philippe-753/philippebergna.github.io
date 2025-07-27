@@ -171,6 +171,16 @@ response = chat.invoke(messages)
     </item>
     
     <item>
+      <title>Coming Soon!</title>
+      <link>https://philippebergna.github.io/publication/advprob-copy/</link>
+      <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://philippebergna.github.io/publication/advprob-copy/</guid>
+      <description>&lt;p&gt;This work presents a novel OOD detection method that tests the stability of model confidence using adversarial probes optimized with diverse objectives.&lt;/p&gt;
+&lt;embed src=&#34;OOD_detection_with_adversarial_perturbation.pdf&#34; width=&#34;100%&#34; height=&#34;800px&#34; type=&#34;application/pdf&#34;&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Jail breaking LLMs</title>
       <link>https://philippebergna.github.io/project/llm-jailbreaking/</link>
       <pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate>
@@ -475,7 +485,7 @@ Checkout out the last paper draft:&lt;/p&gt;
 
 
 
-&lt;div id=&#34;chart-623957418&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-654291387&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -493,7 +503,7 @@ Checkout out the last paper draft:&lt;/p&gt;
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-623957418&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-654291387&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
