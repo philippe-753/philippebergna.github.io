@@ -14,7 +14,7 @@ params:
 
 # Appearance
 appearance:
-  mode: light
+  mode: system
   color: emerald
 
 # SEO
@@ -38,7 +38,7 @@ header:
     blox: "navbar"
     fixed_to_top: true
     show_search: true
-    show_theme_chooser: False
+    show_theme_chooser: true
     logo:
       text: "Philippe Bergna"
 
