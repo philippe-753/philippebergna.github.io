@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
@@ -24,3 +25,7 @@
     
   </channel>
 </rss>
+=======
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Machine Learning | Philippe Bergna - Academic CV</title><link>https://philippe-753.github.io/philippebergna.github.io/tags/machine-learning/</link><atom:link href="https://philippe-753.github.io/philippebergna.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml"/><description>Machine Learning</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 15 Jul 2025 00:00:00 +0000</lastBuildDate><image><url>https://philippe-753.github.io/philippebergna.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url><title>Machine Learning</title><link>https://philippe-753.github.io/philippebergna.github.io/tags/machine-learning/</link></image><item><title>AdvProb: Adversarial Probes to Test Confidence Robustness in Out-of-Distribution Detection</title><link>https://philippe-753.github.io/philippebergna.github.io/publication/advprob/</link><pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate><guid>https://philippe-753.github.io/philippebergna.github.io/publication/advprob/</guid><description>&lt;p>This work presents a novel OOD detection method that tests the stability of model confidence using adversarial probes optimized with diverse objectives.&lt;/p>
+&lt;embed src="OOD_detection_with_adversarial_perturbation.pdf" width="100%" height="800px" type="application/pdf"></description></item></channel></rss>
+>>>>>>> 9de9809 (Deploy)

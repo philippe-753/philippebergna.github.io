@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
@@ -30,6 +31,21 @@
 &lt;pre class=&#34;chroma&#34;&gt;
 &lt;code&gt;
 ```markmap {height=&#34;200px&#34;}
+=======
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Second Brain | Philippe Bergna - Academic CV</title><link>https://philippe-753.github.io/philippebergna.github.io/tags/second-brain/</link><atom:link href="https://philippe-753.github.io/philippebergna.github.io/tags/second-brain/index.xml" rel="self" type="application/rss+xml"/><description>Second Brain</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate><image><url>https://philippe-753.github.io/philippebergna.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url><title>Second Brain</title><link>https://philippe-753.github.io/philippebergna.github.io/tags/second-brain/</link></image><item><title>🧠 Sharpen your thinking with a second brain</title><link>https://philippe-753.github.io/philippebergna.github.io/post/second-brain/</link><pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate><guid>https://philippe-753.github.io/philippebergna.github.io/post/second-brain/</guid><description>&lt;p>Create a personal knowledge base and share your knowledge with your peers.&lt;/p>
+&lt;p>Hugo Blox web framework empowers you with one of the most flexible note-taking capabilities out there.&lt;/p>
+&lt;p>Create a powerful knowledge base that works on top of a local folder of plain text Markdown files.&lt;/p>
+&lt;p>Use it as your second brain, either publicly sharing your knowledge with your peers via your website, or via a private GitHub repository and password-protected site just for yourself.&lt;/p>
+&lt;h2 id="mindmaps">Mindmaps&lt;/h2>
+&lt;p>Hugo Blox supports a Markdown extension for mindmaps.&lt;/p>
+&lt;p>With this open format, can even edit your mindmaps in other popular tools such as Obsidian.&lt;/p>
+&lt;p>Simply insert a Markdown code block labelled as &lt;code>markmap&lt;/code> and optionally set the height of the mindmap as shown in the example below.&lt;/p>
+&lt;p>Mindmaps can be created by simply writing the items as a Markdown list within the &lt;code>markmap&lt;/code> code block, indenting each item to create as many sub-levels as you need:&lt;/p>
+&lt;div class="highlight">
+&lt;pre class="chroma">
+&lt;code>
+```markmap {height="200px"}
+>>>>>>> 9de9809 (Deploy)
 - Hugo Modules
   - Hugo Blox
   - blox-plugins-netlify
