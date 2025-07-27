@@ -1,19 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Facial Recognition | Philippe Bergna - Academic CV</title><link>https://philippebergna.github.io/tags/facial-recognition/</link><atom:link href="https://philippebergna.github.io/tags/facial-recognition/index.xml" rel="self" type="application/rss+xml"/><description>Facial Recognition</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate><image><url>https://philippebergna.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url><title>Facial Recognition</title><link>https://philippebergna.github.io/tags/facial-recognition/</link></image><item><title>Adversarial Attacks for Facial Verification Systems</title><link>https://philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</link><pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</guid><description>&lt;p align="center">
-&lt;img src="featured.png" style="width:70%; height:auto;" />
-&lt;p/>
-&lt;p align="center">&lt;em>Figure 1: Illustration of how adversarial perturbations can affect face similarity scores. Image adapted from Brown et al., 2020.&lt;/em>&lt;/p>
-&lt;h2 id="overview">Overview&lt;/h2>
-&lt;p>As part of my work at Advai, I contributed to a confidential red-teaming project evaluating the robustness of a commercial facial verification platform—one of the UK’s most widely deployed systems. The focus was on &lt;strong>AI safety&lt;/strong>, specifically understanding how such systems behave under &lt;strong>targeted adversarial attacks&lt;/strong> in a &lt;strong>black-box setting&lt;/strong>, where model internals are unknown.&lt;/p>
-&lt;p>The challenge was to simulate how a motivated attacker might manipulate an image to be incorrectly verified as someone else in the system—without triggering biometric defenses like liveness or genuine presence detection. Although technical specifics remain under NDA, the project offered a rare opportunity to test adversarial robustness under realistic deployment conditions.&lt;/p>
-&lt;h2 id="what-are-adversarial-attacks-in-facial-verification">What Are Adversarial Attacks in Facial Verification?&lt;/h2>
-&lt;p>Adversarial attacks on facial verification models aim to subtly modify a face image so that a system misclassifies it—either rejecting a valid user or matching it to someone else. These perturbations are often invisible to humans but exploit vulnerabilities in the model’s learned representations.&lt;/p>
-&lt;p>In black-box scenarios, attackers have no access to the model architecture or weights. Instead, they generate attacks on surrogate models and rely on &lt;strong>transferability&lt;/strong>: the hope that perturbations crafted on one model will still fool another.&lt;/p>
-&lt;h2 id="goal">Goal&lt;/h2>
-&lt;p>To generate targeted, transferable adversarial attacks against one of the UK’s top commercial facial verification systems, and evaluate their effectiveness across multiple industry-leading platforms. Simply put, the objective was to test whether an image could be subtly modified to be falsely recognized as a specific person in the system — all without access to their underlying model.&lt;/p>
-&lt;h2 id="results">Results&lt;/h2>
-&lt;p>Although full experimental details are under NDA, our strongest targeted attacks successfully induced misclassification under constrained, black-box conditions—without access to model architecture, parameters, or training data. These attacks were generated using open-source surrogates and remained effective when evaluated against commercial systems via standard user-facing APIs.&lt;/p>
-&lt;p>The results highlight that even well-established biometric pipelines can be vulnerable to transferable adversarial perturbations in realistic threat scenarios, especially when assurance mechanisms are absent or inconsistently enforced.&lt;/p>
-&lt;h2 id="why-it-matters">Why It Matters&lt;/h2>
-&lt;p>Facial verification systems are increasingly used across borders, banking, and critical infrastructure. This project reinforced that even large-scale commercial systems—deployed by industry leaders—can remain vulnerable to targeted adversarial attacks. These findings underscore the urgent need for proactive AI safety auditing in domains where identity verification underpins national security, privacy, and public trust.&lt;/p>
-&lt;h2 id="citations">Citations&lt;/h2>
-&lt;p>&lt;a href="https://arxiv.org/abs/2004.05790">Brown et al., 2020&lt;/a>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Facial Recognition | Philippe Bergna - Academic CV</title>
+    <link>http://localhost:1313/tags/facial-recognition/</link>
+      <atom:link href="http://localhost:1313/tags/facial-recognition/index.xml" rel="self" type="application/rss+xml" />
+    <description>Facial Recognition</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <title>Facial Recognition</title>
+      <link>http://localhost:1313/tags/facial-recognition/</link>
+    </image>
+    
+    <item>
+      <title>Adversarial Attacks for Facial Verification Systems</title>
+      <link>http://localhost:1313/project/adversarial-attacks-on-facial-verification-systems/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/adversarial-attacks-on-facial-verification-systems/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt;  
+  &lt;img src=&#34;featured.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;  
+&lt;p/&gt;  
+&lt;p align=&#34;center&#34;&gt;&lt;em&gt;Figure 1: Illustration of how adversarial perturbations can affect face similarity scores. Image adapted from Brown et al., 2020.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;As part of my work at Advai, I contributed to a confidential red-teaming project evaluating the robustness of a commercial facial verification platform—one of the UK’s most widely deployed systems. The focus was on &lt;strong&gt;AI safety&lt;/strong&gt;, specifically understanding how such systems behave under &lt;strong&gt;targeted adversarial attacks&lt;/strong&gt; in a &lt;strong&gt;black-box setting&lt;/strong&gt;, where model internals are unknown.&lt;/p&gt;
+&lt;p&gt;The challenge was to simulate how a motivated attacker might manipulate an image to be incorrectly verified as someone else in the system—without triggering biometric defenses like liveness or genuine presence detection. Although technical specifics remain under NDA, the project offered a rare opportunity to test adversarial robustness under realistic deployment conditions.&lt;/p&gt;
+&lt;h2 id=&#34;what-are-adversarial-attacks-in-facial-verification&#34;&gt;What Are Adversarial Attacks in Facial Verification?&lt;/h2&gt;
+&lt;p&gt;Adversarial attacks on facial verification models aim to subtly modify a face image so that a system misclassifies it—either rejecting a valid user or matching it to someone else. These perturbations are often invisible to humans but exploit vulnerabilities in the model’s learned representations.&lt;/p&gt;
+&lt;p&gt;In black-box scenarios, attackers have no access to the model architecture or weights. Instead, they generate attacks on surrogate models and rely on &lt;strong&gt;transferability&lt;/strong&gt;: the hope that perturbations crafted on one model will still fool another.&lt;/p&gt;
+&lt;h2 id=&#34;goal&#34;&gt;Goal&lt;/h2&gt;
+&lt;p&gt;To generate targeted, transferable adversarial attacks against one of the UK’s top commercial facial verification systems, and evaluate their effectiveness across multiple industry-leading platforms. Simply put, the objective was to test whether an image could be subtly modified to be falsely recognized as a specific person in the system — all without access to their underlying model.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Although full experimental details are under NDA, our strongest targeted attacks successfully induced misclassification under constrained, black-box conditions—without access to model architecture, parameters, or training data. These attacks were generated using open-source surrogates and remained effective when evaluated against commercial systems via standard user-facing APIs.&lt;/p&gt;
+&lt;p&gt;The results highlight that even well-established biometric pipelines can be vulnerable to transferable adversarial perturbations in realistic threat scenarios, especially when assurance mechanisms are absent or inconsistently enforced.&lt;/p&gt;
+&lt;h2 id=&#34;why-it-matters&#34;&gt;Why It Matters&lt;/h2&gt;
+&lt;p&gt;Facial verification systems are increasingly used across borders, banking, and critical infrastructure. This project reinforced that even large-scale commercial systems—deployed by industry leaders—can remain vulnerable to targeted adversarial attacks. These findings underscore the urgent need for proactive AI safety auditing in domains where identity verification underpins national security, privacy, and public trust.&lt;/p&gt;
+&lt;h2 id=&#34;citations&#34;&gt;Citations&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2004.05790&#34;&gt;Brown et al., 2020&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

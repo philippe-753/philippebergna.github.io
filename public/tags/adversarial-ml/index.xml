@@ -1,48 +1,90 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Adversarial ML | Philippe Bergna - Academic CV</title><link>https://philippebergna.github.io/tags/adversarial-ml/</link><atom:link href="https://philippebergna.github.io/tags/adversarial-ml/index.xml" rel="self" type="application/rss+xml"/><description>Adversarial ML</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 06 May 2025 00:00:00 +0000</lastBuildDate><image><url>https://philippebergna.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url><title>Adversarial ML</title><link>https://philippebergna.github.io/tags/adversarial-ml/</link></image><item><title>Out-of-Distribution (OOD) Detection with Adversarial Probes</title><link>https://philippebergna.github.io/project/out-of-distribution-ood-detection/</link><pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/project/out-of-distribution-ood-detection/</guid><description>&lt;p align="center">
-&lt;img src="featured.png" style="width:70%; height:auto;" />
-&lt;/p>
-&lt;!-- &lt;p align="center">&lt;em>&lt;/em>&lt;/p> -->
-&lt;p>Coming soon!
-Checkout out the last paper draft:&lt;/p></description></item><item><title>3D Adversarial Camouflage</title><link>https://philippebergna.github.io/project/3d-adversarial-attacks/</link><pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/project/3d-adversarial-attacks/</guid><description>&lt;p align="center">
-&lt;img src="featured.png" style="width:70%; height:auto;" />
-&lt;p/>
-&lt;p align="center">&lt;em>Figure 1: 3D adversarial camouflage patterns optimized to blend into military environments while being misclassified by AI object detection models. Left: Normal vehilce without any camouflage. Middle: Vehicle military camouflaged - still detected by object detector. Right (ours): Vehicle adversarial camuflaged - undetected.&lt;/em>&lt;/p>
-&lt;h2 id="overview">Overview&lt;/h2>
-&lt;p>While working as an AI safety researcher at Advai, one of my most impactful projects focused on the design and deployment of &lt;strong>3D physical adversarial camouflage&lt;/strong> to fool state-of-the-art object detection models, such as those from the YOLO family and Faster R-CNN. Although the specifics of the project are under NDA, this page shares high-level insights into the challenges, innovations, and outcomes of the work.&lt;/p>
-&lt;p>The goal was to bridge the gap between digital adversarial attacks and &lt;strong>physically deployable camouflage&lt;/strong> that remains effective across varying distances, lighting, and camera resolutions—without compromising on visual realism. Our final designs achieved a state-of-the-art misclassification rate in physical environments while still maintaining a plausible military-style appearance.&lt;/p>
-&lt;h2 id="what-are-adversarial-attacks">What are Adversarial attacks?&lt;/h2>
-&lt;p>In computer vision, adversarial attacks involve introducing small, carefully crafted perturbations to digital images to fool AI models into making incorrect predictions. A common type of attack involves optimizing a subtle change to the input image that leads to catastrophic misclassification, even though the change is imperceptible to humans.&lt;/p>
-&lt;p align="center">
-&lt;img src="bandas_adv_atck_exm.png" style="width:70%; height:auto;" />
-&lt;p/>
-&lt;p align="center">&lt;em>Figure 2: Example of a traditional 2D adversarial attack from (Szegedy et al., 2014) paper. &lt;/em>&lt;/p>
-&lt;p>(Learn more in my post on &lt;a href="http://localhost:1313/blogs/blog-2/">What are adversarial attacks&lt;/a>)&lt;/p>
-&lt;h2 id="from-2d-adversarial-attacks-to-3d">From 2D Adversarial Attacks to 3D&lt;/h2>
-&lt;p>The aim of this project was to translate the principles of 2D adversarial attacks into the physical world—specifically by designing textures that can be applied to &lt;strong>vehicles&lt;/strong> in real environments. Unlike digital attacks, which operate in static and controlled conditions, physical attacks must function across a wide range of real-world constraints: changing viewpoints, varying camera heights, rotations, lighting conditions, and occlusions.&lt;/p>
-&lt;p>This project posed a challenging question:&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;em>Can we design a robust, physically deployable adversarial camouflage for vehicles that remains visually consistent with military aesthetics while being consistently misclassified by object detection models?&lt;/em>&lt;/p>
-&lt;/blockquote>
-&lt;p>Note that although this project focuses on adversarial patches-which overwrite a small region of an image rather than perturbing the entire image-we refer to them broadly as adversarial attacks for simplicity. Patches are a specific subclass of adversarial attacks, optimized for local perturbations with similar misclassification objectives.&lt;/p>
-&lt;h2 id="results">Results&lt;/h2>
-&lt;p>Unfortunately, the details of how we constructed and evaluated the physical adversarial camouflages are under NDA, but Figure 1 illustrates the visualization of the goal of the project, which we managed to create an adversarial patch that is both adversarial (misclassified by AI object detector models) and looks military camouflaged. In this project, we not just achieved the highest recorded 3D physical adversarial attack on object detectors, but we also extended the evaluating pipeline significantly to evaluate wider ranges of different objectives, such as different camera resolutions, projections, heights, etc.&lt;/p>
-&lt;h2 id="why-it-matters">Why It Matters&lt;/h2>
-&lt;p>As AI systems like drones, surveillance cameras, and self-driving cars become increasingly common in both military and civilian settings, the ability to physically mislead object detectors through adversarial camouflage raises serious concerns. This work suggests that 3D adversarial textures could be used to evade detection by AI systems in real-world environments—whether to avoid targeting in warfare or to disrupt autonomous vehicles in civilian life. Although specific technical details are under NDA, the implications are clear: physical adversarial attacks represent a credible threat to the safe and reliable deployment of machine learning in high-stakes applications.&lt;/p></description></item><item><title>Adversarial Attacks for Facial Verification Systems</title><link>https://philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</link><pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</guid><description>&lt;p align="center">
-&lt;img src="featured.png" style="width:70%; height:auto;" />
-&lt;p/>
-&lt;p align="center">&lt;em>Figure 1: Illustration of how adversarial perturbations can affect face similarity scores. Image adapted from Brown et al., 2020.&lt;/em>&lt;/p>
-&lt;h2 id="overview">Overview&lt;/h2>
-&lt;p>As part of my work at Advai, I contributed to a confidential red-teaming project evaluating the robustness of a commercial facial verification platform—one of the UK’s most widely deployed systems. The focus was on &lt;strong>AI safety&lt;/strong>, specifically understanding how such systems behave under &lt;strong>targeted adversarial attacks&lt;/strong> in a &lt;strong>black-box setting&lt;/strong>, where model internals are unknown.&lt;/p>
-&lt;p>The challenge was to simulate how a motivated attacker might manipulate an image to be incorrectly verified as someone else in the system—without triggering biometric defenses like liveness or genuine presence detection. Although technical specifics remain under NDA, the project offered a rare opportunity to test adversarial robustness under realistic deployment conditions.&lt;/p>
-&lt;h2 id="what-are-adversarial-attacks-in-facial-verification">What Are Adversarial Attacks in Facial Verification?&lt;/h2>
-&lt;p>Adversarial attacks on facial verification models aim to subtly modify a face image so that a system misclassifies it—either rejecting a valid user or matching it to someone else. These perturbations are often invisible to humans but exploit vulnerabilities in the model’s learned representations.&lt;/p>
-&lt;p>In black-box scenarios, attackers have no access to the model architecture or weights. Instead, they generate attacks on surrogate models and rely on &lt;strong>transferability&lt;/strong>: the hope that perturbations crafted on one model will still fool another.&lt;/p>
-&lt;h2 id="goal">Goal&lt;/h2>
-&lt;p>To generate targeted, transferable adversarial attacks against one of the UK’s top commercial facial verification systems, and evaluate their effectiveness across multiple industry-leading platforms. Simply put, the objective was to test whether an image could be subtly modified to be falsely recognized as a specific person in the system — all without access to their underlying model.&lt;/p>
-&lt;h2 id="results">Results&lt;/h2>
-&lt;p>Although full experimental details are under NDA, our strongest targeted attacks successfully induced misclassification under constrained, black-box conditions—without access to model architecture, parameters, or training data. These attacks were generated using open-source surrogates and remained effective when evaluated against commercial systems via standard user-facing APIs.&lt;/p>
-&lt;p>The results highlight that even well-established biometric pipelines can be vulnerable to transferable adversarial perturbations in realistic threat scenarios, especially when assurance mechanisms are absent or inconsistently enforced.&lt;/p>
-&lt;h2 id="why-it-matters">Why It Matters&lt;/h2>
-&lt;p>Facial verification systems are increasingly used across borders, banking, and critical infrastructure. This project reinforced that even large-scale commercial systems—deployed by industry leaders—can remain vulnerable to targeted adversarial attacks. These findings underscore the urgent need for proactive AI safety auditing in domains where identity verification underpins national security, privacy, and public trust.&lt;/p>
-&lt;h2 id="citations">Citations&lt;/h2>
-&lt;p>&lt;a href="https://arxiv.org/abs/2004.05790">Brown et al., 2020&lt;/a>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adversarial ML | Philippe Bergna - Academic CV</title>
+    <link>http://localhost:1313/tags/adversarial-ml/</link>
+      <atom:link href="http://localhost:1313/tags/adversarial-ml/index.xml" rel="self" type="application/rss+xml" />
+    <description>Adversarial ML</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 06 May 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <title>Adversarial ML</title>
+      <link>http://localhost:1313/tags/adversarial-ml/</link>
+    </image>
+    
+    <item>
+      <title>Out-of-Distribution (OOD) Detection with Adversarial Probes</title>
+      <link>http://localhost:1313/project/out-of-distribution-ood-detection/</link>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/out-of-distribution-ood-detection/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;featured.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;
+&lt;/p&gt;
+&lt;!-- &lt;p align=&#34;center&#34;&gt;&lt;em&gt;&lt;/em&gt;&lt;/p&gt; --&gt;
+&lt;p&gt;Coming soon!
+Checkout out the last paper draft:&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>3D Adversarial Camouflage</title>
+      <link>http://localhost:1313/project/3d-adversarial-attacks/</link>
+      <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/3d-adversarial-attacks/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;featured.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;
+&lt;p/&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;em&gt;Figure 1: 3D adversarial camouflage patterns optimized to blend into military environments while being misclassified by AI object detection models. Left: Normal vehilce without any camouflage. Middle: Vehicle military camouflaged - still detected by object detector. Right (ours): Vehicle adversarial camuflaged - undetected.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;While working as an AI safety researcher at Advai, one of my most impactful projects focused on the design and deployment of &lt;strong&gt;3D physical adversarial camouflage&lt;/strong&gt; to fool state-of-the-art object detection models, such as those from the YOLO family and Faster R-CNN. Although the specifics of the project are under NDA, this page shares high-level insights into the challenges, innovations, and outcomes of the work.&lt;/p&gt;
+&lt;p&gt;The goal was to bridge the gap between digital adversarial attacks and &lt;strong&gt;physically deployable camouflage&lt;/strong&gt; that remains effective across varying distances, lighting, and camera resolutions—without compromising on visual realism. Our final designs achieved a state-of-the-art misclassification rate in physical environments while still maintaining a plausible military-style appearance.&lt;/p&gt;
+&lt;h2 id=&#34;what-are-adversarial-attacks&#34;&gt;What are Adversarial attacks?&lt;/h2&gt;
+&lt;p&gt;In computer vision, adversarial attacks involve introducing small, carefully crafted perturbations to digital images to fool AI models into making incorrect predictions. A common type of attack involves optimizing a subtle change to the input image that leads to catastrophic misclassification, even though the change is imperceptible to humans.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+  &lt;img src=&#34;bandas_adv_atck_exm.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;
+&lt;p/&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;em&gt;Figure 2: Example of a traditional 2D adversarial attack from (Szegedy et al., 2014) paper. &lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;(Learn more in my post on &lt;a href=&#34;http://localhost:1313/blogs/blog-2/&#34;&gt;What are adversarial attacks&lt;/a&gt;)&lt;/p&gt;
+&lt;h2 id=&#34;from-2d-adversarial-attacks-to-3d&#34;&gt;From 2D Adversarial Attacks to 3D&lt;/h2&gt;
+&lt;p&gt;The aim of this project was to translate the principles of 2D adversarial attacks into the physical world—specifically by designing textures that can be applied to &lt;strong&gt;vehicles&lt;/strong&gt; in real environments. Unlike digital attacks, which operate in static and controlled conditions, physical attacks must function across a wide range of real-world constraints: changing viewpoints, varying camera heights, rotations, lighting conditions, and occlusions.&lt;/p&gt;
+&lt;p&gt;This project posed a challenging question:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Can we design a robust, physically deployable adversarial camouflage for vehicles that remains visually consistent with military aesthetics while being consistently misclassified by object detection models?&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Note that although this project focuses on adversarial patches-which overwrite a small region of an image rather than perturbing the entire image-we refer to them broadly as adversarial attacks for simplicity. Patches are a specific subclass of adversarial attacks, optimized for local perturbations with similar misclassification objectives.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Unfortunately, the details of how we constructed and evaluated the physical adversarial camouflages are under NDA, but Figure 1 illustrates the visualization of the goal of the project, which we managed to create an adversarial patch that is both adversarial (misclassified by AI object detector models) and looks military camouflaged. In this project, we not just achieved the highest recorded 3D physical adversarial attack on object detectors, but we also extended the evaluating pipeline significantly to evaluate wider ranges of different objectives, such as different camera resolutions, projections, heights, etc.&lt;/p&gt;
+&lt;h2 id=&#34;why-it-matters&#34;&gt;Why It Matters&lt;/h2&gt;
+&lt;p&gt;As AI systems like drones, surveillance cameras, and self-driving cars become increasingly common in both military and civilian settings, the ability to physically mislead object detectors through adversarial camouflage raises serious concerns. This work suggests that 3D adversarial textures could be used to evade detection by AI systems in real-world environments—whether to avoid targeting in warfare or to disrupt autonomous vehicles in civilian life. Although specific technical details are under NDA, the implications are clear: physical adversarial attacks represent a credible threat to the safe and reliable deployment of machine learning in high-stakes applications.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Adversarial Attacks for Facial Verification Systems</title>
+      <link>http://localhost:1313/project/adversarial-attacks-on-facial-verification-systems/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/adversarial-attacks-on-facial-verification-systems/</guid>
+      <description>&lt;p align=&#34;center&#34;&gt;  
+  &lt;img src=&#34;featured.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;  
+&lt;p/&gt;  
+&lt;p align=&#34;center&#34;&gt;&lt;em&gt;Figure 1: Illustration of how adversarial perturbations can affect face similarity scores. Image adapted from Brown et al., 2020.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;As part of my work at Advai, I contributed to a confidential red-teaming project evaluating the robustness of a commercial facial verification platform—one of the UK’s most widely deployed systems. The focus was on &lt;strong&gt;AI safety&lt;/strong&gt;, specifically understanding how such systems behave under &lt;strong&gt;targeted adversarial attacks&lt;/strong&gt; in a &lt;strong&gt;black-box setting&lt;/strong&gt;, where model internals are unknown.&lt;/p&gt;
+&lt;p&gt;The challenge was to simulate how a motivated attacker might manipulate an image to be incorrectly verified as someone else in the system—without triggering biometric defenses like liveness or genuine presence detection. Although technical specifics remain under NDA, the project offered a rare opportunity to test adversarial robustness under realistic deployment conditions.&lt;/p&gt;
+&lt;h2 id=&#34;what-are-adversarial-attacks-in-facial-verification&#34;&gt;What Are Adversarial Attacks in Facial Verification?&lt;/h2&gt;
+&lt;p&gt;Adversarial attacks on facial verification models aim to subtly modify a face image so that a system misclassifies it—either rejecting a valid user or matching it to someone else. These perturbations are often invisible to humans but exploit vulnerabilities in the model’s learned representations.&lt;/p&gt;
+&lt;p&gt;In black-box scenarios, attackers have no access to the model architecture or weights. Instead, they generate attacks on surrogate models and rely on &lt;strong&gt;transferability&lt;/strong&gt;: the hope that perturbations crafted on one model will still fool another.&lt;/p&gt;
+&lt;h2 id=&#34;goal&#34;&gt;Goal&lt;/h2&gt;
+&lt;p&gt;To generate targeted, transferable adversarial attacks against one of the UK’s top commercial facial verification systems, and evaluate their effectiveness across multiple industry-leading platforms. Simply put, the objective was to test whether an image could be subtly modified to be falsely recognized as a specific person in the system — all without access to their underlying model.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Although full experimental details are under NDA, our strongest targeted attacks successfully induced misclassification under constrained, black-box conditions—without access to model architecture, parameters, or training data. These attacks were generated using open-source surrogates and remained effective when evaluated against commercial systems via standard user-facing APIs.&lt;/p&gt;
+&lt;p&gt;The results highlight that even well-established biometric pipelines can be vulnerable to transferable adversarial perturbations in realistic threat scenarios, especially when assurance mechanisms are absent or inconsistently enforced.&lt;/p&gt;
+&lt;h2 id=&#34;why-it-matters&#34;&gt;Why It Matters&lt;/h2&gt;
+&lt;p&gt;Facial verification systems are increasingly used across borders, banking, and critical infrastructure. This project reinforced that even large-scale commercial systems—deployed by industry leaders—can remain vulnerable to targeted adversarial attacks. These findings underscore the urgent need for proactive AI safety auditing in domains where identity verification underpins national security, privacy, and public trust.&lt;/p&gt;
+&lt;h2 id=&#34;citations&#34;&gt;Citations&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2004.05790&#34;&gt;Brown et al., 2020&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
