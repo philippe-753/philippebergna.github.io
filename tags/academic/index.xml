@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Academic | Philippe Bergna - Academic CV</title><link>https://philippebergna.github.io/tags/academic/</link><atom:link href="https://philippebergna.github.io/tags/academic/index.xml" rel="self" type="application/rss+xml"/><description>Academic</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 27 Oct 2023 00:00:00 +0000</lastBuildDate><image><url>https://philippebergna.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url><title>Academic</title><link>https://philippebergna.github.io/tags/academic/</link></image><item><title>🎉 Easily create your own simple yet highly customizable blog</title><link>https://philippebergna.github.io/post/get-started/</link><pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/post/get-started/</guid><description>&lt;p>Welcome 👋&lt;/p>
+&lt;!--
 &lt;details class="print:hidden xl:hidden" open>
 &lt;summary>Table of Contents&lt;/summary>
 &lt;div class="text-sm">
@@ -23,6 +24,7 @@
 &lt;/nav>
 &lt;/div>
 &lt;/details>
+-->
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;ol>
 &lt;li>The Hugo Blox website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site&lt;/li>

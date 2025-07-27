@@ -159,6 +159,7 @@ Checkout out the last paper draft:&lt;/p></description></item><item><title>3D Ad
 &lt;p>Unfortunately, the details of how we constructed and evaluated the physical adversarial camouflages are under NDA, but Figure 1 illustrates the visualization of the goal of the project, which we managed to create an adversarial patch that is both adversarial (misclassified by AI object detector models) and looks military camouflaged. In this project, we not just achieved the highest recorded 3D physical adversarial attack on object detectors, but we also extended the evaluating pipeline significantly to evaluate wider ranges of different objectives, such as different camera resolutions, projections, heights, etc.&lt;/p>
 &lt;h2 id="why-it-matters">Why It Matters&lt;/h2>
 &lt;p>As AI systems like drones, surveillance cameras, and self-driving cars become increasingly common in both military and civilian settings, the ability to physically mislead object detectors through adversarial camouflage raises serious concerns. This work suggests that 3D adversarial textures could be used to evade detection by AI systems in real-world environments—whether to avoid targeting in warfare or to disrupt autonomous vehicles in civilian life. Although specific technical details are under NDA, the implications are clear: physical adversarial attacks represent a credible threat to the safe and reliable deployment of machine learning in high-stakes applications.&lt;/p></description></item><item><title>Projects</title><link>https://philippebergna.github.io/projects/</link><pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/projects/</guid><description/></item><item><title>🎉 Easily create your own simple yet highly customizable blog</title><link>https://philippebergna.github.io/post/get-started/</link><pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/post/get-started/</guid><description>&lt;p>Welcome 👋&lt;/p>
+&lt;!--
 &lt;details class="print:hidden xl:hidden" open>
 &lt;summary>Table of Contents&lt;/summary>
 &lt;div class="text-sm">
@@ -183,6 +184,7 @@ Checkout out the last paper draft:&lt;/p></description></item><item><title>3D Ad
 &lt;/nav>
 &lt;/div>
 &lt;/details>
+-->
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;ol>
 &lt;li>The Hugo Blox website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site&lt;/li>
@@ -350,7 +352,7 @@ console.log('code block');
 &lt;p>Hugo Blox supports the popular &lt;a href="https://plot.ly/">Plotly&lt;/a> format for interactive data visualizations. With Plotly, you can design almost any kind of visualization you can imagine!&lt;/p>
 &lt;p>Save your Plotly JSON in your page folder, for example &lt;code>line-chart.json&lt;/code>, and then add the &lt;code>{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code> shortcode where you would like the chart to appear.&lt;/p>
 &lt;p>Demo:&lt;/p>
-&lt;div id="chart-694352781" class="chart">&lt;/div>
+&lt;div id="chart-947862153" class="chart">&lt;/div>
 &lt;script>
 async function fetchChartJSON() {
 console.debug('Hugo Blox fetching chart JSON...')
@@ -366,7 +368,7 @@ return;
 clearInterval( a );
 fetchChartJSON().then(chart => {
 console.debug('Plotting chart...')
-window.Plotly.newPlot('chart-694352781', chart.data, chart.layout, {responsive: true});
+window.Plotly.newPlot('chart-947862153', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
