@@ -1,5 +1,18 @@
 
 
+
+
+
+/* TEMPORARY DEBUG STYLES */
+body {
+  background-color: red !important;
+}
+
+
+
+
+
+
 /* Set Advai link text to always appear black */
 a[href="https://www.advai.co.uk/"] div {
   color: black !important;
