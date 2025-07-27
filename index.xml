@@ -1,547 +1,419 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Philippe Bergna - Academic CV</title>
-    <link>https://philippebergna.github.io/</link>
-      <atom:link href="https://philippebergna.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <description>Philippe Bergna - Academic CV</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
-    <image>
-      <url>https://philippebergna.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
-      <title>Philippe Bergna - Academic CV</title>
-      <link>https://philippebergna.github.io/</link>
-    </image>
-    
-    <item>
-      <title>Example Talk</title>
-      <link>https://philippebergna.github.io/event/example/</link>
-      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/event/example/</guid>
-      <description>&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
-&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-&lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.&lt;/span&gt;
-&lt;/div&gt;
-&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Hugo Blox Builder&amp;rsquo;s &lt;a href=&#34;https://www.slideshare.net/slideshow/uncertainty-modeling-in-graph-neural-networks-via-stochastic-precentation-pptx/273579479&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://docs.hugoblox.com/reference/markdown/&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Further event details, including &lt;a href=&#34;https://docs.hugoblox.com/reference/markdown/&#34;&gt;page elements&lt;/a&gt; such as image galleries, can be added to the body of this page.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>RAG Chatbot</title>
-      <link>https://philippebergna.github.io/project/rag-chatbot/</link>
-      <pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/project/rag-chatbot/</guid>
-      <description>&lt;p align=&#34;center&#34;&gt;
-  &lt;img src=&#34;featured.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;
-&lt;/p&gt;
-&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
-&lt;p&gt;This project is a hands-on exploration of Retrieval-Augmented Generation (RAG) using OpenAI&amp;rsquo;s ChatGPT-3.5, powered by LangChain and FAISS.&lt;br&gt;
-It indexes a curated set of AI safety research papers to enable grounded responses from a custom chatbot.&lt;/p&gt;
-&lt;p&gt;The goal was to deepen my understanding of:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;RAG architecture and design&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;LLM deployment pipelines&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;LangChain and FAISS vector search&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Web integration via FastAPI + HTML/JS&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Although this version doesn’t yet use Docker or AWS, they are on the roadmap as part of continued efforts to sharpen my software engineering skills and deploy LLM applications in production environments.&lt;/p&gt;
-&lt;p&gt;📎 &lt;a href=&#34;https://rag-up27.onrender.com/&#34;&gt;Launch Chatbot&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;what-is-rag&#34;&gt;What is RAG?&lt;/h2&gt;
-&lt;p&gt;Retrieval-Augmented Generation (RAG) is a method that enhances LLMs by retrieving relevant context from an external knowledge base at runtime.&lt;br&gt;
-Instead of relying solely on a model’s internal weights, RAG augments the prompt with relevant document chunks retrieved via vector search.&lt;/p&gt;
-&lt;p&gt;This improves:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Factual accuracy&lt;/li&gt;
-&lt;li&gt;Groundedness to a known corpus&lt;/li&gt;
-&lt;li&gt;Flexibility (no fine-tuning required)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In this case, the external knowledge base is made up of ~40 carefully selected AI safety PDFs.&lt;/p&gt;
-&lt;h2 id=&#34;corpus-creation-and-vector-search&#34;&gt;Corpus Creation and Vector Search&lt;/h2&gt;
-&lt;p&gt;So far I have added 40 pdfs from papers from my favourite papers and researchers in the AI safety space, and also and blog posts - mainly from anthropic. To build the knowledge base:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;PDFs were parsed using &lt;code&gt;unstructured.partition_pdf&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;Long texts were split into overlapping chunks using LangChain’s &lt;code&gt;RecursiveCharacterTextSplitter&lt;/code&gt;:
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Chunk size:&lt;/strong&gt; 500 characters&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Overlap:&lt;/strong&gt; 50 characters&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Each chunk was embedded using &lt;code&gt;OpenAIEmbeddings&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;The resulting vectors were stored in a local FAISS index.&lt;/li&gt;
-&lt;li&gt;Cosine similarity was used to perform top-10 document retrieval per query.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Code highlights:&lt;/p&gt;
-&lt;pre&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Philippe Bergna - Academic CV</title><link>https://philippebergna.github.io/</link><atom:link href="https://philippebergna.github.io/index.xml" rel="self" type="application/rss+xml"/><description>Philippe Bergna - Academic CV</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://philippebergna.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url><title>Philippe Bergna - Academic CV</title><link>https://philippebergna.github.io/</link></image><item><title>Example Talk</title><link>https://philippebergna.github.io/event/example/</link><pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate><guid>https://philippebergna.github.io/event/example/</guid><description>&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+&lt;span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="dark:text-neutral-300">Click on the &lt;strong>Slides&lt;/strong> button above to view the built-in slides feature.&lt;/span>
+&lt;/div>
+&lt;p>Slides can be added in a few ways:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Create&lt;/strong> slides using Hugo Blox Builder&amp;rsquo;s &lt;a href="https://www.slideshare.net/slideshow/uncertainty-modeling-in-graph-neural-networks-via-stochastic-precentation-pptx/273579479">&lt;em>Slides&lt;/em>&lt;/a> feature and link using &lt;code>slides&lt;/code> parameter in the front matter of the talk file&lt;/li>
+&lt;li>&lt;strong>Upload&lt;/strong> an existing slide deck to &lt;code>static/&lt;/code> and link using &lt;code>url_slides&lt;/code> parameter in the front matter of the talk file&lt;/li>
+&lt;li>&lt;strong>Embed&lt;/strong> your slides (e.g. Google Slides) or presentation video on this page using &lt;a href="https://docs.hugoblox.com/reference/markdown/">shortcodes&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;p>Further event details, including &lt;a href="https://docs.hugoblox.com/reference/markdown/">page elements&lt;/a> such as image galleries, can be added to the body of this page.&lt;/p></description></item><item><title>RAG Chatbot</title><link>https://philippebergna.github.io/project/rag-chatbot/</link><pubDate>Sun, 20 Jul 2025 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/project/rag-chatbot/</guid><description>&lt;p align="center">
+&lt;img src="featured.png" style="width:70%; height:auto;" />
+&lt;/p>
+&lt;h2 id="summary">Summary&lt;/h2>
+&lt;p>This project is a hands-on exploration of Retrieval-Augmented Generation (RAG) using OpenAI&amp;rsquo;s ChatGPT-3.5, powered by LangChain and FAISS.&lt;br>
+It indexes a curated set of AI safety research papers to enable grounded responses from a custom chatbot.&lt;/p>
+&lt;p>The goal was to deepen my understanding of:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>RAG architecture and design&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>LLM deployment pipelines&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>LangChain and FAISS vector search&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Web integration via FastAPI + HTML/JS&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>Although this version doesn’t yet use Docker or AWS, they are on the roadmap as part of continued efforts to sharpen my software engineering skills and deploy LLM applications in production environments.&lt;/p>
+&lt;p>📎 &lt;a href="https://rag-up27.onrender.com/">Launch Chatbot&lt;/a>&lt;/p>
+&lt;h2 id="what-is-rag">What is RAG?&lt;/h2>
+&lt;p>Retrieval-Augmented Generation (RAG) is a method that enhances LLMs by retrieving relevant context from an external knowledge base at runtime.&lt;br>
+Instead of relying solely on a model’s internal weights, RAG augments the prompt with relevant document chunks retrieved via vector search.&lt;/p>
+&lt;p>This improves:&lt;/p>
+&lt;ul>
+&lt;li>Factual accuracy&lt;/li>
+&lt;li>Groundedness to a known corpus&lt;/li>
+&lt;li>Flexibility (no fine-tuning required)&lt;/li>
+&lt;/ul>
+&lt;p>In this case, the external knowledge base is made up of ~40 carefully selected AI safety PDFs.&lt;/p>
+&lt;h2 id="corpus-creation-and-vector-search">Corpus Creation and Vector Search&lt;/h2>
+&lt;p>So far I have added 40 pdfs from papers from my favourite papers and researchers in the AI safety space, and also and blog posts - mainly from anthropic. To build the knowledge base:&lt;/p>
+&lt;ul>
+&lt;li>PDFs were parsed using &lt;code>unstructured.partition_pdf&lt;/code>.&lt;/li>
+&lt;li>Long texts were split into overlapping chunks using LangChain’s &lt;code>RecursiveCharacterTextSplitter&lt;/code>:
+&lt;ul>
+&lt;li>&lt;strong>Chunk size:&lt;/strong> 500 characters&lt;/li>
+&lt;li>&lt;strong>Overlap:&lt;/strong> 50 characters&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Each chunk was embedded using &lt;code>OpenAIEmbeddings&lt;/code>.&lt;/li>
+&lt;li>The resulting vectors were stored in a local FAISS index.&lt;/li>
+&lt;li>Cosine similarity was used to perform top-10 document retrieval per query.&lt;/li>
+&lt;/ul>
+&lt;p>Code highlights:&lt;/p>
+&lt;pre>
 chunks = splitter.split_text(text)
 index = FAISS.from_documents(chunks, embeddings)
-index.save_local(&#34;faiss_index&#34;)
-&lt;/pre&gt;
-&lt;h2 id=&#34;how-retrieval-works-during-chat&#34;&gt;How Retrieval Works During Chat&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;🗣️ The user&amp;rsquo;s last 4 messages are joined into a synthetic query&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;📄 This query is used to retrieve 10 relevant chunks from FAISS&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;📥 Those chunks are inserted into the LLM&amp;rsquo;s prompt&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;🧑‍⚖️ A system prompt tells the model:&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Use ONLY the context to answer. If it&amp;rsquo;s missing or irrelevant, say &amp;ldquo;I don&amp;rsquo;t know.&amp;rdquo;&lt;/p&gt;
-&lt;pre&gt;
+index.save_local("faiss_index")
+&lt;/pre>
+&lt;h2 id="how-retrieval-works-during-chat">How Retrieval Works During Chat&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>🗣️ The user&amp;rsquo;s last 4 messages are joined into a synthetic query&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>📄 This query is used to retrieve 10 relevant chunks from FAISS&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>📥 Those chunks are inserted into the LLM&amp;rsquo;s prompt&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🧑‍⚖️ A system prompt tells the model:&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Use ONLY the context to answer. If it&amp;rsquo;s missing or irrelevant, say &amp;ldquo;I don&amp;rsquo;t know.&amp;rdquo;&lt;/p>
+&lt;pre>
 context = retrieve_context(query, messages)
-messages.append(HumanMessage(content=f&#34;Context:\n{context}\n\nQuestion: {query}&#34;))
+messages.append(HumanMessage(content=f"Context:\n{context}\n\nQuestion: {query}"))
 response = chat.invoke(messages)
-&lt;/pre&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;frontend--deployment&#34;&gt;Frontend &amp;amp; Deployment&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;🌐 Frontend: Static HTML + JS with a clean chat UI&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;🔌 Backend: FastAPI handles requests and talks to the model&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;🚀 Deployed to Render using uvicorn as the ASGI server&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;🔐 API key is stored using environment variables&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;✅ CORS support for local testing and deployment&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;example-use-case&#34;&gt;Example Use Case&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;You ask: “What are the main takeaways from Anthropic’s paper on constitutional AI?”&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The system retrieves the most relevant passages from the actual PDF&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The LLM replies based only on that retrieved context&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;If the context is not good enough, it will say: “I don’t know.”&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;what-i-learned&#34;&gt;What I Learned&lt;/h2&gt;
-&lt;p&gt;🧱 How to build a RAG pipeline from raw PDFs to chatbot&lt;/p&gt;
-&lt;p&gt;🔎 The importance of chunk size, overlap, and token limits&lt;/p&gt;
-&lt;p&gt;🌍 Full-stack deployment with FastAPI and static frontend&lt;/p&gt;
-&lt;p&gt;📦 How to structure prompt templates and message history&lt;/p&gt;
-&lt;p&gt;📌 What I still plan to add:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Docker containerization&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;AWS hosting and scalable infra&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;OpenAPI documentation for the backend&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Press here if you you want to try the chatbot your self:&lt;/p&gt;
-&lt;p&gt;📎 &lt;a href=&#34;https://rag-up27.onrender.com/&#34;&gt;Launch Chatbot&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>AdvProb: Adversarial Probes to Test Confidence Robustness in Out-of-Distribution Detection</title>
-      <link>https://philippebergna.github.io/publication/advprob/</link>
-      <pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/publication/advprob/</guid>
-      <description>&lt;p&gt;This work presents a novel OOD detection method that tests the stability of model confidence using adversarial probes optimized with diverse objectives.&lt;/p&gt;
-&lt;embed src=&#34;OOD_detection_with_adversarial_perturbation.pdf&#34; width=&#34;100%&#34; height=&#34;800px&#34; type=&#34;application/pdf&#34;&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Jail breaking LLMs</title>
-      <link>https://philippebergna.github.io/project/llm-jailbreaking/</link>
-      <pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/project/llm-jailbreaking/</guid>
-      <description>&lt;p&gt;Coming soon!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Out-of-Distribution (OOD) Detection with Adversarial Probes</title>
-      <link>https://philippebergna.github.io/project/out-of-distribution-ood-detection/</link>
-      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/project/out-of-distribution-ood-detection/</guid>
-      <description>&lt;p align=&#34;center&#34;&gt;
-  &lt;img src=&#34;featured.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;
-&lt;/p&gt;
-&lt;!-- &lt;p align=&#34;center&#34;&gt;&lt;em&gt;&lt;/em&gt;&lt;/p&gt; --&gt;
-&lt;p&gt;Coming soon!
-Checkout out the last paper draft:&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>3D Adversarial Camouflage</title>
-      <link>https://philippebergna.github.io/project/3d-adversarial-attacks/</link>
-      <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/project/3d-adversarial-attacks/</guid>
-      <description>&lt;p align=&#34;center&#34;&gt;
-  &lt;img src=&#34;featured.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;
-&lt;p/&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;em&gt;Figure 1: 3D adversarial camouflage patterns optimized to blend into military environments while being misclassified by AI object detection models. Left: Normal vehilce without any camouflage. Middle: Vehicle military camouflaged - still detected by object detector. Right (ours): Vehicle adversarial camuflaged - undetected.&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;While working as an AI safety researcher at Advai, one of my most impactful projects focused on the design and deployment of &lt;strong&gt;3D physical adversarial camouflage&lt;/strong&gt; to fool state-of-the-art object detection models, such as those from the YOLO family and Faster R-CNN. Although the specifics of the project are under NDA, this page shares high-level insights into the challenges, innovations, and outcomes of the work.&lt;/p&gt;
-&lt;p&gt;The goal was to bridge the gap between digital adversarial attacks and &lt;strong&gt;physically deployable camouflage&lt;/strong&gt; that remains effective across varying distances, lighting, and camera resolutions—without compromising on visual realism. Our final designs achieved a state-of-the-art misclassification rate in physical environments while still maintaining a plausible military-style appearance.&lt;/p&gt;
-&lt;h2 id=&#34;what-are-adversarial-attacks&#34;&gt;What are Adversarial attacks?&lt;/h2&gt;
-&lt;p&gt;In computer vision, adversarial attacks involve introducing small, carefully crafted perturbations to digital images to fool AI models into making incorrect predictions. A common type of attack involves optimizing a subtle change to the input image that leads to catastrophic misclassification, even though the change is imperceptible to humans.&lt;/p&gt;
-&lt;p align=&#34;center&#34;&gt;
-  &lt;img src=&#34;bandas_adv_atck_exm.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;
-&lt;p/&gt;
-&lt;p align=&#34;center&#34;&gt;&lt;em&gt;Figure 2: Example of a traditional 2D adversarial attack from (Szegedy et al., 2014) paper. &lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;(Learn more in my post on &lt;a href=&#34;http://localhost:1313/blogs/blog-2/&#34;&gt;What are adversarial attacks&lt;/a&gt;)&lt;/p&gt;
-&lt;h2 id=&#34;from-2d-adversarial-attacks-to-3d&#34;&gt;From 2D Adversarial Attacks to 3D&lt;/h2&gt;
-&lt;p&gt;The aim of this project was to translate the principles of 2D adversarial attacks into the physical world—specifically by designing textures that can be applied to &lt;strong&gt;vehicles&lt;/strong&gt; in real environments. Unlike digital attacks, which operate in static and controlled conditions, physical attacks must function across a wide range of real-world constraints: changing viewpoints, varying camera heights, rotations, lighting conditions, and occlusions.&lt;/p&gt;
-&lt;p&gt;This project posed a challenging question:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Can we design a robust, physically deployable adversarial camouflage for vehicles that remains visually consistent with military aesthetics while being consistently misclassified by object detection models?&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Note that although this project focuses on adversarial patches-which overwrite a small region of an image rather than perturbing the entire image-we refer to them broadly as adversarial attacks for simplicity. Patches are a specific subclass of adversarial attacks, optimized for local perturbations with similar misclassification objectives.&lt;/p&gt;
-&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
-&lt;p&gt;Unfortunately, the details of how we constructed and evaluated the physical adversarial camouflages are under NDA, but Figure 1 illustrates the visualization of the goal of the project, which we managed to create an adversarial patch that is both adversarial (misclassified by AI object detector models) and looks military camouflaged. In this project, we not just achieved the highest recorded 3D physical adversarial attack on object detectors, but we also extended the evaluating pipeline significantly to evaluate wider ranges of different objectives, such as different camera resolutions, projections, heights, etc.&lt;/p&gt;
-&lt;h2 id=&#34;why-it-matters&#34;&gt;Why It Matters&lt;/h2&gt;
-&lt;p&gt;As AI systems like drones, surveillance cameras, and self-driving cars become increasingly common in both military and civilian settings, the ability to physically mislead object detectors through adversarial camouflage raises serious concerns. This work suggests that 3D adversarial textures could be used to evade detection by AI systems in real-world environments—whether to avoid targeting in warfare or to disrupt autonomous vehicles in civilian life. Although specific technical details are under NDA, the implications are clear: physical adversarial attacks represent a credible threat to the safe and reliable deployment of machine learning in high-stakes applications.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>https://philippebergna.github.io/projects/</link>
-      <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>🎉 Easily create your own simple yet highly customizable blog</title>
-      <link>https://philippebergna.github.io/post/get-started/</link>
-      <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/post/get-started/</guid>
-      <description>&lt;p&gt;Welcome 👋&lt;/p&gt;
-
-
-
-&lt;details class=&#34;print:hidden xl:hidden&#34; open&gt;
-  &lt;summary&gt;Table of Contents&lt;/summary&gt;
-  &lt;div class=&#34;text-sm&#34;&gt;
-  &lt;nav id=&#34;TableOfContents&#34;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;Overview&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#get-started&#34;&gt;Get Started&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#crowd-funded-open-source-software&#34;&gt;Crowd-funded open-source software&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#-click-here-to-become-a-sponsor-and-help-support-hugo-bloxs-future-httpshugobloxcomsponsor&#34;&gt;&lt;a href=&#34;https://hugoblox.com/sponsor/&#34;&gt;❤️ Click here to become a sponsor and help support Hugo Blox&amp;rsquo;s future ❤️&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#ecosystem&#34;&gt;Ecosystem&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#inspiration&#34;&gt;Inspiration&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#features&#34;&gt;Features&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#themes&#34;&gt;Themes&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#license&#34;&gt;License&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-  &lt;/div&gt;
-&lt;/details&gt;
-
-&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;The Hugo Blox website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site&lt;/li&gt;
-&lt;li&gt;The template can be modified and customised to suit your needs. It&amp;rsquo;s a good platform for anyone looking to take control of their data and online identity whilst having the convenience to start off with a &lt;strong&gt;no-code solution (write in Markdown and customize with YAML parameters)&lt;/strong&gt; and having &lt;strong&gt;flexibility to later add even deeper personalization with HTML and CSS&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;You can work with all your favourite tools and apps with hundreds of plugins and integrations to speed up your workflows, interact with your readers, and much more&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;get-started&#34;&gt;Get Started&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;👉 &lt;a href=&#34;https://hugoblox.com/templates/&#34;&gt;&lt;strong&gt;Create a new site&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;📚 &lt;a href=&#34;https://docs.hugoblox.com/&#34;&gt;&lt;strong&gt;Personalize your site&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💬 &lt;a href=&#34;https://discord.gg/z8wNYzb&#34;&gt;Chat with the &lt;strong&gt;Hugo Blox community&lt;/strong&gt;&lt;/a&gt; or &lt;a href=&#34;https://discourse.gohugo.io&#34;&gt;&lt;strong&gt;Hugo community&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🐦 Twitter: &lt;a href=&#34;https://twitter.com/GetResearchDev&#34;&gt;@GetResearchDev&lt;/a&gt; &lt;a href=&#34;https://twitter.com/GeorgeCushen&#34;&gt;@GeorgeCushen&lt;/a&gt; #MadeWithHugoBlox&lt;/li&gt;
-&lt;li&gt;💡 &lt;a href=&#34;https://github.com/HugoBlox/hugo-blox-builder/issues&#34;&gt;Request a &lt;strong&gt;feature&lt;/strong&gt; or report a &lt;strong&gt;bug&lt;/strong&gt; for &lt;em&gt;Hugo Blox&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;⬆️ &lt;strong&gt;Updating Hugo Blox?&lt;/strong&gt; View the &lt;a href=&#34;https://docs.hugoblox.com/reference/update/&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://github.com/HugoBlox/hugo-blox-builder/releases&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;crowd-funded-open-source-software&#34;&gt;Crowd-funded open-source software&lt;/h2&gt;
-&lt;p&gt;To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.&lt;/p&gt;
-&lt;h3 id=&#34;-click-here-to-become-a-sponsor-and-help-support-hugo-bloxs-future-httpshugobloxcomsponsor&#34;&gt;&lt;a href=&#34;https://hugoblox.com/sponsor/&#34;&gt;❤️ Click here to become a sponsor and help support Hugo Blox&amp;rsquo;s future ❤️&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;As a token of appreciation for sponsoring, you can &lt;strong&gt;unlock &lt;a href=&#34;https://hugoblox.com/sponsor/&#34;&gt;these&lt;/a&gt; awesome rewards and extra features 🦄✨&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/GetRD/academic-file-converter&#34;&gt;Bibtex To Markdown&lt;/a&gt;:&lt;/strong&gt; Automatically import publications from BibTeX&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;inspiration&#34;&gt;Inspiration&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://hugoblox.com/creators/&#34;&gt;Learn what other &lt;strong&gt;creators&lt;/strong&gt;&lt;/a&gt; are building with this template.&lt;/p&gt;
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with no-code &lt;a href=&#34;https://hugoblox.com/blocks/&#34;&gt;&lt;strong&gt;blocks&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://docs.hugoblox.com/reference/markdown/&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://docs.hugoblox.com/reference/markdown/&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://docs.hugoblox.com/getting-started/cms/&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://docs.hugoblox.com/getting-started/cms/&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://docs.hugoblox.com/getting-started/customize/&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code syntax highlighting and LaTeX math supported&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one-page design&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 35+ language packs including English, 中文, and Português&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-&lt;p&gt;Hugo Blox and its templates come with &lt;strong&gt;automatic day (light) and night (dark) mode&lt;/strong&gt; built-in. Visitors can choose their preferred mode by clicking the sun/moon icon in the header.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://docs.hugoblox.com/getting-started/customize/&#34;&gt;Choose a stunning &lt;strong&gt;theme&lt;/strong&gt; and &lt;strong&gt;font&lt;/strong&gt;&lt;/a&gt; for your site. Themes are fully customizable.&lt;/p&gt;
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Active Learning</title>
-      <link>https://philippebergna.github.io/project/active-learning/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/project/active-learning/</guid>
-      <description>&lt;p&gt;COMING SOON!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Adversarial Attacks for Facial Verification Systems</title>
-      <link>https://philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</guid>
-      <description>&lt;p align=&#34;center&#34;&gt;  
-  &lt;img src=&#34;featured.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;  
-&lt;p/&gt;  
-&lt;p align=&#34;center&#34;&gt;&lt;em&gt;Figure 1: Illustration of how adversarial perturbations can affect face similarity scores. Image adapted from Brown et al., 2020.&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;As part of my work at Advai, I contributed to a confidential red-teaming project evaluating the robustness of a commercial facial verification platform—one of the UK’s most widely deployed systems. The focus was on &lt;strong&gt;AI safety&lt;/strong&gt;, specifically understanding how such systems behave under &lt;strong&gt;targeted adversarial attacks&lt;/strong&gt; in a &lt;strong&gt;black-box setting&lt;/strong&gt;, where model internals are unknown.&lt;/p&gt;
-&lt;p&gt;The challenge was to simulate how a motivated attacker might manipulate an image to be incorrectly verified as someone else in the system—without triggering biometric defenses like liveness or genuine presence detection. Although technical specifics remain under NDA, the project offered a rare opportunity to test adversarial robustness under realistic deployment conditions.&lt;/p&gt;
-&lt;h2 id=&#34;what-are-adversarial-attacks-in-facial-verification&#34;&gt;What Are Adversarial Attacks in Facial Verification?&lt;/h2&gt;
-&lt;p&gt;Adversarial attacks on facial verification models aim to subtly modify a face image so that a system misclassifies it—either rejecting a valid user or matching it to someone else. These perturbations are often invisible to humans but exploit vulnerabilities in the model’s learned representations.&lt;/p&gt;
-&lt;p&gt;In black-box scenarios, attackers have no access to the model architecture or weights. Instead, they generate attacks on surrogate models and rely on &lt;strong&gt;transferability&lt;/strong&gt;: the hope that perturbations crafted on one model will still fool another.&lt;/p&gt;
-&lt;h2 id=&#34;goal&#34;&gt;Goal&lt;/h2&gt;
-&lt;p&gt;To generate targeted, transferable adversarial attacks against one of the UK’s top commercial facial verification systems, and evaluate their effectiveness across multiple industry-leading platforms. Simply put, the objective was to test whether an image could be subtly modified to be falsely recognized as a specific person in the system — all without access to their underlying model.&lt;/p&gt;
-&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
-&lt;p&gt;Although full experimental details are under NDA, our strongest targeted attacks successfully induced misclassification under constrained, black-box conditions—without access to model architecture, parameters, or training data. These attacks were generated using open-source surrogates and remained effective when evaluated against commercial systems via standard user-facing APIs.&lt;/p&gt;
-&lt;p&gt;The results highlight that even well-established biometric pipelines can be vulnerable to transferable adversarial perturbations in realistic threat scenarios, especially when assurance mechanisms are absent or inconsistently enforced.&lt;/p&gt;
-&lt;h2 id=&#34;why-it-matters&#34;&gt;Why It Matters&lt;/h2&gt;
-&lt;p&gt;Facial verification systems are increasingly used across borders, banking, and critical infrastructure. This project reinforced that even large-scale commercial systems—deployed by industry leaders—can remain vulnerable to targeted adversarial attacks. These findings underscore the urgent need for proactive AI safety auditing in domains where identity verification underpins national security, privacy, and public trust.&lt;/p&gt;
-&lt;h2 id=&#34;citations&#34;&gt;Citations&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/2004.05790&#34;&gt;Brown et al., 2020&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>🧠 Sharpen your thinking with a second brain</title>
-      <link>https://philippebergna.github.io/post/second-brain/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/post/second-brain/</guid>
-      <description>&lt;p&gt;Create a personal knowledge base and share your knowledge with your peers.&lt;/p&gt;
-&lt;p&gt;Hugo Blox web framework empowers you with one of the most flexible note-taking capabilities out there.&lt;/p&gt;
-&lt;p&gt;Create a powerful knowledge base that works on top of a local folder of plain text Markdown files.&lt;/p&gt;
-&lt;p&gt;Use it as your second brain, either publicly sharing your knowledge with your peers via your website, or via a private GitHub repository and password-protected site just for yourself.&lt;/p&gt;
-&lt;h2 id=&#34;mindmaps&#34;&gt;Mindmaps&lt;/h2&gt;
-&lt;p&gt;Hugo Blox supports a Markdown extension for mindmaps.&lt;/p&gt;
-&lt;p&gt;With this open format, can even edit your mindmaps in other popular tools such as Obsidian.&lt;/p&gt;
-&lt;p&gt;Simply insert a Markdown code block labelled as &lt;code&gt;markmap&lt;/code&gt; and optionally set the height of the mindmap as shown in the example below.&lt;/p&gt;
-&lt;p&gt;Mindmaps can be created by simply writing the items as a Markdown list within the &lt;code&gt;markmap&lt;/code&gt; code block, indenting each item to create as many sub-levels as you need:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;
-&lt;code&gt;
-```markmap {height=&#34;200px&#34;}
+&lt;/pre>
+&lt;hr>
+&lt;h2 id="frontend--deployment">Frontend &amp;amp; Deployment&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>🌐 Frontend: Static HTML + JS with a clean chat UI&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🔌 Backend: FastAPI handles requests and talks to the model&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🚀 Deployed to Render using uvicorn as the ASGI server&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>🔐 API key is stored using environment variables&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>✅ CORS support for local testing and deployment&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="example-use-case">Example Use Case&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>You ask: “What are the main takeaways from Anthropic’s paper on constitutional AI?”&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The system retrieves the most relevant passages from the actual PDF&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>The LLM replies based only on that retrieved context&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>If the context is not good enough, it will say: “I don’t know.”&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="what-i-learned">What I Learned&lt;/h2>
+&lt;p>🧱 How to build a RAG pipeline from raw PDFs to chatbot&lt;/p>
+&lt;p>🔎 The importance of chunk size, overlap, and token limits&lt;/p>
+&lt;p>🌍 Full-stack deployment with FastAPI and static frontend&lt;/p>
+&lt;p>📦 How to structure prompt templates and message history&lt;/p>
+&lt;p>📌 What I still plan to add:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Docker containerization&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>AWS hosting and scalable infra&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>OpenAPI documentation for the backend&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>Press here if you you want to try the chatbot your self:&lt;/p>
+&lt;p>📎 &lt;a href="https://rag-up27.onrender.com/">Launch Chatbot&lt;/a>&lt;/p></description></item><item><title>AdvProb: Adversarial Probes to Test Confidence Robustness in Out-of-Distribution Detection</title><link>https://philippebergna.github.io/publication/advprob/</link><pubDate>Tue, 15 Jul 2025 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/publication/advprob/</guid><description>&lt;p>This work presents a novel OOD detection method that tests the stability of model confidence using adversarial probes optimized with diverse objectives.&lt;/p>
+&lt;embed src="OOD_detection_with_adversarial_perturbation.pdf" width="100%" height="800px" type="application/pdf"></description></item><item><title>Jail breaking LLMs</title><link>https://philippebergna.github.io/project/llm-jailbreaking/</link><pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/project/llm-jailbreaking/</guid><description>&lt;p>Coming soon!&lt;/p></description></item><item><title>Out-of-Distribution (OOD) Detection with Adversarial Probes</title><link>https://philippebergna.github.io/project/out-of-distribution-ood-detection/</link><pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/project/out-of-distribution-ood-detection/</guid><description>&lt;p align="center">
+&lt;img src="featured.png" style="width:70%; height:auto;" />
+&lt;/p>
+&lt;!-- &lt;p align="center">&lt;em>&lt;/em>&lt;/p> -->
+&lt;p>Coming soon!
+Checkout out the last paper draft:&lt;/p></description></item><item><title>3D Adversarial Camouflage</title><link>https://philippebergna.github.io/project/3d-adversarial-attacks/</link><pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/project/3d-adversarial-attacks/</guid><description>&lt;p align="center">
+&lt;img src="featured.png" style="width:70%; height:auto;" />
+&lt;p/>
+&lt;p align="center">&lt;em>Figure 1: 3D adversarial camouflage patterns optimized to blend into military environments while being misclassified by AI object detection models. Left: Normal vehilce without any camouflage. Middle: Vehicle military camouflaged - still detected by object detector. Right (ours): Vehicle adversarial camuflaged - undetected.&lt;/em>&lt;/p>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>While working as an AI safety researcher at Advai, one of my most impactful projects focused on the design and deployment of &lt;strong>3D physical adversarial camouflage&lt;/strong> to fool state-of-the-art object detection models, such as those from the YOLO family and Faster R-CNN. Although the specifics of the project are under NDA, this page shares high-level insights into the challenges, innovations, and outcomes of the work.&lt;/p>
+&lt;p>The goal was to bridge the gap between digital adversarial attacks and &lt;strong>physically deployable camouflage&lt;/strong> that remains effective across varying distances, lighting, and camera resolutions—without compromising on visual realism. Our final designs achieved a state-of-the-art misclassification rate in physical environments while still maintaining a plausible military-style appearance.&lt;/p>
+&lt;h2 id="what-are-adversarial-attacks">What are Adversarial attacks?&lt;/h2>
+&lt;p>In computer vision, adversarial attacks involve introducing small, carefully crafted perturbations to digital images to fool AI models into making incorrect predictions. A common type of attack involves optimizing a subtle change to the input image that leads to catastrophic misclassification, even though the change is imperceptible to humans.&lt;/p>
+&lt;p align="center">
+&lt;img src="bandas_adv_atck_exm.png" style="width:70%; height:auto;" />
+&lt;p/>
+&lt;p align="center">&lt;em>Figure 2: Example of a traditional 2D adversarial attack from (Szegedy et al., 2014) paper. &lt;/em>&lt;/p>
+&lt;p>(Learn more in my post on &lt;a href="http://localhost:1313/blogs/blog-2/">What are adversarial attacks&lt;/a>)&lt;/p>
+&lt;h2 id="from-2d-adversarial-attacks-to-3d">From 2D Adversarial Attacks to 3D&lt;/h2>
+&lt;p>The aim of this project was to translate the principles of 2D adversarial attacks into the physical world—specifically by designing textures that can be applied to &lt;strong>vehicles&lt;/strong> in real environments. Unlike digital attacks, which operate in static and controlled conditions, physical attacks must function across a wide range of real-world constraints: changing viewpoints, varying camera heights, rotations, lighting conditions, and occlusions.&lt;/p>
+&lt;p>This project posed a challenging question:&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;em>Can we design a robust, physically deployable adversarial camouflage for vehicles that remains visually consistent with military aesthetics while being consistently misclassified by object detection models?&lt;/em>&lt;/p>
+&lt;/blockquote>
+&lt;p>Note that although this project focuses on adversarial patches-which overwrite a small region of an image rather than perturbing the entire image-we refer to them broadly as adversarial attacks for simplicity. Patches are a specific subclass of adversarial attacks, optimized for local perturbations with similar misclassification objectives.&lt;/p>
+&lt;h2 id="results">Results&lt;/h2>
+&lt;p>Unfortunately, the details of how we constructed and evaluated the physical adversarial camouflages are under NDA, but Figure 1 illustrates the visualization of the goal of the project, which we managed to create an adversarial patch that is both adversarial (misclassified by AI object detector models) and looks military camouflaged. In this project, we not just achieved the highest recorded 3D physical adversarial attack on object detectors, but we also extended the evaluating pipeline significantly to evaluate wider ranges of different objectives, such as different camera resolutions, projections, heights, etc.&lt;/p>
+&lt;h2 id="why-it-matters">Why It Matters&lt;/h2>
+&lt;p>As AI systems like drones, surveillance cameras, and self-driving cars become increasingly common in both military and civilian settings, the ability to physically mislead object detectors through adversarial camouflage raises serious concerns. This work suggests that 3D adversarial textures could be used to evade detection by AI systems in real-world environments—whether to avoid targeting in warfare or to disrupt autonomous vehicles in civilian life. Although specific technical details are under NDA, the implications are clear: physical adversarial attacks represent a credible threat to the safe and reliable deployment of machine learning in high-stakes applications.&lt;/p></description></item><item><title>Projects</title><link>https://philippebergna.github.io/projects/</link><pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/projects/</guid><description/></item><item><title>🎉 Easily create your own simple yet highly customizable blog</title><link>https://philippebergna.github.io/post/get-started/</link><pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/post/get-started/</guid><description>&lt;p>Welcome 👋&lt;/p>
+&lt;details class="print:hidden xl:hidden" open>
+&lt;summary>Table of Contents&lt;/summary>
+&lt;div class="text-sm">
+&lt;nav id="TableOfContents">
+&lt;ul>
+&lt;li>&lt;a href="#overview">Overview&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#get-started">Get Started&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#crowd-funded-open-source-software">Crowd-funded open-source software&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#-click-here-to-become-a-sponsor-and-help-support-hugo-bloxs-future-httpshugobloxcomsponsor">&lt;a href="https://hugoblox.com/sponsor/">❤️ Click here to become a sponsor and help support Hugo Blox&amp;rsquo;s future ❤️&lt;/a>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#ecosystem">Ecosystem&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#inspiration">Inspiration&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#features">Features&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#themes">Themes&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#license">License&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/nav>
+&lt;/div>
+&lt;/details>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;ol>
+&lt;li>The Hugo Blox website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site&lt;/li>
+&lt;li>The template can be modified and customised to suit your needs. It&amp;rsquo;s a good platform for anyone looking to take control of their data and online identity whilst having the convenience to start off with a &lt;strong>no-code solution (write in Markdown and customize with YAML parameters)&lt;/strong> and having &lt;strong>flexibility to later add even deeper personalization with HTML and CSS&lt;/strong>&lt;/li>
+&lt;li>You can work with all your favourite tools and apps with hundreds of plugins and integrations to speed up your workflows, interact with your readers, and much more&lt;/li>
+&lt;/ol>
+&lt;h3 id="get-started">Get Started&lt;/h3>
+&lt;ul>
+&lt;li>👉 &lt;a href="https://hugoblox.com/templates/">&lt;strong>Create a new site&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>📚 &lt;a href="https://docs.hugoblox.com/">&lt;strong>Personalize your site&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>💬 &lt;a href="https://discord.gg/z8wNYzb">Chat with the &lt;strong>Hugo Blox community&lt;/strong>&lt;/a> or &lt;a href="https://discourse.gohugo.io">&lt;strong>Hugo community&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>🐦 Twitter: &lt;a href="https://twitter.com/GetResearchDev">@GetResearchDev&lt;/a> &lt;a href="https://twitter.com/GeorgeCushen">@GeorgeCushen&lt;/a> #MadeWithHugoBlox&lt;/li>
+&lt;li>💡 &lt;a href="https://github.com/HugoBlox/hugo-blox-builder/issues">Request a &lt;strong>feature&lt;/strong> or report a &lt;strong>bug&lt;/strong> for &lt;em>Hugo Blox&lt;/em>&lt;/a>&lt;/li>
+&lt;li>⬆️ &lt;strong>Updating Hugo Blox?&lt;/strong> View the &lt;a href="https://docs.hugoblox.com/reference/update/">Update Guide&lt;/a> and &lt;a href="https://github.com/HugoBlox/hugo-blox-builder/releases">Release Notes&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="crowd-funded-open-source-software">Crowd-funded open-source software&lt;/h2>
+&lt;p>To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.&lt;/p>
+&lt;h3 id="-click-here-to-become-a-sponsor-and-help-support-hugo-bloxs-future-httpshugobloxcomsponsor">&lt;a href="https://hugoblox.com/sponsor/">❤️ Click here to become a sponsor and help support Hugo Blox&amp;rsquo;s future ❤️&lt;/a>&lt;/h3>
+&lt;p>As a token of appreciation for sponsoring, you can &lt;strong>unlock &lt;a href="https://hugoblox.com/sponsor/">these&lt;/a> awesome rewards and extra features 🦄✨&lt;/strong>&lt;/p>
+&lt;h2 id="ecosystem">Ecosystem&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>&lt;a href="https://github.com/GetRD/academic-file-converter">Bibtex To Markdown&lt;/a>:&lt;/strong> Automatically import publications from BibTeX&lt;/li>
+&lt;/ul>
+&lt;h2 id="inspiration">Inspiration&lt;/h2>
+&lt;p>&lt;a href="https://hugoblox.com/creators/">Learn what other &lt;strong>creators&lt;/strong>&lt;/a> are building with this template.&lt;/p>
+&lt;h2 id="features">Features&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Page builder&lt;/strong> - Create &lt;em>anything&lt;/em> with no-code &lt;a href="https://hugoblox.com/blocks/">&lt;strong>blocks&lt;/strong>&lt;/a> and &lt;a href="https://docs.hugoblox.com/reference/markdown/">&lt;strong>elements&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Edit any type of content&lt;/strong> - Blog posts, publications, talks, slides, projects, and more!&lt;/li>
+&lt;li>&lt;strong>Create content&lt;/strong> in &lt;a href="https://docs.hugoblox.com/reference/markdown/">&lt;strong>Markdown&lt;/strong>&lt;/a>, &lt;a href="https://docs.hugoblox.com/getting-started/cms/">&lt;strong>Jupyter&lt;/strong>&lt;/a>, or &lt;a href="https://docs.hugoblox.com/getting-started/cms/">&lt;strong>RStudio&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Plugin System&lt;/strong> - Fully customizable &lt;a href="https://docs.hugoblox.com/getting-started/customize/">&lt;strong>color&lt;/strong> and &lt;strong>font themes&lt;/strong>&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Display Code and Math&lt;/strong> - Code syntax highlighting and LaTeX math supported&lt;/li>
+&lt;li>&lt;strong>Integrations&lt;/strong> - &lt;a href="https://analytics.google.com">Google Analytics&lt;/a>, &lt;a href="https://disqus.com">Disqus commenting&lt;/a>, Maps, Contact Forms, and more!&lt;/li>
+&lt;li>&lt;strong>Beautiful Site&lt;/strong> - Simple and refreshing one-page design&lt;/li>
+&lt;li>&lt;strong>Industry-Leading SEO&lt;/strong> - Help get your website found on search engines and social media&lt;/li>
+&lt;li>&lt;strong>Media Galleries&lt;/strong> - Display your images and videos with captions in a customizable gallery&lt;/li>
+&lt;li>&lt;strong>Mobile Friendly&lt;/strong> - Look amazing on every screen with a mobile friendly version of your site&lt;/li>
+&lt;li>&lt;strong>Multi-language&lt;/strong> - 35+ language packs including English, 中文, and Português&lt;/li>
+&lt;li>&lt;strong>Multi-user&lt;/strong> - Each author gets their own profile page&lt;/li>
+&lt;li>&lt;strong>Privacy Pack&lt;/strong> - Assists with GDPR&lt;/li>
+&lt;li>&lt;strong>Stand Out&lt;/strong> - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li>
+&lt;li>&lt;strong>One-Click Deployment&lt;/strong> - No servers. No databases. Only files.&lt;/li>
+&lt;/ul>
+&lt;h2 id="themes">Themes&lt;/h2>
+&lt;p>Hugo Blox and its templates come with &lt;strong>automatic day (light) and night (dark) mode&lt;/strong> built-in. Visitors can choose their preferred mode by clicking the sun/moon icon in the header.&lt;/p>
+&lt;p>&lt;a href="https://docs.hugoblox.com/getting-started/customize/">Choose a stunning &lt;strong>theme&lt;/strong> and &lt;strong>font&lt;/strong>&lt;/a> for your site. Themes are fully customizable.&lt;/p>
+&lt;h2 id="license">License&lt;/h2>
+&lt;p>Copyright 2016-present &lt;a href="https://georgecushen.com">George Cushen&lt;/a>.&lt;/p>
+&lt;p>Released under the &lt;a href="https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md">MIT&lt;/a> license.&lt;/p></description></item><item><title>Active Learning</title><link>https://philippebergna.github.io/project/active-learning/</link><pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/project/active-learning/</guid><description>&lt;p>COMING SOON!&lt;/p></description></item><item><title>Adversarial Attacks for Facial Verification Systems</title><link>https://philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</link><pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</guid><description>&lt;p align="center">
+&lt;img src="featured.png" style="width:70%; height:auto;" />
+&lt;p/>
+&lt;p align="center">&lt;em>Figure 1: Illustration of how adversarial perturbations can affect face similarity scores. Image adapted from Brown et al., 2020.&lt;/em>&lt;/p>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>As part of my work at Advai, I contributed to a confidential red-teaming project evaluating the robustness of a commercial facial verification platform—one of the UK’s most widely deployed systems. The focus was on &lt;strong>AI safety&lt;/strong>, specifically understanding how such systems behave under &lt;strong>targeted adversarial attacks&lt;/strong> in a &lt;strong>black-box setting&lt;/strong>, where model internals are unknown.&lt;/p>
+&lt;p>The challenge was to simulate how a motivated attacker might manipulate an image to be incorrectly verified as someone else in the system—without triggering biometric defenses like liveness or genuine presence detection. Although technical specifics remain under NDA, the project offered a rare opportunity to test adversarial robustness under realistic deployment conditions.&lt;/p>
+&lt;h2 id="what-are-adversarial-attacks-in-facial-verification">What Are Adversarial Attacks in Facial Verification?&lt;/h2>
+&lt;p>Adversarial attacks on facial verification models aim to subtly modify a face image so that a system misclassifies it—either rejecting a valid user or matching it to someone else. These perturbations are often invisible to humans but exploit vulnerabilities in the model’s learned representations.&lt;/p>
+&lt;p>In black-box scenarios, attackers have no access to the model architecture or weights. Instead, they generate attacks on surrogate models and rely on &lt;strong>transferability&lt;/strong>: the hope that perturbations crafted on one model will still fool another.&lt;/p>
+&lt;h2 id="goal">Goal&lt;/h2>
+&lt;p>To generate targeted, transferable adversarial attacks against one of the UK’s top commercial facial verification systems, and evaluate their effectiveness across multiple industry-leading platforms. Simply put, the objective was to test whether an image could be subtly modified to be falsely recognized as a specific person in the system — all without access to their underlying model.&lt;/p>
+&lt;h2 id="results">Results&lt;/h2>
+&lt;p>Although full experimental details are under NDA, our strongest targeted attacks successfully induced misclassification under constrained, black-box conditions—without access to model architecture, parameters, or training data. These attacks were generated using open-source surrogates and remained effective when evaluated against commercial systems via standard user-facing APIs.&lt;/p>
+&lt;p>The results highlight that even well-established biometric pipelines can be vulnerable to transferable adversarial perturbations in realistic threat scenarios, especially when assurance mechanisms are absent or inconsistently enforced.&lt;/p>
+&lt;h2 id="why-it-matters">Why It Matters&lt;/h2>
+&lt;p>Facial verification systems are increasingly used across borders, banking, and critical infrastructure. This project reinforced that even large-scale commercial systems—deployed by industry leaders—can remain vulnerable to targeted adversarial attacks. These findings underscore the urgent need for proactive AI safety auditing in domains where identity verification underpins national security, privacy, and public trust.&lt;/p>
+&lt;h2 id="citations">Citations&lt;/h2>
+&lt;p>&lt;a href="https://arxiv.org/abs/2004.05790">Brown et al., 2020&lt;/a>&lt;/p></description></item><item><title>🧠 Sharpen your thinking with a second brain</title><link>https://philippebergna.github.io/post/second-brain/</link><pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/post/second-brain/</guid><description>&lt;p>Create a personal knowledge base and share your knowledge with your peers.&lt;/p>
+&lt;p>Hugo Blox web framework empowers you with one of the most flexible note-taking capabilities out there.&lt;/p>
+&lt;p>Create a powerful knowledge base that works on top of a local folder of plain text Markdown files.&lt;/p>
+&lt;p>Use it as your second brain, either publicly sharing your knowledge with your peers via your website, or via a private GitHub repository and password-protected site just for yourself.&lt;/p>
+&lt;h2 id="mindmaps">Mindmaps&lt;/h2>
+&lt;p>Hugo Blox supports a Markdown extension for mindmaps.&lt;/p>
+&lt;p>With this open format, can even edit your mindmaps in other popular tools such as Obsidian.&lt;/p>
+&lt;p>Simply insert a Markdown code block labelled as &lt;code>markmap&lt;/code> and optionally set the height of the mindmap as shown in the example below.&lt;/p>
+&lt;p>Mindmaps can be created by simply writing the items as a Markdown list within the &lt;code>markmap&lt;/code> code block, indenting each item to create as many sub-levels as you need:&lt;/p>
+&lt;div class="highlight">
+&lt;pre class="chroma">
+&lt;code>
+```markmap {height="200px"}
 - Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
+- Hugo Blox
+- blox-plugins-netlify
+- blox-plugins-netlify-cms
+- blox-plugins-reveal
 ```
-&lt;/code&gt;
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;highlight&#34; height=&#34;200px&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- Hugo Modules
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - Hugo Blox
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - blox-plugins-netlify
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - blox-plugins-netlify-cms
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - blox-plugins-reveal
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Anh here&amp;rsquo;s a more advanced mindmap with formatting, code blocks, and math:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;
-&lt;code&gt;
+&lt;/code>
+&lt;/pre>
+&lt;/div>
+&lt;p>renders as&lt;/p>
+&lt;div class="highlight" height="200px">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- Hugo Modules
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - Hugo Blox
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - blox-plugins-netlify
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - blox-plugins-netlify-cms
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - blox-plugins-reveal
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Anh here&amp;rsquo;s a more advanced mindmap with formatting, code blocks, and math:&lt;/p>
+&lt;div class="highlight">
+&lt;pre class="chroma">
+&lt;code>
 ```markmap
 - Mindmaps
-  - Links
-    - [Hugo Blox Docs](https://docs.hugoblox.com/)
-    - [Discord Community](https://discord.gg/z8wNYzb)
-    - [GitHub](https://github.com/HugoBlox/hugo-blox-builder)
-  - Features
-    - Markdown formatting
-    - **inline** ~~text~~ *styles*
-    - multiline
-      text
-    - `inline code`
-    -
-      ```js
-      console.log(&#39;hello&#39;);
-      console.log(&#39;code block&#39;);
-      ```
-    - Math: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
+- Links
+- [Hugo Blox Docs](https://docs.hugoblox.com/)
+- [Discord Community](https://discord.gg/z8wNYzb)
+- [GitHub](https://github.com/HugoBlox/hugo-blox-builder)
+- Features
+- Markdown formatting
+- **inline** ~~text~~ *styles*
+- multiline
+text
+- `inline code`
+-
+```js
+console.log('hello');
+console.log('code block');
 ```
-&lt;/code&gt;
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- Mindmaps
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - Links
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - [Hugo Blox Docs](https://docs.hugoblox.com/)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - [Discord Community](https://discord.gg/z8wNYzb)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - [GitHub](https://github.com/HugoBlox/hugo-blox-builder)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  - Features
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - Markdown formatting
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - **inline** ~~text~~ *styles*
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - multiline
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      text
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - `inline code`
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    -
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ```js
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      console.log(&amp;#39;hello&amp;#39;);
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      console.log(&amp;#39;code block&amp;#39;);
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ```
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    - Math: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;highlighting&#34;&gt;Highlighting&lt;/h2&gt;
-&lt;p&gt;&lt;mark&gt;Highlight&lt;/mark&gt; important text with &lt;code&gt;mark&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;mark&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Highlighted text&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;mark&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;callouts&#34;&gt;Callouts&lt;/h2&gt;
-&lt;p&gt;Use &lt;a href=&#34;https://docs.hugoblox.com/reference/markdown/#callouts&#34;&gt;callouts&lt;/a&gt; (aka &lt;em&gt;asides&lt;/em&gt;, &lt;em&gt;hints&lt;/em&gt;, or &lt;em&gt;alerts&lt;/em&gt;) to draw attention to notes, tips, and warnings.&lt;/p&gt;
-&lt;p&gt;By wrapping a paragraph in &lt;code&gt;{{% callout note %}} ... {{% /callout %}}&lt;/code&gt;, it will render as an aside.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% callout note %}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% /callout %}}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
-&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-&lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;A Markdown aside is useful for displaying notices, hints, or definitions to your readers.&lt;/span&gt;
-&lt;/div&gt;
-&lt;p&gt;Or use the &lt;code&gt;warning&lt;/code&gt; callout type so your readers don&amp;rsquo;t miss critical details:&lt;/p&gt;
-&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-yellow-100 dark:bg-yellow-900&#34;&gt;
-&lt;span class=&#34;pr-3 pt-1 text-red-400&#34;&gt;
-  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0zM12 15.75h.007v.008H12z&#34;/&gt;&lt;/svg&gt;
-&lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;A Markdown aside is useful for displaying notices, hints, or definitions to your readers.&lt;/span&gt;
-&lt;/div&gt;
-&lt;h2 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>📈 Communicate your results effectively with the best data visualizations</title>
-      <link>https://philippebergna.github.io/post/data-visualization/</link>
-      <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/post/data-visualization/</guid>
-      <description>&lt;p&gt;Hugo Blox is designed to give technical content creators a seamless experience. You can focus on the content and Hugo Blox handles the rest.&lt;/p&gt;
-&lt;p&gt;Use popular tools such as Plotly, Mermaid, and data frames.&lt;/p&gt;
-&lt;h2 id=&#34;charts&#34;&gt;Charts&lt;/h2&gt;
-&lt;p&gt;Hugo Blox supports the popular &lt;a href=&#34;https://plot.ly/&#34;&gt;Plotly&lt;/a&gt; format for interactive data visualizations. With Plotly, you can design almost any kind of visualization you can imagine!&lt;/p&gt;
-&lt;p&gt;Save your Plotly JSON in your page folder, for example &lt;code&gt;line-chart.json&lt;/code&gt;, and then add the &lt;code&gt;{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code&gt; shortcode where you would like the chart to appear.&lt;/p&gt;
-&lt;p&gt;Demo:&lt;/p&gt;
-
-
-
-
-&lt;div id=&#34;chart-792635481&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
-&lt;script&gt;
-  async function fetchChartJSON() {
-    console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
-    const response = await fetch(&#39;.\/line-chart.json&#39;);
-    return await response.json();
-  }
-
-  (function() {
-    let a = setInterval( function() {
-      if ( typeof window.Plotly === &#39;undefined&#39; ) {
-        console.debug(&#39;Plotly not loaded yet...&#39;)
-        return;
-      }
-      clearInterval( a );
-
-      fetchChartJSON().then(chart =&gt; {
-        console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-792635481&#39;, chart.data, chart.layout, {responsive: true});
-      });
-    }, 500 );
-  })();
-&lt;/script&gt;
-
-&lt;p&gt;You might also find the &lt;a href=&#34;http://plotly-json-editor.getforge.io/&#34;&gt;Plotly JSON Editor&lt;/a&gt; useful.&lt;/p&gt;
-&lt;h2 id=&#34;diagrams&#34;&gt;Diagrams&lt;/h2&gt;
-&lt;p&gt;Hugo Blox supports the &lt;em&gt;Mermaid&lt;/em&gt; Markdown extension for diagrams.&lt;/p&gt;
-&lt;p&gt;An example &lt;strong&gt;flowchart&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
+- Math: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
+```
+&lt;/code>
+&lt;/pre>
+&lt;/div>
+&lt;p>renders as&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- Mindmaps
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - Links
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - [Hugo Blox Docs](https://docs.hugoblox.com/)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - [Discord Community](https://discord.gg/z8wNYzb)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - [GitHub](https://github.com/HugoBlox/hugo-blox-builder)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - Features
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - Markdown formatting
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - **inline** ~~text~~ *styles*
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - multiline
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> text
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - `inline code`
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> -
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ```js
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> console.log(&amp;#39;hello&amp;#39;);
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> console.log(&amp;#39;code block&amp;#39;);
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> ```
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - Math: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="highlighting">Highlighting&lt;/h2>
+&lt;p>&lt;mark>Highlight&lt;/mark> important text with &lt;code>mark&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">mark&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Highlighted text&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">mark&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="callouts">Callouts&lt;/h2>
+&lt;p>Use &lt;a href="https://docs.hugoblox.com/reference/markdown/#callouts">callouts&lt;/a> (aka &lt;em>asides&lt;/em>, &lt;em>hints&lt;/em>, or &lt;em>alerts&lt;/em>) to draw attention to notes, tips, and warnings.&lt;/p>
+&lt;p>By wrapping a paragraph in &lt;code>{{% callout note %}} ... {{% /callout %}}&lt;/code>, it will render as an aside.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">{{% callout note %}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{% /callout %}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>renders as&lt;/p>
+&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+&lt;span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="dark:text-neutral-300">A Markdown aside is useful for displaying notices, hints, or definitions to your readers.&lt;/span>
+&lt;/div>
+&lt;p>Or use the &lt;code>warning&lt;/code> callout type so your readers don&amp;rsquo;t miss critical details:&lt;/p>
+&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-yellow-100 dark:bg-yellow-900">
+&lt;span class="pr-3 pt-1 text-red-400">
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0zM12 15.75h.007v.008H12z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="dark:text-neutral-300">A Markdown aside is useful for displaying notices, hints, or definitions to your readers.&lt;/span>
+&lt;/div>
+&lt;h2 id="did-you-find-this-page-helpful-consider-sharing-it-">Did you find this page helpful? Consider sharing it 🙌&lt;/h2></description></item><item><title>📈 Communicate your results effectively with the best data visualizations</title><link>https://philippebergna.github.io/post/data-visualization/</link><pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/post/data-visualization/</guid><description>&lt;p>Hugo Blox is designed to give technical content creators a seamless experience. You can focus on the content and Hugo Blox handles the rest.&lt;/p>
+&lt;p>Use popular tools such as Plotly, Mermaid, and data frames.&lt;/p>
+&lt;h2 id="charts">Charts&lt;/h2>
+&lt;p>Hugo Blox supports the popular &lt;a href="https://plot.ly/">Plotly&lt;/a> format for interactive data visualizations. With Plotly, you can design almost any kind of visualization you can imagine!&lt;/p>
+&lt;p>Save your Plotly JSON in your page folder, for example &lt;code>line-chart.json&lt;/code>, and then add the &lt;code>{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code> shortcode where you would like the chart to appear.&lt;/p>
+&lt;p>Demo:&lt;/p>
+&lt;div id="chart-694352781" class="chart">&lt;/div>
+&lt;script>
+async function fetchChartJSON() {
+console.debug('Hugo Blox fetching chart JSON...')
+const response = await fetch('.\/line-chart.json');
+return await response.json();
+}
+(function() {
+let a = setInterval( function() {
+if ( typeof window.Plotly === 'undefined' ) {
+console.debug('Plotly not loaded yet...')
+return;
+}
+clearInterval( a );
+fetchChartJSON().then(chart => {
+console.debug('Plotting chart...')
+window.Plotly.newPlot('chart-694352781', chart.data, chart.layout, {responsive: true});
+});
+}, 500 );
+})();
+&lt;/script>
+&lt;p>You might also find the &lt;a href="http://plotly-json-editor.getforge.io/">Plotly JSON Editor&lt;/a> useful.&lt;/p>
+&lt;h2 id="diagrams">Diagrams&lt;/h2>
+&lt;p>Hugo Blox supports the &lt;em>Mermaid&lt;/em> Markdown extension for diagrams.&lt;/p>
+&lt;p>An example &lt;strong>flowchart&lt;/strong>:&lt;/p>
+&lt;pre>&lt;code>```mermaid
 graph TD
 A[Hard] --&amp;gt;|Text| B(Round)
 B --&amp;gt; C{Decision}
 C --&amp;gt;|One| D[Result 1]
 C --&amp;gt;|Two| E[Result 2]
 ```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;graph TD
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;A[Hard] --&amp;gt;|Text| B(Round)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;B --&amp;gt; C{Decision}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C --&amp;gt;|One| D[Result 1]
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C --&amp;gt;|Two| E[Result 2]
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;An example &lt;strong&gt;sequence diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
+&lt;/code>&lt;/pre>
+&lt;p>renders as&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">graph TD
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">A[Hard] --&amp;gt;|Text| B(Round)
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">B --&amp;gt; C{Decision}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">C --&amp;gt;|One| D[Result 1]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">C --&amp;gt;|Two| E[Result 2]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>An example &lt;strong>sequence diagram&lt;/strong>:&lt;/p>
+&lt;pre>&lt;code>```mermaid
 sequenceDiagram
 Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
 loop Healthcheck
-    John-&amp;gt;&amp;gt;John: Fight against hypochondria
+John-&amp;gt;&amp;gt;John: Fight against hypochondria
 end
 Note right of John: Rational thoughts!
 John--&amp;gt;&amp;gt;Alice: Great!
 John-&amp;gt;&amp;gt;Bob: How about you?
 Bob--&amp;gt;&amp;gt;John: Jolly good!
 ```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sequenceDiagram
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;loop Healthcheck
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    John-&amp;gt;&amp;gt;John: Fight against hypochondria
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;end
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Note right of John: Rational thoughts!
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;John--&amp;gt;&amp;gt;Alice: Great!
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;John-&amp;gt;&amp;gt;Bob: How about you?
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Bob--&amp;gt;&amp;gt;John: Jolly good!
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;An example &lt;strong&gt;class diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
+&lt;/code>&lt;/pre>
+&lt;p>renders as&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sequenceDiagram
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">loop Healthcheck
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> John-&amp;gt;&amp;gt;John: Fight against hypochondria
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">end
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Note right of John: Rational thoughts!
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">John--&amp;gt;&amp;gt;Alice: Great!
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">John-&amp;gt;&amp;gt;Bob: How about you?
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Bob--&amp;gt;&amp;gt;John: Jolly good!
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>An example &lt;strong>class diagram&lt;/strong>:&lt;/p>
+&lt;pre>&lt;code>```mermaid
 classDiagram
 Class01 &amp;lt;|-- AveryLongClass : Cool
 Class03 *-- Class04
@@ -557,24 +429,24 @@ Class01 : int chimp
 Class01 : int gorilla
 Class08 &amp;lt;--&amp;gt; C2: Cool label
 ```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;classDiagram
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class01 &amp;lt;|-- AveryLongClass : Cool
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class03 *-- Class04
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class05 o-- Class06
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class07 .. Class08
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class09 --&amp;gt; C2 : Where am i?
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class09 --* C3
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class09 --|&amp;gt; Class07
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class07 : equals()
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class07 : Object[] elementData
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class01 : size()
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class01 : int chimp
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class01 : int gorilla
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Class08 &amp;lt;--&amp;gt; C2: Cool label
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;An example &lt;strong&gt;state diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
+&lt;/code>&lt;/pre>
+&lt;p>renders as&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">classDiagram
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Class01 &amp;lt;|-- AveryLongClass : Cool
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Class03 *-- Class04
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Class05 o-- Class06
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Class07 .. Class08
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Class09 --&amp;gt; C2 : Where am i?
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Class09 --* C3
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Class09 --|&amp;gt; Class07
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Class07 : equals()
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Class07 : Object[] elementData
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Class01 : size()
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Class01 : int chimp
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Class01 : int gorilla
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Class08 &amp;lt;--&amp;gt; C2: Cool label
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>An example &lt;strong>state diagram&lt;/strong>:&lt;/p>
+&lt;pre>&lt;code>```mermaid
 stateDiagram
 [*] --&amp;gt; Still
 Still --&amp;gt; [*]
@@ -583,422 +455,277 @@ Moving --&amp;gt; Still
 Moving --&amp;gt; Crash
 Crash --&amp;gt; [*]
 ```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;stateDiagram
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[*] --&amp;gt; Still
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Still --&amp;gt; [*]
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Still --&amp;gt; Moving
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Moving --&amp;gt; Still
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Moving --&amp;gt; Crash
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Crash --&amp;gt; [*]
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;data-frames&#34;&gt;Data Frames&lt;/h2&gt;
-&lt;p&gt;Save your spreadsheet as a CSV file in your page&amp;rsquo;s folder and then render it by adding the &lt;em&gt;Table&lt;/em&gt; shortcode to your page:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;table&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;path&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;results.csv&amp;#34;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;header&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;true&amp;#34;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;caption&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Table 1: My results&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;table class=&#34;table-auto w-full&#34;&gt;
-  
-    
-    
-    &lt;thead&gt;
-      &lt;tr&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;customer_id&lt;/th&gt;  &lt;th class=&#34;border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left&#34;&gt;score&lt;/th&gt;  &lt;/tr&gt;
-    &lt;/thead&gt;
-  
-  &lt;tbody&gt;
-  
-    &lt;tr&gt;
-      
-        
-          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;1&lt;/td&gt;
-        
-      
-        
-          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;0&lt;/td&gt;
-        
-      
-    &lt;/tr&gt;
-  
-    &lt;tr&gt;
-      
-        
-          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;2&lt;/td&gt;
-        
-      
-        
-          &lt;td data-table-dtype=&#34;text&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;0.5&lt;/td&gt;
-        
-      
-    &lt;/tr&gt;
-  
-    &lt;tr&gt;
-      
-        
-          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;3&lt;/td&gt;
-        
-      
-        
-          &lt;td data-table-dtype=&#34;number&#34; class=&#34;border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400&#34;&gt;1&lt;/td&gt;
-        
-      
-    &lt;/tr&gt;
-  
-  &lt;/tbody&gt;
-  
-    &lt;caption class=&#34;table-caption&#34;&gt;Table 1: My results&lt;/caption&gt;
-  
-&lt;/table&gt;
-
-&lt;h2 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>👩🏼‍🏫 Teach academic courses</title>
-      <link>https://philippebergna.github.io/post/teach-courses/</link>
-      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/post/teach-courses/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://hugoblox.com&#34;&gt;Hugo Blox Builder&lt;/a&gt; is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Embed videos, podcasts, code, LaTeX math, and even test students!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Hugo Blox.&lt;/p&gt;
-&lt;h2 id=&#34;video&#34;&gt;Video&lt;/h2&gt;
-&lt;p&gt;Teach your course by sharing videos with your students. Choose from one of the following approaches:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Youtube&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; youtube D2vj0WcvH5c &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/D2vj0WcvH5c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Bilibili&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; bilibili BV1WV4y1r7DF &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;w-full h-auto aspect-video relative&#34;&gt;
-  &lt;iframe src=&#34;//player.bilibili.com/player.html?bvid=BV1WV4y1r7DF&amp;page=1&#34;
-  allow=&#34;accelerometer; clipboard-write; encrypted-media; gyroscope; fullscreen; picture-in-picture;&#34;
-  class=&#34;w-full h-full&#34;
-  &gt;&lt;/iframe&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Video file&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Videos may be added to a page by either placing them in your &lt;code&gt;assets/media/&lt;/code&gt; media library or in your &lt;a href=&#34;https://gohugo.io/content-management/page-bundles/&#34;&gt;page&amp;rsquo;s folder&lt;/a&gt;, and then embedding them with the &lt;em&gt;video&lt;/em&gt; shortcode:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; video src=&amp;quot;my_video.mp4&amp;quot; controls=&amp;quot;yes&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;podcast&#34;&gt;Podcast&lt;/h2&gt;
-&lt;p&gt;You can add a podcast or music to a page by placing the MP3 file in the page&amp;rsquo;s folder or the media library folder and then embedding the audio on your page with the &lt;em&gt;audio&lt;/em&gt; shortcode:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; audio src=&amp;quot;ambient-piano.mp3&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Try it out:&lt;/p&gt;
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-&lt;audio controls &gt;
-  &lt;source src=&#34;https://philippebergna.github.io/post/teach-courses/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;
-
-&lt;h2 id=&#34;test-students&#34;&gt;Test students&lt;/h2&gt;
-&lt;p&gt;Provide a simple yet fun self-assessment by revealing the solutions to challenges with the &lt;code&gt;spoiler&lt;/code&gt; shortcode:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;spoiler&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;text&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;👉 Click to view the solution&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;You found me!
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;spoiler&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
-  &lt;summary class=&#34;cursor-pointer&#34;&gt;👉 Click to view the solution&lt;/summary&gt;
-  &lt;div class=&#34;rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2&#34;&gt;
-    You found me 🎉
-  &lt;/div&gt;
-&lt;/details&gt;
-&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
-&lt;p&gt;Hugo Blox Builder supports a Markdown extension for $\LaTeX$ math. Enable math by setting the &lt;code&gt;math: true&lt;/code&gt; option in your page&amp;rsquo;s front matter, or enable math for your entire site by toggling math in your &lt;code&gt;config/_default/params.yaml&lt;/code&gt; file:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;features&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;math&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;enable&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To render &lt;em&gt;inline&lt;/em&gt; or &lt;em&gt;block&lt;/em&gt; math, wrap your LaTeX math with &lt;code&gt;$...$&lt;/code&gt; or &lt;code&gt;$$...$$&lt;/code&gt;, respectively.&lt;/p&gt;
-&lt;p&gt;Example &lt;strong&gt;math block&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;$$&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\gamma&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;_{n} &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{ &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\left&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; | &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\left&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; x_{n} &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; x_{n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;} &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\right&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;^T &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\left&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\nabla&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; F &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; x_{n}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\nabla&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; F &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; x_{n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\right&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\right&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; |}{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\left&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\|\nabla&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; F&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{x}_{n}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\nabla&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; F&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{x}_{n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\right&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\|&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;^&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;$$&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
+&lt;/code>&lt;/pre>
+&lt;p>renders as&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">stateDiagram
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">[*] --&amp;gt; Still
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Still --&amp;gt; [*]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Still --&amp;gt; Moving
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Moving --&amp;gt; Still
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Moving --&amp;gt; Crash
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Crash --&amp;gt; [*]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="data-frames">Data Frames&lt;/h2>
+&lt;p>Save your spreadsheet as a CSV file in your page&amp;rsquo;s folder and then render it by adding the &lt;em>Table&lt;/em> shortcode to your page:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{{&amp;lt;&lt;/span> &lt;span class="nx">table&lt;/span> &lt;span class="nx">path&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;results.csv&amp;#34;&lt;/span> &lt;span class="nx">header&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span> &lt;span class="nx">caption&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;Table 1: My results&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;}}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>renders as&lt;/p>
+&lt;table class="table-auto w-full">
+&lt;thead>
+&lt;tr> &lt;th class="border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left">customer_id&lt;/th> &lt;th class="border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left">score&lt;/th> &lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td data-table-dtype="number" class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">1&lt;/td>
+&lt;td data-table-dtype="number" class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">0&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td data-table-dtype="number" class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">2&lt;/td>
+&lt;td data-table-dtype="text" class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">0.5&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td data-table-dtype="number" class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">3&lt;/td>
+&lt;td data-table-dtype="number" class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">1&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;caption class="table-caption">Table 1: My results&lt;/caption>
+&lt;/table>
+&lt;h2 id="did-you-find-this-page-helpful-consider-sharing-it-">Did you find this page helpful? Consider sharing it 🙌&lt;/h2></description></item><item><title>👩🏼‍🏫 Teach academic courses</title><link>https://philippebergna.github.io/post/teach-courses/</link><pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/post/teach-courses/</guid><description>&lt;p>&lt;a href="https://hugoblox.com">Hugo Blox Builder&lt;/a> is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.&lt;/p>
+&lt;p>&lt;strong>Embed videos, podcasts, code, LaTeX math, and even test students!&lt;/strong>&lt;/p>
+&lt;p>On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Hugo Blox.&lt;/p>
+&lt;h2 id="video">Video&lt;/h2>
+&lt;p>Teach your course by sharing videos with your students. Choose from one of the following approaches:&lt;/p>
+&lt;p>&lt;strong>Youtube&lt;/strong>:&lt;/p>
+&lt;pre>&lt;code>{{&amp;lt; youtube D2vj0WcvH5c &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/D2vj0WcvH5c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;strong>Bilibili&lt;/strong>:&lt;/p>
+&lt;pre>&lt;code>{{&amp;lt; bilibili BV1WV4y1r7DF &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;div class="w-full h-auto aspect-video relative">
+&lt;iframe src="//player.bilibili.com/player.html?bvid=BV1WV4y1r7DF&amp;page=1"
+allow="accelerometer; clipboard-write; encrypted-media; gyroscope; fullscreen; picture-in-picture;"
+class="w-full h-full"
+>&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;strong>Video file&lt;/strong>&lt;/p>
+&lt;p>Videos may be added to a page by either placing them in your &lt;code>assets/media/&lt;/code> media library or in your &lt;a href="https://gohugo.io/content-management/page-bundles/">page&amp;rsquo;s folder&lt;/a>, and then embedding them with the &lt;em>video&lt;/em> shortcode:&lt;/p>
+&lt;pre>&lt;code>{{&amp;lt; video src=&amp;quot;my_video.mp4&amp;quot; controls=&amp;quot;yes&amp;quot; &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;h2 id="podcast">Podcast&lt;/h2>
+&lt;p>You can add a podcast or music to a page by placing the MP3 file in the page&amp;rsquo;s folder or the media library folder and then embedding the audio on your page with the &lt;em>audio&lt;/em> shortcode:&lt;/p>
+&lt;pre>&lt;code>{{&amp;lt; audio src=&amp;quot;ambient-piano.mp3&amp;quot; &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;p>Try it out:&lt;/p>
+&lt;audio controls >
+&lt;source src="https://philippebergna.github.io/post/teach-courses/ambient-piano.mp3" type="audio/mpeg">
+&lt;/audio>
+&lt;h2 id="test-students">Test students&lt;/h2>
+&lt;p>Provide a simple yet fun self-assessment by revealing the solutions to challenges with the &lt;code>spoiler&lt;/code> shortcode:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">{{&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nt">spoiler&lt;/span> &lt;span class="na">text&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;👉 Click to view the solution&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">You found me!
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="p">/&lt;/span>&lt;span class="nt">spoiler&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>renders as&lt;/p>
+&lt;details class="spoiler " id="spoiler-3">
+&lt;summary class="cursor-pointer">👉 Click to view the solution&lt;/summary>
+&lt;div class="rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2">
+You found me 🎉
+&lt;/div>
+&lt;/details>
+&lt;h2 id="math">Math&lt;/h2>
+&lt;p>Hugo Blox Builder supports a Markdown extension for $\LaTeX$ math. Enable math by setting the &lt;code>math: true&lt;/code> option in your page&amp;rsquo;s front matter, or enable math for your entire site by toggling math in your &lt;code>config/_default/params.yaml&lt;/code> file:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">features&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">math&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">enable&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>To render &lt;em>inline&lt;/em> or &lt;em>block&lt;/em> math, wrap your LaTeX math with &lt;code>$...$&lt;/code> or &lt;code>$$...$$&lt;/code>, respectively.&lt;/p>
+&lt;p>Example &lt;strong>math block&lt;/strong>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-latex" data-lang="latex">&lt;span class="line">&lt;span class="cl">&lt;span class="sb">$$&lt;/span>&lt;span class="nb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">&lt;/span>&lt;span class="nv">\gamma&lt;/span>&lt;span class="nb">_{n} &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\frac&lt;/span>&lt;span class="nb">{ &lt;/span>&lt;span class="nv">\left&lt;/span>&lt;span class="nb"> | &lt;/span>&lt;span class="nv">\left&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="nv">\mathbf&lt;/span>&lt;span class="nb"> x_{n} &lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\mathbf&lt;/span>&lt;span class="nb"> x_{n&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="nb">} &lt;/span>&lt;span class="nv">\right&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="nb">^T &lt;/span>&lt;span class="nv">\left&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">[&lt;/span>&lt;span class="nv">\nabla&lt;/span>&lt;span class="nb"> F &lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="nv">\mathbf&lt;/span>&lt;span class="nb"> x_{n}&lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\nabla&lt;/span>&lt;span class="nb"> F &lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="nv">\mathbf&lt;/span>&lt;span class="nb"> x_{n&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="nb">}&lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\right&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">]&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\right&lt;/span>&lt;span class="nb"> |}{&lt;/span>&lt;span class="nv">\left&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\|\nabla&lt;/span>&lt;span class="nb"> F&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="nv">\mathbf&lt;/span>&lt;span class="nb">{x}_{n}&lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\nabla&lt;/span>&lt;span class="nb"> F&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="nv">\mathbf&lt;/span>&lt;span class="nb">{x}_{n&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="nb">}&lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\right&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\|&lt;/span>&lt;span class="nb">^&lt;/span>&lt;span class="m">2&lt;/span>&lt;span class="nb">}
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">&lt;/span>&lt;span class="s">$$&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>renders as&lt;/p>
 $$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
-&lt;p&gt;Example &lt;strong&gt;inline math&lt;/strong&gt; &lt;code&gt;$\nabla F(\mathbf{x}_{n})$&lt;/code&gt; renders as $\nabla F(\mathbf{x}_{n})$.&lt;/p&gt;
-&lt;p&gt;Example &lt;strong&gt;multi-line math&lt;/strong&gt; using the math linebreak (&lt;code&gt;\\&lt;/code&gt;):&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;$$&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;k;p_{&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}^{&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{cases}p_{&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}^{&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;} &amp;amp; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\text&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{if }k&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;, &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\\&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;p_{&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}^{&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;} &amp;amp; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\text&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{if }k&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\end&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{cases}&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;$$&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
+&lt;p>Example &lt;strong>inline math&lt;/strong> &lt;code>$\nabla F(\mathbf{x}_{n})$&lt;/code> renders as $\nabla F(\mathbf{x}_{n})$.&lt;/p>
+&lt;p>Example &lt;strong>multi-line math&lt;/strong> using the math linebreak (&lt;code>\\&lt;/code>):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-latex" data-lang="latex">&lt;span class="line">&lt;span class="cl">&lt;span class="sb">$$&lt;/span>&lt;span class="nb">f&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="nb">k;p_{&lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="nb">}^{&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="nb">}&lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\begin&lt;/span>&lt;span class="nb">{cases}p_{&lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="nb">}^{&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="nb">} &amp;amp; &lt;/span>&lt;span class="nv">\text&lt;/span>&lt;span class="nb">{if }k&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="nb">, &lt;/span>&lt;span class="nv">\\&lt;/span>&lt;span class="nb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">&lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nb">p_{&lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="nb">}^{&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="nb">} &amp;amp; &lt;/span>&lt;span class="nv">\text&lt;/span>&lt;span class="nb">{if }k&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="nb">.&lt;/span>&lt;span class="nv">\end&lt;/span>&lt;span class="nb">{cases}&lt;/span>&lt;span class="s">$$&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>renders as&lt;/p>
 $$
 f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} &amp; \text{if }k=1, \\
 1-p_{0}^{*} &amp; \text{if }k=0.\end{cases}
 $$
-&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
-&lt;p&gt;Hugo Blox Builder utilises Hugo&amp;rsquo;s Markdown extension for highlighting code syntax. The code theme can be selected in the &lt;code&gt;config/_default/params.yaml&lt;/code&gt; file.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```python
+&lt;h2 id="code">Code&lt;/h2>
+&lt;p>Hugo Blox Builder utilises Hugo&amp;rsquo;s Markdown extension for highlighting code syntax. The code theme can be selected in the &lt;code>config/_default/params.yaml&lt;/code> file.&lt;/p>
+&lt;pre>&lt;code>```python
 import pandas as pd
 data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
 data.head()
 ```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pandas&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pd&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;data&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;read_csv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;data.csv&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;inline-images&#34;&gt;Inline Images&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;icon&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;python&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Python&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-&lt;p&gt;
-  &lt;span class=&#34;inline-block  pr-1&#34;&gt;
-    &lt;svg style=&#34;height: 1em; transform: translateY(0.1em);&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; height=&#34;1em&#34; viewBox=&#34;0 0 448 512&#34; fill=&#34;currentColor&#34;&gt;&lt;path d=&#34;M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z&#34;/&gt;&lt;/svg&gt;
-  &lt;/span&gt; Python&lt;/p&gt;
-&lt;h2 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Aversarial Attacks Introduction</title>
-      <link>https://philippebergna.github.io/blogs/blog-2/</link>
-      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/blogs/blog-2/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://hugoblox.com&#34;&gt;Hugo Blox Builder&lt;/a&gt; is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Embed videos, podcasts, code, LaTeX math, and even test students!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Hugo Blox.&lt;/p&gt;
-&lt;h2 id=&#34;video&#34;&gt;Video&lt;/h2&gt;
-&lt;p&gt;Teach your course by sharing videos with your students. Choose from one of the following approaches:&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/D2vj0WcvH5c&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;Youtube&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; youtube w7Ft2ymGmfc &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Bilibili&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; bilibili id=&amp;quot;BV1WV4y1r7DF&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;Video file&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Videos may be added to a page by either placing them in your &lt;code&gt;assets/media/&lt;/code&gt; media library or in your &lt;a href=&#34;https://gohugo.io/content-management/page-bundles/&#34;&gt;page&amp;rsquo;s folder&lt;/a&gt;, and then embedding them with the &lt;em&gt;video&lt;/em&gt; shortcode:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; video src=&amp;quot;my_video.mp4&amp;quot; controls=&amp;quot;yes&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;podcast&#34;&gt;Podcast&lt;/h2&gt;
-&lt;p&gt;You can add a podcast or music to a page by placing the MP3 file in the page&amp;rsquo;s folder or the media library folder and then embedding the audio on your page with the &lt;em&gt;audio&lt;/em&gt; shortcode:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; audio src=&amp;quot;ambient-piano.mp3&amp;quot; &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Try it out:&lt;/p&gt;
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-&lt;audio controls &gt;
-  &lt;source src=&#34;https://philippebergna.github.io/blogs/blog-2/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;
-
-&lt;h2 id=&#34;test-students&#34;&gt;Test students&lt;/h2&gt;
-&lt;p&gt;Provide a simple yet fun self-assessment by revealing the solutions to challenges with the &lt;code&gt;spoiler&lt;/code&gt; shortcode:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;spoiler&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;text&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;👉 Click to view the solution&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;You found me!
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;spoiler&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
-  &lt;summary class=&#34;cursor-pointer&#34;&gt;👉 Click to view the solution&lt;/summary&gt;
-  &lt;div class=&#34;rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2&#34;&gt;
-    You found me 🎉
-  &lt;/div&gt;
-&lt;/details&gt;
-&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
-&lt;p&gt;Hugo Blox Builder supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the &lt;code&gt;math&lt;/code&gt; option in your &lt;code&gt;config/_default/params.yaml&lt;/code&gt; file.&lt;/p&gt;
-&lt;p&gt;To render &lt;em&gt;inline&lt;/em&gt; or &lt;em&gt;block&lt;/em&gt; math, wrap your LaTeX math with &lt;code&gt;{{&amp;lt; math &amp;gt;}}$...${{&amp;lt; /math &amp;gt;}}&lt;/code&gt; or &lt;code&gt;{{&amp;lt; math &amp;gt;}}$$...$${{&amp;lt; /math &amp;gt;}}&lt;/code&gt;, respectively.&lt;/p&gt;
-&lt;div class=&#34;flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900&#34;&gt;
-&lt;span class=&#34;pr-3 pt-1 text-primary-600 dark:text-primary-300&#34;&gt;
-  &lt;svg height=&#34;24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;1.5&#34; d=&#34;m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z&#34;/&gt;&lt;/svg&gt;
-&lt;/span&gt;
-  &lt;span class=&#34;dark:text-neutral-300&#34;&gt;We wrap the LaTeX math in the Hugo Blox &lt;em&gt;math&lt;/em&gt; shortcode to prevent Hugo rendering our math as Markdown.&lt;/span&gt;
-&lt;/div&gt;
-&lt;p&gt;Example &lt;strong&gt;math block&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt;&amp;lt; math &amp;gt;&lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;$$&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\gamma&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;_{n} &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\frac&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{ &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\left&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; | &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\left&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; x_{n} &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; x_{n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;} &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\right&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;^T &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\left&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\nabla&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; F &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; x_{n}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\nabla&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; F &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; x_{n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\right&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\right&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; |}{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\left&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\|\nabla&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; F&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{x}_{n}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\nabla&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; F&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\mathbf&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{x}_{n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\right&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\|&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;^&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;$$&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt;&amp;lt; /math &amp;gt;&lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-
+&lt;/code>&lt;/pre>
+&lt;p>renders as&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">pandas&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">pd&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">pd&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">read_csv&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;data.csv&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">data&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="inline-images">Inline Images&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{{&amp;lt;&lt;/span> &lt;span class="nx">icon&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;python&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;}}&lt;/span> &lt;span class="nx">Python&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>renders as&lt;/p>
+&lt;p>
+&lt;span class="inline-block pr-1">
+&lt;svg style="height: 1em; transform: translateY(0.1em);" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="currentColor">&lt;path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/>&lt;/svg>
+&lt;/span> Python&lt;/p>
+&lt;h2 id="did-you-find-this-page-helpful-consider-sharing-it-">Did you find this page helpful? Consider sharing it 🙌&lt;/h2></description></item><item><title>Aversarial Attacks Introduction</title><link>https://philippebergna.github.io/blogs/blog-2/</link><pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/blogs/blog-2/</guid><description>&lt;p>&lt;a href="https://hugoblox.com">Hugo Blox Builder&lt;/a> is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.&lt;/p>
+&lt;p>&lt;strong>Embed videos, podcasts, code, LaTeX math, and even test students!&lt;/strong>&lt;/p>
+&lt;p>On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Hugo Blox.&lt;/p>
+&lt;h2 id="video">Video&lt;/h2>
+&lt;p>Teach your course by sharing videos with your students. Choose from one of the following approaches:&lt;/p>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/D2vj0WcvH5c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;strong>Youtube&lt;/strong>:&lt;/p>
+&lt;pre>&lt;code>{{&amp;lt; youtube w7Ft2ymGmfc &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;p>&lt;strong>Bilibili&lt;/strong>:&lt;/p>
+&lt;pre>&lt;code>{{&amp;lt; bilibili id=&amp;quot;BV1WV4y1r7DF&amp;quot; &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;p>&lt;strong>Video file&lt;/strong>&lt;/p>
+&lt;p>Videos may be added to a page by either placing them in your &lt;code>assets/media/&lt;/code> media library or in your &lt;a href="https://gohugo.io/content-management/page-bundles/">page&amp;rsquo;s folder&lt;/a>, and then embedding them with the &lt;em>video&lt;/em> shortcode:&lt;/p>
+&lt;pre>&lt;code>{{&amp;lt; video src=&amp;quot;my_video.mp4&amp;quot; controls=&amp;quot;yes&amp;quot; &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;h2 id="podcast">Podcast&lt;/h2>
+&lt;p>You can add a podcast or music to a page by placing the MP3 file in the page&amp;rsquo;s folder or the media library folder and then embedding the audio on your page with the &lt;em>audio&lt;/em> shortcode:&lt;/p>
+&lt;pre>&lt;code>{{&amp;lt; audio src=&amp;quot;ambient-piano.mp3&amp;quot; &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;p>Try it out:&lt;/p>
+&lt;audio controls >
+&lt;source src="https://philippebergna.github.io/blogs/blog-2/ambient-piano.mp3" type="audio/mpeg">
+&lt;/audio>
+&lt;h2 id="test-students">Test students&lt;/h2>
+&lt;p>Provide a simple yet fun self-assessment by revealing the solutions to challenges with the &lt;code>spoiler&lt;/code> shortcode:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">{{&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nt">spoiler&lt;/span> &lt;span class="na">text&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;👉 Click to view the solution&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">You found me!
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="p">/&lt;/span>&lt;span class="nt">spoiler&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>renders as&lt;/p>
+&lt;details class="spoiler " id="spoiler-2">
+&lt;summary class="cursor-pointer">👉 Click to view the solution&lt;/summary>
+&lt;div class="rounded-lg bg-neutral-50 dark:bg-neutral-800 p-2">
+You found me 🎉
+&lt;/div>
+&lt;/details>
+&lt;h2 id="math">Math&lt;/h2>
+&lt;p>Hugo Blox Builder supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the &lt;code>math&lt;/code> option in your &lt;code>config/_default/params.yaml&lt;/code> file.&lt;/p>
+&lt;p>To render &lt;em>inline&lt;/em> or &lt;em>block&lt;/em> math, wrap your LaTeX math with &lt;code>{{&amp;lt; math &amp;gt;}}$...${{&amp;lt; /math &amp;gt;}}&lt;/code> or &lt;code>{{&amp;lt; math &amp;gt;}}$$...$${{&amp;lt; /math &amp;gt;}}&lt;/code>, respectively.&lt;/p>
+&lt;div class="flex px-4 py-3 mb-6 rounded-md bg-primary-100 dark:bg-primary-900">
+&lt;span class="pr-3 pt-1 text-primary-600 dark:text-primary-300">
+&lt;svg height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">&lt;path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0m-9-3.75h.008v.008H12z"/>&lt;/svg>
+&lt;/span>
+&lt;span class="dark:text-neutral-300">We wrap the LaTeX math in the Hugo Blox &lt;em>math&lt;/em> shortcode to prevent Hugo rendering our math as Markdown.&lt;/span>
+&lt;/div>
+&lt;p>Example &lt;strong>math block&lt;/strong>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-latex" data-lang="latex">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">{{&lt;/span>&amp;lt; math &amp;gt;&lt;span class="nb">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sb">$$&lt;/span>&lt;span class="nb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">&lt;/span>&lt;span class="nv">\gamma&lt;/span>&lt;span class="nb">_{n} &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\frac&lt;/span>&lt;span class="nb">{ &lt;/span>&lt;span class="nv">\left&lt;/span>&lt;span class="nb"> | &lt;/span>&lt;span class="nv">\left&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="nv">\mathbf&lt;/span>&lt;span class="nb"> x_{n} &lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\mathbf&lt;/span>&lt;span class="nb"> x_{n&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="nb">} &lt;/span>&lt;span class="nv">\right&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="nb">^T &lt;/span>&lt;span class="nv">\left&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">[&lt;/span>&lt;span class="nv">\nabla&lt;/span>&lt;span class="nb"> F &lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="nv">\mathbf&lt;/span>&lt;span class="nb"> x_{n}&lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\nabla&lt;/span>&lt;span class="nb"> F &lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="nv">\mathbf&lt;/span>&lt;span class="nb"> x_{n&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="nb">}&lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\right&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">]&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\right&lt;/span>&lt;span class="nb"> |}{&lt;/span>&lt;span class="nv">\left&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\|\nabla&lt;/span>&lt;span class="nb"> F&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="nv">\mathbf&lt;/span>&lt;span class="nb">{x}_{n}&lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\nabla&lt;/span>&lt;span class="nb"> F&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="nv">\mathbf&lt;/span>&lt;span class="nb">{x}_{n&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="nb">}&lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\right&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\|&lt;/span>&lt;span class="nb">^&lt;/span>&lt;span class="m">2&lt;/span>&lt;span class="nb">}
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">&lt;/span>&lt;span class="s">$$&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">{{&lt;/span>&amp;lt; /math &amp;gt;&lt;span class="nb">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>renders as&lt;/p>
 $$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
-
-
-&lt;p&gt;Example &lt;strong&gt;inline math&lt;/strong&gt; &lt;code&gt;{{&amp;lt; math &amp;gt;}}$\nabla F(\mathbf{x}_{n})${{&amp;lt; /math &amp;gt;}}&lt;/code&gt; renders as $\nabla F(\mathbf{x}_{n})$
-.&lt;/p&gt;
-&lt;p&gt;Example &lt;strong&gt;multi-line math&lt;/strong&gt; using the math linebreak (&lt;code&gt;\\&lt;/code&gt;):&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-latex&#34; data-lang=&#34;latex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt;&amp;lt; math &amp;gt;&lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;sb&#34;&gt;$$&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;k;p_{&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}^{&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\begin&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{cases}p_{&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}^{&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;} &amp;amp; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\text&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{if }k&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;, &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\\&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;p_{&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;}^{&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;} &amp;amp; &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\text&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{if }k&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;\end&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;{cases}&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;$$&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;{{&lt;/span&gt;&amp;lt; /math &amp;gt;&lt;span class=&#34;nb&#34;&gt;}}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-
-
+&lt;p>Example &lt;strong>inline math&lt;/strong> &lt;code>{{&amp;lt; math &amp;gt;}}$\nabla F(\mathbf{x}_{n})${{&amp;lt; /math &amp;gt;}}&lt;/code> renders as $\nabla F(\mathbf{x}_{n})$
+.&lt;/p>
+&lt;p>Example &lt;strong>multi-line math&lt;/strong> using the math linebreak (&lt;code>\\&lt;/code>):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-latex" data-lang="latex">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">{{&lt;/span>&amp;lt; math &amp;gt;&lt;span class="nb">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sb">$$&lt;/span>&lt;span class="nb">f&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="nb">k;p_{&lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="nb">}^{&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="nb">}&lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\begin&lt;/span>&lt;span class="nb">{cases}p_{&lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="nb">}^{&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="nb">} &amp;amp; &lt;/span>&lt;span class="nv">\text&lt;/span>&lt;span class="nb">{if }k&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="nb">, &lt;/span>&lt;span class="nv">\\&lt;/span>&lt;span class="nb">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">&lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nb">p_{&lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="nb">}^{&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="nb">} &amp;amp; &lt;/span>&lt;span class="nv">\text&lt;/span>&lt;span class="nb">{if }k&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="nb">.&lt;/span>&lt;span class="nv">\end&lt;/span>&lt;span class="nb">{cases}&lt;/span>&lt;span class="s">$$&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">{{&lt;/span>&amp;lt; /math &amp;gt;&lt;span class="nb">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>renders as&lt;/p>
 $$
 f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} &amp; \text{if }k=1, \\
 1-p_{0}^{*} &amp; \text{if }k=0.\end{cases}
 $$
-
-
-
-&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
-&lt;p&gt;Hugo Blox Builder utilises Hugo&amp;rsquo;s Markdown extension for highlighting code syntax. The code theme can be selected in the &lt;code&gt;config/_default/params.yaml&lt;/code&gt; file.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```python
+&lt;h2 id="code">Code&lt;/h2>
+&lt;p>Hugo Blox Builder utilises Hugo&amp;rsquo;s Markdown extension for highlighting code syntax. The code theme can be selected in the &lt;code>config/_default/params.yaml&lt;/code> file.&lt;/p>
+&lt;pre>&lt;code>```python
 import pandas as pd
 data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
 data.head()
 ```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pandas&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pd&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;data&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pd&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;read_csv&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;data.csv&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;inline-images&#34;&gt;Inline Images&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{{&amp;lt;&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;icon&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;python&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;}}&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;Python&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-&lt;p&gt;
-  &lt;span class=&#34;inline-block  pr-1&#34;&gt;
-    &lt;svg style=&#34;height: 1em; transform: translateY(0.1em);&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; height=&#34;1em&#34; viewBox=&#34;0 0 448 512&#34; fill=&#34;currentColor&#34;&gt;&lt;path d=&#34;M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z&#34;/&gt;&lt;/svg&gt;
-  &lt;/span&gt; Python&lt;/p&gt;
-&lt;h2 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Experience</title>
-      <link>https://philippebergna.github.io/experience/</link>
-      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/experience/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Learn JavaScript</title>
-      <link>https://philippebergna.github.io/blogs/what-is-adversarial-attakcks/</link>
-      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/blogs/what-is-adversarial-attakcks/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;!-- What is this blog about? computer vision, etc. Why did I decide to write this blog? --&gt;
-&lt;p&gt;For the past 2.5 years I have been working as a reseach scientist on AI safety for computer vision systems at &lt;a href=&#34;https://www.advai.co.uk/&#34;&gt;Advai&lt;/a&gt;. With the boom of Large language models (LLMs) such as ChatGPT, gemini, and claude emerging in the las few years, the AI safety community seemed to have shifted their focus from computer vision systems to LLMs safety. However, I still believe that if we wish to build trust and robust AI models, the reseach on Adversarial attacks in computer vision serves as a pillow to takle before we can&lt;/p&gt;
-&lt;h2 id=&#34;why-do-adversarial-attacks-exist-my-own-take&#34;&gt;Why do Adversarial attacks exist? my own take.&lt;/h2&gt;
-&lt;h2 id=&#34;types-of-adversarial-attacks&#34;&gt;Types of Adversarial Attacks&lt;/h2&gt;
-&lt;p&gt;FSGM, PGD, Iterative PGD (?), Deepfool, Gans.&lt;/p&gt;
-&lt;h2 id=&#34;some-cool-adversarial-attackszws&#34;&gt;Some cool adversarial attackszws&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>✅ Manage your projects</title>
-      <link>https://philippebergna.github.io/post/project-management/</link>
-      <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://philippebergna.github.io/post/project-management/</guid>
-      <description>&lt;p&gt;Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!&lt;/p&gt;
-&lt;h2 id=&#34;ideation&#34;&gt;Ideation&lt;/h2&gt;
-&lt;p&gt;Hugo Blox supports a Markdown extension for mindmaps.&lt;/p&gt;
-&lt;p&gt;Simply insert a Markdown code block labelled as &lt;code&gt;markmap&lt;/code&gt; and optionally set the height of the mindmap as shown in the example below.&lt;/p&gt;
-&lt;p&gt;Mindmaps can be created by simply writing the items as a Markdown list within the &lt;code&gt;markmap&lt;/code&gt; code block, indenting each item to create as many sub-levels as you need:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;
-&lt;code&gt;
-```markmap {height=&#34;200px&#34;}
+&lt;/code>&lt;/pre>
+&lt;p>renders as&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">pandas&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">pd&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">pd&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">read_csv&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;data.csv&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">data&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="inline-images">Inline Images&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{{&amp;lt;&lt;/span> &lt;span class="nx">icon&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;python&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;}}&lt;/span> &lt;span class="nx">Python&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>renders as&lt;/p>
+&lt;p>
+&lt;span class="inline-block pr-1">
+&lt;svg style="height: 1em; transform: translateY(0.1em);" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="currentColor">&lt;path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/>&lt;/svg>
+&lt;/span> Python&lt;/p>
+&lt;h2 id="did-you-find-this-page-helpful-consider-sharing-it-">Did you find this page helpful? Consider sharing it 🙌&lt;/h2></description></item><item><title>Experience</title><link>https://philippebergna.github.io/experience/</link><pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/experience/</guid><description/></item><item><title>Learn JavaScript</title><link>https://philippebergna.github.io/blogs/what-is-adversarial-attakcks/</link><pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/blogs/what-is-adversarial-attakcks/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;!-- What is this blog about? computer vision, etc. Why did I decide to write this blog? -->
+&lt;p>For the past 2.5 years I have been working as a reseach scientist on AI safety for computer vision systems at &lt;a href="https://www.advai.co.uk/">Advai&lt;/a>. With the boom of Large language models (LLMs) such as ChatGPT, gemini, and claude emerging in the las few years, the AI safety community seemed to have shifted their focus from computer vision systems to LLMs safety. However, I still believe that if we wish to build trust and robust AI models, the reseach on Adversarial attacks in computer vision serves as a pillow to takle before we can&lt;/p>
+&lt;h2 id="why-do-adversarial-attacks-exist-my-own-take">Why do Adversarial attacks exist? my own take.&lt;/h2>
+&lt;h2 id="types-of-adversarial-attacks">Types of Adversarial Attacks&lt;/h2>
+&lt;p>FSGM, PGD, Iterative PGD (?), Deepfool, Gans.&lt;/p>
+&lt;h2 id="some-cool-adversarial-attackszws">Some cool adversarial attackszws&lt;/h2></description></item><item><title>✅ Manage your projects</title><link>https://philippebergna.github.io/post/project-management/</link><pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/post/project-management/</guid><description>&lt;p>Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!&lt;/p>
+&lt;h2 id="ideation">Ideation&lt;/h2>
+&lt;p>Hugo Blox supports a Markdown extension for mindmaps.&lt;/p>
+&lt;p>Simply insert a Markdown code block labelled as &lt;code>markmap&lt;/code> and optionally set the height of the mindmap as shown in the example below.&lt;/p>
+&lt;p>Mindmaps can be created by simply writing the items as a Markdown list within the &lt;code>markmap&lt;/code> code block, indenting each item to create as many sub-levels as you need:&lt;/p>
+&lt;div class="highlight">
+&lt;pre class="chroma">
+&lt;code>
+```markmap {height="200px"}
 - Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
+- Hugo Blox
+- blox-plugins-netlify
+- blox-plugins-netlify-cms
+- blox-plugins-reveal
 ```
-&lt;/code&gt;
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;markmap&#34; style=&#34;height: 200px;&#34;&gt;
-
-&lt;pre&gt;- Hugo Modules
-  - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;diagrams&#34;&gt;Diagrams&lt;/h2&gt;
-&lt;p&gt;Hugo Blox supports the &lt;em&gt;Mermaid&lt;/em&gt; Markdown extension for diagrams.&lt;/p&gt;
-&lt;p&gt;An example &lt;strong&gt;Gantt diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
+&lt;/code>
+&lt;/pre>
+&lt;/div>
+&lt;p>renders as&lt;/p>
+&lt;div class="markmap" style="height: 200px;">
+&lt;pre>- Hugo Modules
+- Hugo Blox
+- blox-plugins-netlify
+- blox-plugins-netlify-cms
+- blox-plugins-reveal&lt;/pre>
+&lt;/div>
+&lt;h2 id="diagrams">Diagrams&lt;/h2>
+&lt;p>Hugo Blox supports the &lt;em>Mermaid&lt;/em> Markdown extension for diagrams.&lt;/p>
+&lt;p>An example &lt;strong>Gantt diagram&lt;/strong>:&lt;/p>
+&lt;pre>&lt;code>```mermaid
 gantt
 section Section
-Completed :done,    des1, 2014-01-06,2014-01-08
-Active        :active,  des2, 2014-01-07, 3d
-Parallel 1   :         des3, after des1, 1d
-Parallel 2   :         des4, after des1, 1d
-Parallel 3   :         des5, after des3, 1d
-Parallel 4   :         des6, after des4, 1d
+Completed :done, des1, 2014-01-06,2014-01-08
+Active :active, des2, 2014-01-07, 3d
+Parallel 1 : des3, after des1, 1d
+Parallel 2 : des4, after des1, 1d
+Parallel 3 : des5, after des3, 1d
+Parallel 4 : des6, after des4, 1d
 ```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;mermaid&#34;&gt;gantt
+&lt;/code>&lt;/pre>
+&lt;p>renders as&lt;/p>
+&lt;div class="mermaid">gantt
 section Section
-Completed :done,    des1, 2014-01-06,2014-01-08
-Active        :active,  des2, 2014-01-07, 3d
-Parallel 1   :         des3, after des1, 1d
-Parallel 2   :         des4, after des1, 1d
-Parallel 3   :         des5, after des3, 1d
-Parallel 4   :         des6, after des4, 1d
-&lt;/div&gt;
-&lt;h2 id=&#34;todo-lists&#34;&gt;Todo lists&lt;/h2&gt;
-&lt;p&gt;You can even write your todo lists in Markdown too:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;- [x]&lt;/span&gt; Write math example
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;- [x]&lt;/span&gt; Write diagram example
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;- [ ]&lt;/span&gt; Do something else
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;renders as&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Write math example
-&lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Write diagram example&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Do something else&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h2&gt;
-</description>
-    </item>
-    
-  </channel>
-</rss>
+Completed :done, des1, 2014-01-06,2014-01-08
+Active :active, des2, 2014-01-07, 3d
+Parallel 1 : des3, after des1, 1d
+Parallel 2 : des4, after des1, 1d
+Parallel 3 : des5, after des3, 1d
+Parallel 4 : des6, after des4, 1d
+&lt;/div>
+&lt;h2 id="todo-lists">Todo lists&lt;/h2>
+&lt;p>You can even write your todo lists in Markdown too:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">&lt;span class="k">- [x]&lt;/span> Write math example
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">- [x]&lt;/span> Write diagram example
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">- [ ]&lt;/span> Do something else
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>renders as&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Write math example
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Write diagram example&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Do something else&lt;/li>
+&lt;/ul>
+&lt;h2 id="did-you-find-this-page-helpful-consider-sharing-it-">Did you find this page helpful? Consider sharing it 🙌&lt;/h2></description></item></channel></rss>
