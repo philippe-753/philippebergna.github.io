@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
@@ -29,11 +28,3 @@ Checkout out the last paper draft:&lt;/p&gt;
     
   </channel>
 </rss>
-=======
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OOD Detection | Philippe Bergna - Academic CV</title><link>https://philippebergna.github.io/tags/ood-detection/</link><atom:link href="https://philippebergna.github.io/tags/ood-detection/index.xml" rel="self" type="application/rss+xml"/><description>OOD Detection</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 06 May 2025 00:00:00 +0000</lastBuildDate><image><url>https://philippebergna.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url><title>OOD Detection</title><link>https://philippebergna.github.io/tags/ood-detection/</link></image><item><title>Out-of-Distribution (OOD) Detection with Adversarial Probes</title><link>https://philippebergna.github.io/project/out-of-distribution-ood-detection/</link><pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate><guid>https://philippebergna.github.io/project/out-of-distribution-ood-detection/</guid><description>&lt;p align="center">
-&lt;img src="featured.png" style="width:70%; height:auto;" />
-&lt;/p>
-&lt;!-- &lt;p align="center">&lt;em>&lt;/em>&lt;/p> -->
-&lt;p>Coming soon!
-Checkout out the last paper draft:&lt;/p></description></item></channel></rss>
->>>>>>> 86dfcce (Deploy)
