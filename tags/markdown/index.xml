@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Markdown | Philippe Bergna - Academic CV</title>
-    <link>/tags/markdown/</link>
-      <atom:link href="/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://philippe-753.github.io/philippebergna.github.io/tags/markdown/</link>
+      <atom:link href="https://philippe-753.github.io/philippebergna.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <description>Markdown</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 27 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <url>https://philippe-753.github.io/philippebergna.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>Markdown</title>
-      <link>/tags/markdown/</link>
+      <link>https://philippe-753.github.io/philippebergna.github.io/tags/markdown/</link>
     </image>
     
     <item>
       <title>🎉 Easily create your own simple yet highly customizable blog</title>
-      <link>/post/get-started/</link>
+      <link>https://philippe-753.github.io/philippebergna.github.io/post/get-started/</link>
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>/post/get-started/</guid>
+      <guid>https://philippe-753.github.io/philippebergna.github.io/post/get-started/</guid>
       <description>&lt;p&gt;Welcome 👋&lt;/p&gt;
 &lt;!-- 
 
@@ -101,18 +101,18 @@
     
     <item>
       <title>Active Learning</title>
-      <link>/project/active-learning/</link>
+      <link>https://philippe-753.github.io/philippebergna.github.io/project/active-learning/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>/project/active-learning/</guid>
+      <guid>https://philippe-753.github.io/philippebergna.github.io/project/active-learning/</guid>
       <description>&lt;p&gt;COMING SOON!&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>🧠 Sharpen your thinking with a second brain</title>
-      <link>/post/second-brain/</link>
+      <link>https://philippe-753.github.io/philippebergna.github.io/post/second-brain/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>/post/second-brain/</guid>
+      <guid>https://philippe-753.github.io/philippebergna.github.io/post/second-brain/</guid>
       <description>&lt;p&gt;Create a personal knowledge base and share your knowledge with your peers.&lt;/p&gt;
 &lt;p&gt;Hugo Blox web framework empowers you with one of the most flexible note-taking capabilities out there.&lt;/p&gt;
 &lt;p&gt;Create a powerful knowledge base that works on top of a local folder of plain text Markdown files.&lt;/p&gt;
@@ -214,9 +214,9 @@
     
     <item>
       <title>📈 Communicate your results effectively with the best data visualizations</title>
-      <link>/post/data-visualization/</link>
+      <link>https://philippe-753.github.io/philippebergna.github.io/post/data-visualization/</link>
       <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>/post/data-visualization/</guid>
+      <guid>https://philippe-753.github.io/philippebergna.github.io/post/data-visualization/</guid>
       <description>&lt;p&gt;Hugo Blox is designed to give technical content creators a seamless experience. You can focus on the content and Hugo Blox handles the rest.&lt;/p&gt;
 &lt;p&gt;Use popular tools such as Plotly, Mermaid, and data frames.&lt;/p&gt;
 &lt;h2 id=&#34;charts&#34;&gt;Charts&lt;/h2&gt;
@@ -227,7 +227,7 @@
 
 
 
-&lt;div id=&#34;chart-816527493&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-328594716&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -245,7 +245,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-816527493&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-328594716&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -420,9 +420,9 @@ Crash --&amp;gt; [*]
     
     <item>
       <title>👩🏼‍🏫 Teach academic courses</title>
-      <link>/post/teach-courses/</link>
+      <link>https://philippe-753.github.io/philippebergna.github.io/post/teach-courses/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>/post/teach-courses/</guid>
+      <guid>https://philippe-753.github.io/philippebergna.github.io/post/teach-courses/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://hugoblox.com&#34;&gt;Hugo Blox Builder&lt;/a&gt; is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Embed videos, podcasts, code, LaTeX math, and even test students!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Hugo Blox.&lt;/p&gt;
@@ -472,7 +472,7 @@ Crash --&amp;gt; [*]
 
 
 &lt;audio controls &gt;
-  &lt;source src=&#34;/post/teach-courses/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  &lt;source src=&#34;https://philippe-753.github.io/philippebergna.github.io/philippebergna.github.io/post/teach-courses/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
 
 &lt;h2 id=&#34;test-students&#34;&gt;Test students&lt;/h2&gt;
@@ -533,9 +533,9 @@ data.head()
     
     <item>
       <title>✅ Manage your projects</title>
-      <link>/post/project-management/</link>
+      <link>https://philippe-753.github.io/philippebergna.github.io/post/project-management/</link>
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>/post/project-management/</guid>
+      <guid>https://philippe-753.github.io/philippebergna.github.io/post/project-management/</guid>
       <description>&lt;p&gt;Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!&lt;/p&gt;
 &lt;h2 id=&#34;ideation&#34;&gt;Ideation&lt;/h2&gt;
 &lt;p&gt;Hugo Blox supports a Markdown extension for mindmaps.&lt;/p&gt;

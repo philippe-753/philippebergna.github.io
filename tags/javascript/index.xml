@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JavaScript | Philippe Bergna - Academic CV</title>
-    <link>/tags/javascript/</link>
-      <atom:link href="/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://philippe-753.github.io/philippebergna.github.io/tags/javascript/</link>
+      <atom:link href="https://philippe-753.github.io/philippebergna.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <description>JavaScript</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <url>https://philippe-753.github.io/philippebergna.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>JavaScript</title>
-      <link>/tags/javascript/</link>
+      <link>https://philippe-753.github.io/philippebergna.github.io/tags/javascript/</link>
     </image>
     
     <item>
       <title>Learn JavaScript</title>
-      <link>/blogs/what-is-adversarial-attakcks/</link>
+      <link>https://philippe-753.github.io/philippebergna.github.io/blogs/what-is-adversarial-attakcks/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>/blogs/what-is-adversarial-attakcks/</guid>
+      <guid>https://philippe-753.github.io/philippebergna.github.io/blogs/what-is-adversarial-attakcks/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;!-- What is this blog about? computer vision, etc. Why did I decide to write this blog? --&gt;
 &lt;p&gt;For the past 2.5 years I have been working as a reseach scientist on AI safety for computer vision systems at &lt;a href=&#34;https://www.advai.co.uk/&#34;&gt;Advai&lt;/a&gt;. With the boom of Large language models (LLMs) such as ChatGPT, gemini, and claude emerging in the las few years, the AI safety community seemed to have shifted their focus from computer vision systems to LLMs safety. However, I still believe that if we wish to build trust and robust AI models, the reseach on Adversarial attacks in computer vision serves as a pillow to takle before we can&lt;/p&gt;

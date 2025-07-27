@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wowchemy | Philippe Bergna - Academic CV</title>
-    <link>/tags/wowchemy/</link>
-      <atom:link href="/tags/wowchemy/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://philippe-753.github.io/philippebergna.github.io/tags/wowchemy/</link>
+      <atom:link href="https://philippe-753.github.io/philippebergna.github.io/tags/wowchemy/index.xml" rel="self" type="application/rss+xml" />
     <description>Wowchemy</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <url>https://philippe-753.github.io/philippebergna.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>Wowchemy</title>
-      <link>/tags/wowchemy/</link>
+      <link>https://philippe-753.github.io/philippebergna.github.io/tags/wowchemy/</link>
     </image>
     
     <item>
       <title>Active Learning</title>
-      <link>/project/active-learning/</link>
+      <link>https://philippe-753.github.io/philippebergna.github.io/project/active-learning/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>/project/active-learning/</guid>
+      <guid>https://philippe-753.github.io/philippebergna.github.io/project/active-learning/</guid>
       <description>&lt;p&gt;COMING SOON!&lt;/p&gt;
 </description>
     </item>

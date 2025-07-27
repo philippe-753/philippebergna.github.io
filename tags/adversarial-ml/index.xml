@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Adversarial ML | Philippe Bergna - Academic CV</title>
-    <link>/tags/adversarial-ml/</link>
-      <atom:link href="/tags/adversarial-ml/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://philippe-753.github.io/philippebergna.github.io/tags/adversarial-ml/</link>
+      <atom:link href="https://philippe-753.github.io/philippebergna.github.io/tags/adversarial-ml/index.xml" rel="self" type="application/rss+xml" />
     <description>Adversarial ML</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 06 May 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <url>https://philippe-753.github.io/philippebergna.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>Adversarial ML</title>
-      <link>/tags/adversarial-ml/</link>
+      <link>https://philippe-753.github.io/philippebergna.github.io/tags/adversarial-ml/</link>
     </image>
     
     <item>
       <title>Out-of-Distribution (OOD) Detection with Adversarial Probes</title>
-      <link>/project/out-of-distribution-ood-detection/</link>
+      <link>https://philippe-753.github.io/philippebergna.github.io/project/out-of-distribution-ood-detection/</link>
       <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
-      <guid>/project/out-of-distribution-ood-detection/</guid>
+      <guid>https://philippe-753.github.io/philippebergna.github.io/project/out-of-distribution-ood-detection/</guid>
       <description>&lt;p align=&#34;center&#34;&gt;
   &lt;img src=&#34;featured.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;
 &lt;/p&gt;
@@ -28,9 +28,9 @@ Checkout out the last paper draft:&lt;/p&gt;
     
     <item>
       <title>3D Adversarial Camouflage</title>
-      <link>/project/3d-adversarial-attacks/</link>
+      <link>https://philippe-753.github.io/philippebergna.github.io/project/3d-adversarial-attacks/</link>
       <pubDate>Sat, 21 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>/project/3d-adversarial-attacks/</guid>
+      <guid>https://philippe-753.github.io/philippebergna.github.io/project/3d-adversarial-attacks/</guid>
       <description>&lt;p align=&#34;center&#34;&gt;
   &lt;img src=&#34;featured.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;
 &lt;p/&gt;
@@ -61,9 +61,9 @@ Checkout out the last paper draft:&lt;/p&gt;
     
     <item>
       <title>Adversarial Attacks for Facial Verification Systems</title>
-      <link>/project/adversarial-attacks-on-facial-verification-systems/</link>
+      <link>https://philippe-753.github.io/philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>/project/adversarial-attacks-on-facial-verification-systems/</guid>
+      <guid>https://philippe-753.github.io/philippebergna.github.io/project/adversarial-attacks-on-facial-verification-systems/</guid>
       <description>&lt;p align=&#34;center&#34;&gt;  
   &lt;img src=&#34;featured.png&#34; style=&#34;width:70%; height:auto;&#34; /&gt;  
 &lt;p/&gt;  
