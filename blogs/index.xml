@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs | Philippe Bergna - Academic CV</title>
-    <link>https://philippe-753.github.io/philippebergna.github.io/blogs/</link>
-      <atom:link href="https://philippe-753.github.io/philippebergna.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://philippebergna.github.io/blogs/</link>
+      <atom:link href="https://philippebergna.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
     <description>Blogs</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 24 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://philippe-753.github.io/philippebergna.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
+      <url>https://philippebergna.github.io/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>Blogs</title>
-      <link>https://philippe-753.github.io/philippebergna.github.io/blogs/</link>
+      <link>https://philippebergna.github.io/blogs/</link>
     </image>
     
     <item>
       <title>Aversarial Attacks Introduction</title>
-      <link>https://philippe-753.github.io/philippebergna.github.io/blogs/blog-2/</link>
+      <link>https://philippebergna.github.io/blogs/blog-2/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://philippe-753.github.io/philippebergna.github.io/blogs/blog-2/</guid>
+      <guid>https://philippebergna.github.io/blogs/blog-2/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://hugoblox.com&#34;&gt;Hugo Blox Builder&lt;/a&gt; is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Embed videos, podcasts, code, LaTeX math, and even test students!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Hugo Blox.&lt;/p&gt;
@@ -60,7 +60,7 @@
 
 
 &lt;audio controls &gt;
-  &lt;source src=&#34;https://philippe-753.github.io/philippebergna.github.io/philippebergna.github.io/blogs/blog-2/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  &lt;source src=&#34;https://philippebergna.github.io/blogs/blog-2/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
 
 &lt;h2 id=&#34;test-students&#34;&gt;Test students&lt;/h2&gt;
@@ -137,9 +137,9 @@ data.head()
     
     <item>
       <title>Learn JavaScript</title>
-      <link>https://philippe-753.github.io/philippebergna.github.io/blogs/what-is-adversarial-attakcks/</link>
+      <link>https://philippebergna.github.io/blogs/what-is-adversarial-attakcks/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://philippe-753.github.io/philippebergna.github.io/blogs/what-is-adversarial-attakcks/</guid>
+      <guid>https://philippebergna.github.io/blogs/what-is-adversarial-attakcks/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;!-- What is this blog about? computer vision, etc. Why did I decide to write this blog? --&gt;
 &lt;p&gt;For the past 2.5 years I have been working as a reseach scientist on AI safety for computer vision systems at &lt;a href=&#34;https://www.advai.co.uk/&#34;&gt;Advai&lt;/a&gt;. With the boom of Large language models (LLMs) such as ChatGPT, gemini, and claude emerging in the las few years, the AI safety community seemed to have shifted their focus from computer vision systems to LLMs safety. However, I still believe that if we wish to build trust and robust AI models, the reseach on Adversarial attacks in computer vision serves as a pillow to takle before we can&lt;/p&gt;
